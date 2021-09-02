@@ -8,7 +8,7 @@ import logo from "../assets/img/logo.svg";
 import banji from "../assets/img/banji.svg";
 import heroImg from "../assets/img/heroImg.png";
 
-import { HiMenuAlt4 } from 'react-icons/hi';
+import { FiMenu } from 'react-icons/fi';
 import { GrFormClose } from 'react-icons/gr';
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
         <StyledHero>
             <div className="header">
                 <img className="logo" src={logo} alt="enoverlab logo" />
-                <HiMenuAlt4 className="first-icon" onClick={() => setActive(!active)} />
+                <FiMenu className="first-icon" onClick={() => setActive(!active)} />
 
                 <div className={active ? "contact active" : "contact"}>
                     <div className="title">Contact Us</div>
