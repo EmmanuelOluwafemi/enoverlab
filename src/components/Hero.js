@@ -106,6 +106,10 @@ const StyledHero = styled.section`
         justify-content: space-between;
         position: relative;
 
+        @media (max-width: 768px) {
+            padding: 0 6%;
+        }
+
         .first-icon {
             font-size: 1.8rem;
             color: #000;
