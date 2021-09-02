@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -8,7 +8,12 @@ import logo from "../assets/img/logo.svg";
 import banji from "../assets/img/banji.svg";
 import heroImg from "../assets/img/heroImg.png";
 
+import { HiMenuAlt4 } from 'react-icons/hi';
+import { GrFormClose } from 'react-icons/gr';
+
 const Hero = () => {
+
+    const [active, setActive] = useState(false);
 
     useEffect(() => {
         AOS.init();
@@ -16,7 +21,16 @@ const Hero = () => {
 
     return (
         <StyledHero>
-            <img className="logo" src={logo} alt="enoverlab logo" />
+            <div className="header">
+                <img className="logo" src={logo} alt="enoverlab logo" />
+                <HiMenuAlt4 className="first-icon" onClick={() => setActive(!active)} />
+
+                <div className={active ? "contact active" : "contact"}>
+                    <div className="title">Contact Us</div>
+                    <a href="tel:08135369680">08135369680</a>
+                    <GrFormClose onClick={() => setActive(!active)} className="icon" />
+                </div>
+            </div>
 
             <div className="content-section">
                 <div className="content">
@@ -54,10 +68,6 @@ const Hero = () => {
                     </div>
 
                     <a href="https://forms.gle/gGfWTd9bQvP9SGZz8"
-                        data-aos="fade-right" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500"
-                        data-aos-delay="800"
                     >REGISTER HERE</a>
                 </div>
                 <img
@@ -81,18 +91,80 @@ const StyledHero = styled.section`
     height: 100%;
     max-height: 100vh;
     max-width: 100vw;
-    background: #fff;
-    padding: 3rem 6%;
+    background: rgba(82, 222, 229, 0.05);
+    padding: 3rem 0;
 
     @media (max-width: 768px) {
         max-height: auto;
+        overflow-x: hidden;
     }
 
-    .logo {
+    .header {
+        padding: 0 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
 
-        @media (max-width: 768px) {
-            width: 160px;
-            height: auto;
+        .first-icon {
+            font-size: 1.8rem;
+            color: #000;
+            cursor: pointer;
+        }
+    
+        .logo {
+    
+            @media (max-width: 768px) {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        .contact {
+            position: absolute;
+            top: 0;
+            right: -15%;
+            padding: 1.5rem 2rem;
+            padding-right: 3.5rem;
+            background: #fff;
+            display: none;
+
+            &.active {
+                right: 7%;
+                display: block;
+
+                @media (max-width: 768px) {
+                    right: -1rem;
+                    padding-right: 1.5rem;
+                    top: -1rem;
+                }
+            }
+
+            .icon {
+                position: relative;
+                top: -2rem;
+                right: -12%;
+                cursor: pointer;
+                font-size: 1.5rem;
+
+                @media (max-width: 768px) {
+                    top: -3rem;
+                    right: 2rem;
+                }
+            }
+
+            .title {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #000;
+            }
+
+            a {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #090C9B;
+                text-decoration: none;
+            }
         }
     }
 
@@ -102,24 +174,23 @@ const StyledHero = styled.section`
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         margin-top: 4rem;
-        position: relative;
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
         }
 
         img.hero {
-            position: absolute;
-            right: -6.8%;
-
-            @media (max-width: 768px) {
-                position: static;
-                width: 100%;
-                heigt: auto;
-            }
+            width: 100%;
+            heigt: auto;
         }
 
         .content {
+            padding-left: 18%;
+
+            @media (max-width: 768px) {
+                padding: 0 6%;
+            }
+
             button {
                 padding: .85rem 2.2rem;
                 border: none;
@@ -128,8 +199,11 @@ const StyledHero = styled.section`
                 color: #12169B;
                 font-size: 1rem;
                 font-weight: 600;
+                margin-top: 2rem;
+                font-family: 'nexaregular';
 
                 @media (max-width: 768px) {
+                    margin-top: 0;
                     font-size: .8rem;
                 }
             }
@@ -140,22 +214,24 @@ const StyledHero = styled.section`
                 color: #090C9B;
                 max-width: 574px;
                 margin-top: 2.5rem;
-                line-height: 1.3;
+                line-height: 1.1;
+                font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
                     font-size: 1.5rem;
-                    line-height: 1.1;
+                    line-height: 1.3;
                     margin-top: 1.5rem;
                 }
             }
             
             p {
                 font-size: 1.25rem;
-                font-weight: 400;
+                font-weight: 300;
                 color: #090C9B;
-                margin-top: 1.5rem;
-                max-width: 473px;
+                margin-top: 1.3rem;
+                max-width: 423px;
                 line-height: 1.5;
+                font-family: 'nexalight';
 
                 @media (max-width: 768px) {
                     font-size: .9rem;
