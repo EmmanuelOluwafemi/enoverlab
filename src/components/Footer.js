@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Footer = () => {
     return (
         <StyledFooter>
-            <a href="https://www.instagram.com/p/CTUJsB8MZ5q/?utm_medium=copy_link">Follow us on instagram</a>
+            <a href="https://instagram.com/enoverlab?utm_medium=copy_link">Follow us on instagram</a>
         </StyledFooter>
     )
 }
