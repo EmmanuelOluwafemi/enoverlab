@@ -89,7 +89,7 @@ export default Hero
 const StyledHero = styled.section`
     width: 100%;
     height: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     background: rgba(82, 222, 229, 0.05);
     padding: 3rem 0;
