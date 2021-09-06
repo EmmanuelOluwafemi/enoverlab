@@ -1,74 +1,35 @@
-import React, { useEffect, useState } from 'react'
-
-import AOS from 'aos';
 import "aos/dist/aos.css";
 import styled from "styled-components";
 
-import logo from "../assets/img/logo.svg";
-import banji from "../assets/img/banji.svg";
 import heroImg from "../assets/img/heroImg.png";
 
-import { FiMenu } from 'react-icons/fi';
-import { GrFormClose } from 'react-icons/gr';
+import { IoIosArrowRoundForward } from 'react-icons/io';
+import Header from './Header';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
-
-    const [active, setActive] = useState(false);
-
-    useEffect(() => {
-        AOS.init();
-      }, []);
-
     return (
         <StyledHero>
-            <div className="header">
-                <img className="logo" src={logo} alt="enoverlab logo" />
-                <FiMenu className="first-icon" onClick={() => setActive(!active)} />
-
-                <div className={active ? "contact active" : "contact"}>
-                    <div className="title">Contact Us</div>
-                    <a href="tel:08135369680">08135369680</a>
-                    <GrFormClose onClick={() => setActive(!active)} className="icon" />
-                </div>
-            </div>
-
+            <Header />
             <div className="content-section">
                 <div className="content">
-                    <button 
-                        data-aos="fade-right" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500"
-                    >FREE AMA SESSION</button>
+                    <h3>TRAINING TO BE EMPLOYABLE</h3>
                     <h1
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="200"
-                    >How to transition <br />into Product Management</h1>
+                    >
+                        Transition into <br />Product Management</h1>
                     <p
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="400"
-                    >What you need to know to start building a career as a Product Manager</p>
+                    >Building product managers who will innovate products for the future</p>
 
-                    <div 
-                        className="speaker"
-                        data-aos="fade-right" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500"
-                        data-aos-delay="600"
-                    >
-                        <img src={banji} alt="banji's face" />
-                        <div className="speakers-details">
-                            <div className="title">Speaker</div>
-                            <div className="name">EWENLA OLABANJI</div>
-                            <div className="position">Snr Product Manager, Perxels</div>
-                        </div>
-                    </div>
-
-                    <a href="https://forms.gle/gGfWTd9bQvP9SGZz8"
-                    >REGISTER HERE</a>
+                    <Link to="/contact"
+                    >Enrol Now <IoIosArrowRoundForward className="icons"/></Link>
                 </div>
                 <img
                     data-aos="fade-left" 
@@ -99,79 +60,6 @@ const StyledHero = styled.section`
         overflow-x: hidden;
     }
 
-    .header {
-        padding: 0 9%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-
-        @media (max-width: 768px) {
-            padding: 0 6%;
-        }
-
-        .first-icon {
-            font-size: 1.8rem;
-            color: #000;
-            cursor: pointer;
-        }
-    
-        .logo {
-    
-            @media (max-width: 768px) {
-                width: 120px;
-                height: auto;
-            }
-        }
-
-        .contact {
-            position: absolute;
-            top: 0;
-            right: -15%;
-            padding: 1.5rem 2rem;
-            padding-right: 3.5rem;
-            background: #fff;
-            display: none;
-
-            &.active {
-                right: 7%;
-                display: block;
-
-                @media (max-width: 768px) {
-                    right: -1rem;
-                    padding-right: 1.5rem;
-                    top: -1rem;
-                }
-            }
-
-            .icon {
-                position: relative;
-                top: -2rem;
-                right: -12%;
-                cursor: pointer;
-                font-size: 1.5rem;
-
-                @media (max-width: 768px) {
-                    top: -3rem;
-                    right: 2rem;
-                }
-            }
-
-            .title {
-                font-size: 1rem;
-                font-weight: 400;
-                color: #000;
-            }
-
-            a {
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: #090C9B;
-                text-decoration: none;
-            }
-        }
-    }
-
     .content-section {
         width: 100%;
         display: grid;
@@ -185,39 +73,39 @@ const StyledHero = styled.section`
 
         img.hero {
             width: 100%;
-            heigt: auto;
+            height: auto;
         }
 
         .content {
             padding-left: 18%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             @media (max-width: 768px) {
                 padding: 0 6%;
             }
 
-            button {
-                padding: .85rem 2.2rem;
-                border: none;
-                border-radius: 100px;
-                background: rgba(9, 12, 155, 0.1);
-                color: #12169B;
+            h3 {
                 font-size: 1rem;
                 font-weight: 600;
-                margin-top: 2rem;
-                font-family: 'nexaregular';
+                line-height: 1.5;
+                letter-spacing: 0.235em;
+                color: #12169B;
+                margin-bottom: 1.3rem;
+                margin-top: -3rem;
 
                 @media (max-width: 768px) {
                     margin-top: 0;
-                    font-size: .8rem;
+                    margin-bottom: 0;
                 }
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 3.35rem;
                 font-weight: 800;
                 color: #090C9B;
-                max-width: 574px;
-                margin-top: 2.5rem;
+                max-width: 706px;
                 line-height: 1.1;
                 font-family: 'nexaHeavy';
 
@@ -233,7 +121,7 @@ const StyledHero = styled.section`
                 font-weight: 300;
                 color: #090C9B;
                 margin-top: 1.3rem;
-                max-width: 423px;
+                max-width: 480px;
                 line-height: 1.5;
                 font-family: 'nexalight';
 
@@ -277,13 +165,22 @@ const StyledHero = styled.section`
                 color: #090C9B;
                 line-height: 104%;
                 letter-spacing: 0.02em;
-                padding: 1.2rem 2.2rem;
+                padding: 1.2rem 0;
                 background: #52DEE5;
                 box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
                 display: inline-block;
                 margin-top: 2rem;
                 text-decoration: none;
                 font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 200px;
+
+                .icons {
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                }
 
                 &:hover {
                     background: rgba(9, 12, 155, 0.1);
