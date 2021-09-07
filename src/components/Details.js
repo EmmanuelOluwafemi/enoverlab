@@ -18,18 +18,16 @@ const Details = () => {
                         <img src={facilitate} alt="facilitate icon" />
                         <div className="title">Experienced Facilitators</div>
                         <div className="cont">
-                            We teach in small groups with experienced product 
-                            managers who have the practical knowledge to 
-                            train and mentor you.
+                            We teach in small groups with experienced product managers who 
+                            have the practical knowledge to train and mentor you.
                         </div>
                     </div>
                     <div className="card">
                         <img src={progress} alt="progress icon" />
                         <div className="title">Progressive Learning</div>
                         <div className="cont">
-                            We teach in small groups with experienced product 
-                            managers who have the practical knowledge to 
-                            train and mentor you.
+                            Our classes are structured to take you practically through the 
+                            processes involved in product management to gain real-life experience.
                         </div>
                     </div>
                 </div>
