@@ -6,14 +6,14 @@ import character from "../assets/img/character.jpg";
 
 const data = [
     {
-        content: "Gain an immersive understanding of the practices and skills needed to succeed in an entry-level project management role"
+        content: "Gain an immersive understanding of the practices and skills needed to succeed as a product manager."
     },
     {
-        content: "Learn the foundations of Agile project management, with a focus on implementing Scrum events, building Scrum artifacts, and understanding Scrum roles",
+        content: "Learn the frameworks needed to improve the implementation of product management processes for efficient delivery.",
         secondary: true
     },
     {
-        content: "Learn how to create effective project documentation and artifacts throughout the various phases of a project"
+        content: "Use core tools that are important in different phase of the product lifecycle to help drive productivity, result and growth."
     },
 ]
 
@@ -62,8 +62,9 @@ const Become = () => {
 export default Become
 
 const StyledBecome = styled.section`
-    width: 100%;
     padding: 3rem 6%;
+    max-width: 100vw;
+    overflow-x: hidden;
 
     .title {
         font-size: 3.125rem;

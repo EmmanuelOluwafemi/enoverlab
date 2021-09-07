@@ -85,6 +85,7 @@ const StyledServices = styled.section`
     padding: 3rem 6%;
     background: rgba(82, 222, 229, 0.05);
     padding-top: 4.5rem;
+    overflow-x: hidden;
 
     h3 {
         font-size: 1.5rem;

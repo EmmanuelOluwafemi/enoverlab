@@ -8,12 +8,14 @@ import { IoMail } from 'react-icons/io5';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
+import Modal from '../components/Modal';
 
 const Contact = () => {
 
         const scriptUrl = "https://script.google.com/macros/s/AKfycbxSXjrzw_lMCpy7x0zj-t-Of0lf5rqQ0CNrsmXElBxvqQ8Sp2Hu41AB4EF_g38A_s7Hmg/exec";
 
         const [loading, setLoading] = useState(false)
+        const [active, setActive] = useState(false);
 
         const formRef = useRef(null)
 
@@ -24,12 +26,14 @@ const Contact = () => {
                 fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
                 .then(res => {
                     setLoading(false)
+                    setActive(true)
                 })
                 .catch(err => console.log(err))
         }
 
     return (
         <StyledContact>
+            <Modal active={active} setActive={setActive} />
             <Header />
             <StyledHeader>
                 <div className="title-container">
@@ -107,7 +111,7 @@ const Contact = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="message">Message</label>
-                        <textarea type="text" name="message" id="message" placeholder="I am interested in becoming a Sponsor for perxels Design School" />
+                        <textarea type="text" name="message" id="message" placeholder="I am interested in joining Enoverlab..." />
                     </div>
 
                     <div className="button-container">

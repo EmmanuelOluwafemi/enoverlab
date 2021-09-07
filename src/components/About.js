@@ -49,7 +49,6 @@ const About = () => {
 export default About
 
 const StyledAbout = styled.section`
-    width: 100%;
     max-width: 100vw;
     padding: 0 6%;
     display: grid;

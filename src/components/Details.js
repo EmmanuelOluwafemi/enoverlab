@@ -41,9 +41,14 @@ const Details = () => {
 export default Details
 
 const StyledDetals = styled.section`
-    width: 100%;
     padding: 5rem 9%;
     margin-top: 5rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+    }
 
     .content {
         width: 100%;

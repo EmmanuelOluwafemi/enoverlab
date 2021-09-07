@@ -11,7 +11,7 @@ import education from "../assets/img/education.png";
 const data = [
     {
         imgUrl: education,
-        title: "7 Weeks Training and Mentorship",
+        title: "10 Weeks Training and Mentorship",
     },
     {
         imgUrl: analytics,
@@ -83,10 +83,11 @@ const What = () => {
 export default What
 
 const StyledWat = styled.section`
-    width: 100%;
     padding: 3rem 6%;
     background: #F6FDFE;
     position: relative;
+    max-width: 100vw;
+    overflow-x: hidden;
 
     img.bg {
         position: absolute;

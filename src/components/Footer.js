@@ -59,8 +59,9 @@ const Footer = () => {
 export default Footer
 
 const StyledFooter = styled.footer`
-    width: 100%;
     margin-top: 8rem;
+    overflow-x: hidden;
+    max-width: 100vw;
 
     @media (max-width: 768px) {
         margin-top: 3rem;

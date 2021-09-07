@@ -10,22 +10,15 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 const data = [
     {
         imgUrl: jordy,
-        name: "IBUKUN",
-        location: "USA",
-        content: `Enover is an ideal school for anybody who wants to learn 
-                product management.  Their syllabus is profound and their 
-                mentors are awesome. I got a job after my training. 
-                Thank you!`
-    },
-    {
-        imgUrl: jordy,
-        name: "IBUKUN",
-        location: "USA",
-        content: `Enover is an ideal school for anybody who wants to learn 
-                product management.  Their syllabus is profound and their 
-                mentors are awesome. I got a job after my training. 
-                Thank you!`
-    },
+        name: "Samuel Adekoya",
+        location: "Product Manager",
+        content: `The product management course at Enoverlab is very detailed and 
+                each class was an interesting experience for me. Coming from a field 
+                that is not tech related, I was able to easily understand the role of 
+                a product manager, frameworks to improve my work as a PM and most importantly, 
+                the core skills to build products that will provide increased customer 
+                value while at the same time drive business growth.`
+    }
 ]
 
 const Testimonial = () => {
@@ -109,8 +102,9 @@ const Testimonial = () => {
 export default Testimonial
 
 const SliderContainer = styled.div`
-    width: 100%;
     padding: 5rem 6%;
+    max-width: 100vw;
+    overflow-x: hidden;
     
     h2 {
         font-size: 3.1rem;

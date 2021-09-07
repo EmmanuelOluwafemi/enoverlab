@@ -48,12 +48,12 @@ const Hero = () => {
 export default Hero
 
 const StyledHero = styled.section`
-    width: 100%;
     height: 100%;
     min-height: 100vh;
     max-width: 100vw;
     background: rgba(82, 222, 229, 0.05);
     padding: 3rem 0;
+    overflow-x: hidden;
 
     @media (max-width: 768px) {
         max-height: auto;
