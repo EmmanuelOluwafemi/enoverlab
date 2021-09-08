@@ -17,7 +17,7 @@ const Ads = () => {
 
             <img className="user" src={character} alt="character" />
 
-            <a href="foem">Register here</a>
+            <a href="https://forms.gle/gGfWTd9bQvP9SGZz8">Register here</a>
         </StyledAds>
     )
 }
