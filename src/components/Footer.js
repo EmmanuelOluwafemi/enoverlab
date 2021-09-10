@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import styled from "styled-components";
 
-import joyce from "../assets/img/joyce.jpg";
-
 import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
@@ -28,12 +26,6 @@ const Footer = () => {
                         Join Us
                     </Link>
                 </div>
-                <img 
-                    data-aos="fade-right" 
-                    data-aos-easing="ease-in-sine"
-                    data-aos-duration="500" 
-                    data-aos-delay="600"
-                src={joyce} alt="joyce" />
             </div>
 
             <div className="footer-content">
@@ -72,17 +64,9 @@ const StyledFooter = styled.footer`
         padding: 0 10%;
         background: #090C9B;
         min-height: 381px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        position: relative;
-        margin-bottom: 8rem;
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 2rem;
-            padding: 3rem 10%;
-            margin-bottom: 3rem;
-        }
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
         
         .text-content {
             width: 100%;
@@ -90,12 +74,14 @@ const StyledFooter = styled.footer`
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             h4 {
                 font-size: 2.2rem;
                 font-weight: 400;
                 color: #fff;
-                max-width: 448.38px;
+                max-width: 670px;
+                text-align: center;
                 text-transform: capitalize;
                 line-height: 1.7;
 
@@ -109,6 +95,7 @@ const StyledFooter = styled.footer`
                 color: #090C9B;
                 text-decoration: none;
                 background: #52DEE5;
+                width: 100%;
                 max-width: 193px;
                 height: 48px;
                 display: flex;

@@ -3,22 +3,37 @@ import React, { useRef, useState } from 'react'
 import styled from "styled-components";
 import Slider from "react-slick";
 
-import jordy from "../assets/img/jordy.jpg";
 import quote from "../assets/img/quote.png"
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const data = [
     {
-        imgUrl: jordy,
+        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/jordy_GxVIHVW_Am.jpg?updatedAt=1631278518154",
         name: "Samuel Adekoya",
-        location: "Product Manager",
+        location: "USA",
         content: `The product management course at Enoverlab is very detailed and 
                 each class was an interesting experience for me. Coming from a field 
                 that is not tech related, I was able to easily understand the role of 
                 a product manager, frameworks to improve my work as a PM and most importantly, 
                 the core skills to build products that will provide increased customer 
                 value while at the same time drive business growth.`
-    }
+    },
+    {
+        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/feranmi_MzfOf-rUD.jpg?updatedAt=1631278518455",
+        name: "RAPHIU",
+        location: "KWARA",
+        content: `Enover is an ideal school for anybody who wants to learn product management.  
+                Their syllabus is profound and their mentors are awesome. I got a job after 
+                my training. Thank you!`
+    },
+    {
+        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/joy_C8wrEUkgw.jpg?updatedAt=1631278518549",
+        name: "JOY",
+        location: "LAGOS",
+        content: `Enover is an ideal school for anybody who wants to learn product management.  
+                Their syllabus is profound and their mentors are awesome. I got a job after 
+                my training. Thank you!`
+    },
 ]
 
 const Testimonial = () => {
@@ -34,7 +49,7 @@ const Testimonial = () => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
