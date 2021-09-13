@@ -39,6 +39,7 @@ const advance = [
 ]
 
 const Pricing = () => {
+    window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
             <Header />

@@ -12,6 +12,7 @@ const PricingCard = ({ primary, children, title, price, dur, subtitle  }) => {
             </div>
             <p>{subtitle}</p>
             { children }
+            <a href="https://wa.me/2349063124595?text='Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course.">Enroll for this plan</a>
         </PricingCardWrapper>
     )
 }
@@ -24,6 +25,24 @@ const PricingCardWrapper = styled.div`
     background: #52DEE5;
     border: none;
     max-height: 643px;
+    position: relative;
+
+    a {
+        text-decoration: none;
+        padding: 1.4rem 2.4rem;
+        background: #090C9B;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-family: 'nexabold';
+        position: absolute;
+        bottom: -2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 270px;
+        text-align: center;
+        border-radius: 5px; 
+    }
 
     &.active {
         border: 4px solid #090C9B;

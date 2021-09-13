@@ -23,16 +23,15 @@ const data = [
         name: "RAPHIU",
         location: "KWARA",
         content: `Enover is an ideal school for anybody who wants to learn product management.  
-                Their syllabus is profound and their mentors are awesome. I got a job after 
-                my training. Thank you!`
+                Their syllabus is profound and their mentors are awesome. 
+                I got a job after my training. Thank you!`
     },
     {
         imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/joy_C8wrEUkgw.jpg?updatedAt=1631278518549",
         name: "JOY",
         location: "LAGOS",
-        content: `Enover is an ideal school for anybody who wants to learn product management.  
-                Their syllabus is profound and their mentors are awesome. I got a job after 
-                my training. Thank you!`
+        content: `The trainining was detailed, am glad I enrolled.
+                The facillitators are experienced. Thank you EnoverLab.`
     },
 ]
 
