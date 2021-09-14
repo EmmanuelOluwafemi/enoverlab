@@ -161,11 +161,11 @@ const StyledHero = styled.section`
             }
 
             a {
-                font-size: 1.125rem;
+                font-size: 1rem;
                 color: #090C9B;
                 line-height: 104%;
                 letter-spacing: 0.02em;
-                padding: 1.2rem 0;
+                padding: 1rem 0;
                 background: #52DEE5;
                 box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
                 display: inline-block;
@@ -175,10 +175,10 @@ const StyledHero = styled.section`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                max-width: 200px;
+                max-width: 195px;
 
                 .icons {
-                    margin-left: 1rem;
+                    margin-left: .8rem;
                     font-size: 1.5rem;
                 }
 

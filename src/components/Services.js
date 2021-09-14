@@ -156,30 +156,31 @@ const StyledCard = styled.div`
         position: absolute;
         bottom: -.8rem;
         left: 2rem;
-        width: 185px;
-        height: 38px;
-        background: #52DEE5;
+        font-size: 1rem;
         color: #090C9B;
+        line-height: 104%;
+        letter-spacing: 0.02em;
+        padding: 1rem 0;
+        background: #52DEE5;
+        box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+        font-weight: 700;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-transform: uppercase;
-        font-size: .75rem;
-        text-decoration: none;
-        font-weight: 700;
+        width: 100%;
+        max-width: 195px;
 
-        .icon {
-            margin-left: 1rem;
+        .icons {
+            margin-left: .8rem;
             font-size: 1.5rem;
         }
 
         &:hover {
             background: rgba(9, 12, 155, 0.7);
             color: #fff;
-
-            .icon {
-                color: #fff;
-            }
         }
     }
 `;

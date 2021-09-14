@@ -28,20 +28,34 @@ const PricingCardWrapper = styled.div`
     position: relative;
 
     a {
-        text-decoration: none;
-        padding: 1.4rem 2.4rem;
-        background: #090C9B;
-        color: #fff;
-        font-size: 1.25rem;
-        font-weight: 700;
-        font-family: 'nexabold';
         position: absolute;
-        bottom: -2.5rem;
         left: 50%;
         transform: translateX(-50%);
-        width: 270px;
-        text-align: center;
-        border-radius: 5px; 
+        bottom: -1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        line-height: 104%;
+        padding: 1rem 0;
+        background: #090C9B;
+        box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
+        margin-top: 2rem;
+        text-decoration: none;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 195px;
+
+        .icons {
+            margin-left: .8rem;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            background: rgba(9, 12, 155, 0.9);
+            color: #fff;
+        }
     }
 
     &.active {

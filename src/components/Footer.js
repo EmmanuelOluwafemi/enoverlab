@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styled from "styled-components";
 
-import { FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 
@@ -22,22 +22,22 @@ const Footer = () => {
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500" 
                         data-aos-delay="300"
-                    to="/contact">
-                        Join Us
+                    to="/Pricing">
+                        Enrol Now
                     </Link>
                 </div>
             </div>
 
             <div className="footer-content">
                 <div className="social-icons">
-                    <a href="facebook.com">
-                        <FaFacebookF className="icon" />
-                    </a>
-                    <a href="facebook.com">
+                    <a href="https://instagram.com/enoverlab?utm_medium=copy_link">
                         <FaInstagram className="icon" />
                     </a>
-                    <a href="facebook.com">
+                    <a href="https://twitter.com/enoverlab?s=08">
                         <FaTwitter className="icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/enoverlab">
+                        <FaLinkedinIn className="icon" />
                     </a>
                 </div>
                 <div className="footer-note">
@@ -91,17 +91,32 @@ const StyledFooter = styled.footer`
             }
 
             a {
-                margin-top: 2.2rem;
+                font-size: 1rem;
                 color: #090C9B;
-                text-decoration: none;
+                line-height: 104%;
+                letter-spacing: 0.02em;
+                padding: 1rem 0;
                 background: #52DEE5;
-                width: 100%;
-                max-width: 193px;
-                height: 48px;
+                box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
+                display: inline-block;
+                margin-top: 2rem;
+                text-decoration: none;
+                font-weight: 700;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                font-family: 'nexabold';
+                justify-content: center;
+                width: 100%;
+                max-width: 195px;
+
+                .icons {
+                    margin-left: .8rem;
+                    font-size: 1.5rem;
+                }
+
+                &:hover {
+                    background: rgba(9, 12, 155, 0.1);
+                    color: #fff;
+                }
             }
         }
 

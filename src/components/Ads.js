@@ -12,7 +12,7 @@ const Ads = () => {
 
             <div className="content">
                 <div className="title">Topic:</div>
-                <h4>Misconceptions about Product Management</h4>
+                <h4>Why are Product Managers important to any organisation? </h4>
             </div>
 
             <img className="user" src={character} alt="character" />
