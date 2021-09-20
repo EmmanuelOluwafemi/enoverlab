@@ -22,10 +22,11 @@ const data = [
     {
         imgUrl: community,
         title: "COMMUNITY",
+        link: "https://chat.whatsapp.com/Jny8eNbllbQFiXDqSafxBV"
     },
 ]
 
-const Card = ({ imgUrl, title, headTitle, i }) => {
+const Card = ({ imgUrl, title, headTitle, i, link }) => {
     return (
         <StyledCard
             data-aos="fade-left" 
@@ -39,10 +40,14 @@ const Card = ({ imgUrl, title, headTitle, i }) => {
                 <h1>{title}</h1>
             </div>
 
-            <Link to="/pricing">
-                See Pricing
-                <IoIosArrowRoundForward className="icon" />
-            </Link>
+            {
+                !link ?
+                <Link to="/pricing">
+                    See Pricing
+                    <IoIosArrowRoundForward className="icon" />
+                </Link>:
+                <a href={link}>Join Community</a>
+            }
         </StyledCard>
     )
 }
@@ -63,13 +68,14 @@ const Services = () => {
             >Here at enoverlab,</h1>
             <div className="card-grid">
                 {
-                    data.map(({ imgUrl, title, headTitle }, i) => (
+                    data.map(({ imgUrl, title, headTitle, link }, i) => (
                         <Card
                             i={i} 
                             key={imgUrl}
                             imgUrl={imgUrl}
                             title={title}
                             headTitle={headTitle}
+                            link={link}
                         />
                     ))
                 }
