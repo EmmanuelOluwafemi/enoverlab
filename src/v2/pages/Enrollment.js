@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components';
-// import Header from '../v2/components/Header';
+import Select from 'react-select'
 
 import Modal from '../components/Modal';
 import HeroImg from '../../assets/img/heroImg.png';
@@ -26,7 +26,12 @@ const Contact = () => {
                 })
                 .catch(err => console.log(err))
         }
-
+        
+    const options = [
+        { value: 'basic', label: 'Basic - (₦30,000 for 4 weeks)' },
+        { value: 'premium', label: 'Premium - (₦100,000 for 10 weeks)' },
+    ]
+    
     return (
         <>
             <Modal active={active} setActive={setActive} />
@@ -63,10 +68,11 @@ const Contact = () => {
                         </div>
                         <div className="input-group">
                             <label htmlFor="message">What plan do you want to go for?</label>
-                            <select name="plan" id="plan">
+                            {/* <select name="plan" id="plan">
                                 <option value="basic">Basic - (₦30,000 for 4 weeks)</option>
                                 <option value="premium">Premium - (₦100,000 for 10 weeks)</option>
-                            </select>
+                            </select> */}
+                            <Select options={options} name="plan" id="plan" />
                         </div>
 
                         <div className="button-container">
