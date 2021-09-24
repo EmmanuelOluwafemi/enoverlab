@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Pricing from './pages/Pricing';
 import V2Home from './v2/pages/Home';
+import V2Contact from "./v2/pages/Contact";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,9 @@ function App() {
       <Switch>
         <Route exact path="/v2">
             <V2Home />
+        </Route>
+        <Route exact path="/v2/contact">
+            <V2Contact />
         </Route>
         <Route exact path="/">
           <Home />

@@ -198,7 +198,6 @@ const StyledPricing = styled.section`
     .list-item {
         display: flex;
         align-items: center;
-        background: yellow;
     }
     @media (max-width: 774px) {
         grid-template-columns: repeat(1, 1fr);
@@ -206,10 +205,14 @@ const StyledPricing = styled.section`
         .cost-duration {
             display: flex;
             flex-direction: column;
-            .cost {
-                margin-left: auto;
+            align-items: center;
+            justify-content: center;
+
+            .duration, .cost {
+                margin: 1rem 0;
             }
         }
+        
         .enroll-link {
             margin: 1rem auto 1rem auto;
         }
