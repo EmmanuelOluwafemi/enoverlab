@@ -37,7 +37,11 @@ const Become = () => {
             <div className="grid-container">
                 {/* <img src={ character } alt="character" /> */}
                 <div className="sweet-spot">
-                    Our Sweet Spot
+                    <h2 className="caption">Our Sweet Spot</h2>
+                    <p>
+                        We are not just about teaching you core design skills, we are also particular about preparing you for the real-life work environment so you can advance in the career fast.
+                    </p>
+                    <h2 className="why">THIS IS WHY 70% <br /> OF OUR ALUMNI ARE <br />NOW EMPLOYED.</h2>
                 </div>
 
                 <div className="card-list">
@@ -82,10 +86,32 @@ const StyledBecome = styled.section`
         grid-gap: 2rem;
 
         .sweet-spot{
-            font-size: 4rem;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            /* align-items: center; */
             justify-content: center;
+            h2.caption {
+                font-weight: 700;
+                font-size: 40px;
+                color: #121212;
+                text-align: left;
+                font-family: 'nexabold', sans-serif;
+            }
+            h2.why {
+                font-weight: 800;
+                font-size: 38px;
+                color: #34296B;
+                line-height: 55px;
+                font-family: 'nexablack', sans-serif;
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                color: #121212;
+                margin: 28px 0;
+                font-family: 'nexaregular', sans-serif;
+                font-style: normal;
+            }
         }
 
         @media (max-width: 768px) {

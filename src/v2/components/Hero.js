@@ -65,6 +65,11 @@ const StyledHero = styled.section`
         img.hero {
             width: 100%;
             height: auto;
+            @media (max-width: 768px) {
+                margin-right: 2rem;
+                width: 90%;
+                margin-left: auto;
+            }
         }
 
         .content {
@@ -75,6 +80,9 @@ const StyledHero = styled.section`
 
             @media (max-width: 768px) {
                 padding: 0 6%;
+                br {
+                    display: none;
+                }
             }
 
             h3 {
@@ -101,7 +109,7 @@ const StyledHero = styled.section`
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 35px;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }

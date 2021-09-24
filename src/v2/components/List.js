@@ -38,7 +38,7 @@ const ListStyled = styled.div`
         margin: 0;
         padding: 0;
         margin-bottom: .5rem;
-        margin-left: 9px;
+        margin-left: 1.5rem;
         display: flex;
         align-items: center;
     }

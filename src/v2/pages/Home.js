@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Pricing from '../components/Pricing'
 import Testimonial from '../components/Testimonial'
 import What from '../components/What'
+import ClassStart from '../components/ClassStart'
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
          <Hero />
          <Pricing />
          <What />
+         <ClassStart />
          <Testimonial />
          <Become />
          <Footer />   
