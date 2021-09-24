@@ -103,6 +103,9 @@ const StyledBecome = styled.section`
                 color: #34296B;
                 line-height: 55px;
                 font-family: 'nexablack', sans-serif;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
             }
             p{
                 font-weight: 400;
@@ -116,6 +119,7 @@ const StyledBecome = styled.section`
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
+           
         }
 
         img {

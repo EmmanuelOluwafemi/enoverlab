@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import styled from "styled-components";
 
 const ClassStart = () => {
-    const startDate = new Date("Oct 10, 2021 12:00:00")
-    const now = Date.now
-    const {initialMinute = 0,initialSeconds = 0} = {};
-    const [ minutes, setMinutes ] = useState(initialMinute);
-    const [seconds, setSeconds ] =  useState(initialSeconds);
-    useEffect(()=>{
-    let myInterval = setInterval(() => {
-            if (seconds > 0) {
-                setSeconds(seconds - 1);
-            }
-            if (seconds === 0) {
-                if (minutes === 0) {
-                    clearInterval(myInterval)
-                } else {
-                    setMinutes(minutes - 1);
-                    setSeconds(59);
-                }
-            } 
-        }, 1000)
-        return ()=> {
-            clearInterval(myInterval);
-          };
-    });
+    // const startDate = new Date("Oct 10, 2021 12:00:00")
+    // const now = Date.now
+    // const {initialMinute = 0,initialSeconds = 0} = {};
+    // const [ minutes, setMinutes ] = useState(initialMinute);
+    // const [seconds, setSeconds ] =  useState(initialSeconds);
+    // useEffect(()=>{
+    // let myInterval = setInterval(() => {
+    //         if (seconds > 0) {
+    //             setSeconds(seconds - 1);
+    //         }
+    //         if (seconds === 0) {
+    //             if (minutes === 0) {
+    //                 clearInterval(myInterval)
+    //             } else {
+    //                 setMinutes(minutes - 1);
+    //                 setSeconds(59);
+    //             }
+    //         } 
+    //     }, 1000)
+    //     return ()=> {
+    //         clearInterval(myInterval);
+    //       };
+    // });
 
     return (
         <StyledFooter>
