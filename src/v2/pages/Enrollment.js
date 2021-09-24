@@ -68,11 +68,7 @@ const Contact = () => {
                         </div>
                         <div className="input-group">
                             <label htmlFor="message">What plan do you want to go for?</label>
-                            {/* <select name="plan" id="plan">
-                                <option value="basic">Basic - (₦30,000 for 4 weeks)</option>
-                                <option value="premium">Premium - (₦100,000 for 10 weeks)</option>
-                            </select> */}
-                            <Select options={options} name="plan" id="plan" />
+                            <Select options={options} name="plan" id="plan"git s />
                         </div>
 
                         <div className="button-container">
@@ -92,6 +88,8 @@ const StyledContact = styled.section`
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-gap: 2rem;
+    max-width: 100vw;
+    overflow-x: hidden;
     div.hero-img {
         background: #090C9B;
         display: flex;
