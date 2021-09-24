@@ -33,14 +33,7 @@ const Card = ({ content, secondary }) => {
 const Become = () => {
     return (
         <StyledBecome id="sweet-spot">
-            {/* <div
-                data-aos="fade-top" 
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="500"
-                className="title"
-            >
-                Become an efficient Product Manager
-            </div> */}
+            
             <div className="grid-container">
                 {/* <img src={ character } alt="character" /> */}
                 <div className="sweet-spot">
