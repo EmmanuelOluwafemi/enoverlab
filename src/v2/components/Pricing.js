@@ -56,8 +56,8 @@ const Pricing = () => {
                 </div>
 
                 <a className="enroll-link"
-                    href="https://wa.me/2349063124595?text='Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course."
-                > Enroll for this plan
+                    href="/v2/enrol"
+                > Enrol for this plan
                 </a>
                 
 
@@ -84,8 +84,8 @@ const Pricing = () => {
                 </div>
 
                 <a className="enroll-link"
-                    href="https://wa.me/2349063124595?text='Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course."
-                > Enroll for this plan
+                    href="/v2/enrol"
+                > Enrol for this plan
                 </a>
             </StyledPricing>
 

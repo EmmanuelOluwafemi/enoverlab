@@ -18,9 +18,10 @@ const Hero = () => {
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        Learn the core skills, frameworks <br /> and tools needed to become a <br /> product manager in 10 weeks </h1>
+                        Build up your product management skills in 10 weeks
+                    </h1> 
 
-                    <Link to="/contact">Enrol Now </Link>
+                    <Link to="/v2/enrol">Enrol Now </Link>
                 </div>
                 <img
                     data-aos="fade-left" 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-const Modal = ({ active, setActive }) => {
+const Modal = ({ text, active, setActive }) => {
     return (
         <StyledModal className={ active ? "active" : "" }>
             <div onClick={() => setActive(!active)} className="overlay" />
             <div className="content">
-                Thanks for the interest, Your message will be reviewed and responded to as soon as possible.
+                Thanks for the interest, Your enrollment will be reviewed and responded to as soon as possible.
             </div>
         </StyledModal>
     )
