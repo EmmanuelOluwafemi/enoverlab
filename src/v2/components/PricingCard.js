@@ -7,7 +7,7 @@ const PricingCard = ({ primary, children, title, price, dur, objective  }) => {
         <PricingCardWrapper className={primary ? "active" : ""}>
             <h2>{title}</h2>
             <h3>Course Objectives</h3>
-            <p classname="objective">{objective}</p>
+            <p className="objective">{objective}</p>
             { children }
         </PricingCardWrapper>
     )

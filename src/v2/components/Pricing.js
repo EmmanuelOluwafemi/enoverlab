@@ -50,9 +50,9 @@ const Pricing = () => {
                         <List key={index} text={item} className="list-item" />
                     ))}
                 </PricingCard>
-                <div class="cost-duration">
-                    <span class="duration">Duration: <b>4 Weeks</b> </span>
-                    <span class="cost">Tuition: <b>N30,000</b></span>
+                <div className="cost-duration">
+                    <span className="duration">Duration: <b>4 Weeks</b> </span>
+                    <span className="cost">Tuition: <b>N30,000</b></span>
                 </div>
 
                 <a className="enroll-link"
@@ -78,9 +78,9 @@ const Pricing = () => {
                         <li>Google Analytics for tracking web-based data</li>
                     </ul>
                 </Tools>
-                <div class="cost-duration">
-                    <span class="duration">Duration: <b>10 Weeks</b> </span>
-                    <span class="cost">Tuition: <b>N100,000</b></span>
+                <div className="cost-duration">
+                    <span className="duration">Duration: <b>10 Weeks</b> </span>
+                    <span className="cost">Tuition: <b>N100,000</b></span>
                 </div>
 
                 <a className="enroll-link"

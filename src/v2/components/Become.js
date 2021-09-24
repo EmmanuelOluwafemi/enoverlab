@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from "styled-components";
 
-import character from "../../assets/img/character.jpg";
+// import character from "../../assets/img/character.jpg";
 
 const data = [
     {
@@ -44,6 +44,7 @@ const Become = () => {
                     {
                         data.map(({content, secondary}) => (
                             <Card 
+                                key={content}
                                 content={content}
                                 secondary={secondary}
                             />
