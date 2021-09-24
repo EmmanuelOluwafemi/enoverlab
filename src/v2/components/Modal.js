@@ -5,7 +5,7 @@ const Modal = ({ text, active, setActive }) => {
         <StyledModal className={ active ? "active" : "" }>
             <div onClick={() => setActive(!active)} className="overlay" />
             <div className="content">
-                Thanks for the interest, Your enrollment will be reviewed and responded to as soon as possible.
+            Thank you for showing interest, you will be added to a waiting room for further communication
             </div>
         </StyledModal>
     )
