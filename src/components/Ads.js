@@ -3,7 +3,7 @@ import React from 'react'
 import styled from "styled-components";
 
 import ama from "../assets/img/ama.png";
-import character from "../assets/img/ama-face.jpg";
+import character from "../assets/img/ama-face.png";
 
 const Ads = () => {
     return (
@@ -12,7 +12,7 @@ const Ads = () => {
 
             <div className="content">
                 <div className="title">Topic:</div>
-                <h4>Why are Product Managers important to any organisation? </h4>
+                <h4>Scrum Methodology, Why is it important to product managers? </h4>
             </div>
 
             <img className="user" src={character} alt="character" />
