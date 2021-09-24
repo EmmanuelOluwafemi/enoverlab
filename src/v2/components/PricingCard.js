@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PricingCard = ({ primary, children, title, price, dur, objective  }) => {
     return (
         <PricingCardWrapper className={primary ? "active" : ""}>
-            <h2>{title}</h2>
+            <h2 className="title">{title}</h2>
             <h3>Course Objectives</h3>
             <p className="objective">{objective}</p>
             { children }
@@ -20,12 +20,13 @@ const PricingCardWrapper = styled.div`
     border: none;
     position: relative;
 
-    h2 {
+    h2.title {
         font-weight: 800;
         font-size: 36px;
         color: #34296B;
+        font-family: 'nexablack', sans-serif;
     }
-    h2 {
+    h3 {
         font-weight: bold;
         font-size: 20px;
         color: #121212;
@@ -83,5 +84,23 @@ const PricingCardWrapper = styled.div`
     }
     .content {
         font-size: 22px;
+    }
+    @media(max-width: 765px) {
+        margin-top: 3rem;
+        h2, h3, p.objective {
+            text-align: center;
+        }
+        h2.title {
+            font-size: 3rem;
+        }
+        h3 {
+            margin: 20px auto 0px auto;
+        }
+        p.objective {
+            font-weight: bold;
+            font-size: 18px;
+            color: #1A1A1A;
+            margin: 10px auto 50px auto;
+        }
     }
 `

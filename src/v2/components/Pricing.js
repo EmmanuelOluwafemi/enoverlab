@@ -43,7 +43,7 @@ const Pricing = () => {
         <StyledPricingWrapper id="plans">
             <StyledPricing>
                 <PricingCard 
-                    title="BASIC" 
+                    title="BASIC CLASS" 
                     objective="Learn the foundation of Product Management"
                 >
                     {basic.map((item, index) => (
@@ -92,7 +92,7 @@ const Pricing = () => {
             <StyledPricing className="reverse-2">
                 <hr/>
                 <PricingCard primary
-                    title="ADVANCE"
+                    title="ADVANCE CLASS"
                     objective="Learn the core skills, frameworks and tools needed to become a Product Manager"
                 >
                     {advance.map((item, index) => (
@@ -156,9 +156,9 @@ const StyledPricing = styled.section`
         .duration, .cost {
             border-radius: 100px;
             background: rgba(29, 182, 188, 0.3);
-            height: 50px;
+            /* height: 50px; */
             padding: 15px 45px;
-            white-space: nowrap;
+            /* white-space: nowrap; */
             margin: 1rem 0;
             /* font-size: 18px; */
             /* font-weight: 700; */
@@ -204,12 +204,20 @@ const StyledPricing = styled.section`
         padding: 0 6%;
         .cost-duration {
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
 
             .duration, .cost {
-                margin: 1rem 0;
+                margin: 2rem 0;
+                font-size: 1rem;
+                padding: 1rem;
+                /* b {
+                    /* display: block; */
+                } */
+            }
+            .cost {
+                margin-left: 10px;
             }
         }
         

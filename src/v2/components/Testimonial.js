@@ -124,7 +124,7 @@ const SliderContainer = styled.div`
         font-size: 3.1rem;
         font-weight: 900;
         color: #090C9B;
-        font-family: 'nexabold', sans-serif;
+        font-family: 'nexablack', sans-serif;
         margin-bottom: 4rem;
 
         @media (max-width: 768px) {
