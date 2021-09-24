@@ -204,20 +204,14 @@ const StyledPricing = styled.section`
         padding: 0 6%;
         .cost-duration {
             display: flex;
-            /* flex-direction: column; */
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
 
             .duration, .cost {
-                margin: 2rem 0;
-                font-size: 1rem;
-                padding: 1rem;
-                /* b {
-                    /* display: block; */
-                } */
-            }
-            .cost {
-                margin-left: 10px;
+                margin: 1rem 0;
+                font-size: 1.1rem;
+                padding: 1rem 2rem;
             }
         }
         
