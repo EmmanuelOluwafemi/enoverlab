@@ -34,7 +34,7 @@ const ClassStart = () => {
                     data-aos="fade-right" 
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                >CLASS STARTS ON 5TH OF JULY, 2021
+                >CLASS STARTS ON 10TH OF OCTOBER, 2021
                </h3>
                <p>12 Days : 15 Hours : 2 Minutes : 10 Seconds</p>
             </div>
