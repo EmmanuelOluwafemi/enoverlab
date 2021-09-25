@@ -8,17 +8,37 @@ import Modal from '../components/Modal';
 import HeroImg from '../../assets/img/heroImg.png';
 
 const Contact = () => {
-    window.scrollTo(0, 0);
+    
 
     const scriptUrl = "https://script.google.com/macros/s/AKfycbwTsbbU6MIOcdAWSgqjdYX9L76iI2BNXHKdzssWzezdyb7YdoWuKcekYdE6J96jZ4dx/exec";
 
     const [loading, setLoading] = useState(false)
     const [active, setActive] = useState(false);
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        plan: ''
+    })
+    const updateFormData = (e, r, v) => {
+        // e.preventDefault()
+        const t = {...formData}
+        t[r] = v
+        setFormData(t)
+    }
+
     const formRef = useRef(null)
+    const errorMessage = "All form fields are required"
+    const [isError, setIsError] = useState()
 
     const handleSubmit = (e) => {
             e.preventDefault()
+            if(formData.name.length === 0 || formData.email.length === 0 || formData.phone.length === 0 || formData.plan.length === 0){
+                setIsError(true)
+                window.scrollTo(0,0)
+                return
+            } else {
             setLoading(true)
 
             fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
@@ -27,12 +47,14 @@ const Contact = () => {
                 setActive(true)
             })
             .catch(err => console.log(err))
+        }
     }
         
     const options = [
         { value: 'basic', label: 'Basic - (₦30,000 for 4 weeks)' },
         { value: 'premium', label: 'Premium - (₦100,000 for 10 weeks)' },
     ]
+    
     
     return (
         <>
@@ -59,30 +81,31 @@ const Contact = () => {
                     <p>
                         Thank you for showing interest, you will be added to a waiting room for further communication
                     </p>
+                    {isError && <p className="error">{errorMessage}</p>}
                     <form
                         ref={formRef}
-                        data-aos="fade-left" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500" 
-                        data-aos-delay="1200"
+                        // data-aos="fade-left" 
+                        // data-aos-easing="ease-in-sine"
+                        // data-aos-duration="500" 
+                        // data-aos-delay="1200"
                         onSubmit={handleSubmit}
                         name="forms"
                     >
                         <div className="input-group">
                             <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" />
+                            <input type="text" name="name" id="name" value={formData.name} onChange={(e) => updateFormData(e, 'name', e.target.value)} />
                         </div>
                         <div className="input-group">
                             <label htmlFor="email">Email</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" value={formData.email} onChange={(e) => updateFormData(e, 'email', e.target.value)} />
                         </div>
                         <div className="input-group">
                             <label htmlFor="phone">Phone Number</label>
-                            <input type="text" name="phone" id="phone" />
+                            <input type="text" name="phone" id="phone" value={formData.phone} onChange={(e) => updateFormData(e, 'phone', e.target.value)} />
                         </div>
                         <div className="input-group">
                             <label htmlFor="message">What plan do you want to go for?</label>
-                            <Select options={options} isSearchable={false} name="plan" id="plan"git s />
+                            <Select options={options} isSearchable={false} name="plan" id="plan" onChange={(e) => updateFormData(e, 'plan', e.value)} />
                         </div>
 
                         <div className="button-container">
@@ -104,6 +127,10 @@ const StyledContact = styled.section`
     grid-gap: 2rem;
     max-width: 100vw;
     overflow-x: hidden;
+    .error {
+        font-size: 1rem;
+        color: red;
+    }
     div.left-side {
         padding: 6rem 0;
         background: #090C9B;

@@ -18,7 +18,7 @@ const Hero = () => {
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        Build up your product management skills in 10 weeks
+                        Build up your product <br /> management skills in <br /> 10 weeks
                     </h1> 
 
                     <Link to="/v2/enrol">Enrol Now </Link>
@@ -78,11 +78,15 @@ const StyledHero = styled.section`
             display: flex;
             flex-direction: column;
             justify-content: center;
+            br {
+                display: none;
+            }
+            
 
             @media (max-width: 768px) {
                 padding: 0 6%;
                 br {
-                    display: none;
+                    display: block;
                 }
             }
 
@@ -110,7 +114,7 @@ const StyledHero = styled.section`
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 35px;
+                    font-size: 1.9rem;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }
