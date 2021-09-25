@@ -18,10 +18,10 @@ const Header = () => {
             <FiMenu onClick={() => setActive(!active)} className="first-icon" onClick={() => setActive(!active)} />
 
             <div className={active ? "menu active" : "menu"}>
-                <NavHashLink activeClassName="active" to="/v2/#plans">Plans</NavHashLink>
-                <NavHashLink activeClassName="active" to="/v2/#testimonial">Testimonial</NavHashLink>
-                <NavHashLink activeClassName="active" to="/v2/#sweet-spot">Sweet Spot</NavHashLink>
-                <NavLink activeClassName="active" to="/v2/contact">Contact</NavLink>
+                <NavHashLink activeClassName="active" to="/pmcourse/#plans">Plans</NavHashLink>
+                <NavHashLink activeClassName="active" to="/pmcourse/#testimonial">Testimonial</NavHashLink>
+                <NavHashLink activeClassName="active" to="/pmcourse/#sweet-spot">Sweet Spot</NavHashLink>
+                <NavLink activeClassName="active" to="/pmcourse/contact">Contact</NavLink>
             </div>
 
             <div onClick={() => setActive(!active)} className={active ? "overlay active" : "overlay"}></div>

@@ -25,13 +25,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/v2">
+        <Route exact path="/pmcourse">
             <V2Home />
         </Route>
-        <Route exact path="/v2/contact">
+        <Route exact path="/pmcourse/contact">
             <V2Contact />
         </Route>
-        <Route exact path="/v2/enrol">
+        <Route exact path="/pmcourse/enrol">
             <Enroll />
         </Route>
         <Route exact path="/">

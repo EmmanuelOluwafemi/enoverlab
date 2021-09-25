@@ -6,8 +6,8 @@ import { IoCall } from 'react-icons/io5';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { IoMail } from 'react-icons/io5';
 import { FaInstagram } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+// import { FaFacebookF } from 'react-icons/fa';
+// import { FaTwitter } from 'react-icons/fa';
 import Modal from '../components/Modal';
 
 const Contact = () => {
@@ -120,7 +120,7 @@ const Contact = () => {
                 </form>
             </ContactFormContainer>
             <Footer>
-                <div className="social-icons">
+                {/* <div className="social-icons">
                     <a href="facebook.com">
                         <FaFacebookF className="icon" />
                     </a>
@@ -133,7 +133,7 @@ const Contact = () => {
                 </div>
                 <div className="footer-note">
                     Copyright@enoverlab
-                </div>
+                </div> */}
             </Footer>
         </StyledContact>
     )

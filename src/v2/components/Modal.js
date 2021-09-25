@@ -12,7 +12,7 @@ const Modal = ({ text, active, setActive }) => {
     }
     return (
         <StyledModal className={ active ? "active" : "" }>
-            {redirect ? <Redirect to="/v2" /> : ""}
+            {redirect ? <Redirect to="/pmcourse" /> : ""}
             <div className="overlay" />
             <div className="content">
                 <h3>Thank you for showing interest<span><Smiley /></span></h3>

@@ -57,7 +57,7 @@ const Pricing = () => {
                 </div>
 
                 <a className="enroll-link"
-                    href="/v2/enrol"
+                    href="/pmcourse/enrol"
                 > Enrol for this plan
                 </a>
                 
@@ -102,7 +102,7 @@ const Pricing = () => {
                 </div>
 
                 <a className="enroll-link"
-                    href="/v2/enrol"
+                    href="/pmcourse/enrol"
                 > Enrol for this plan
                 </a>
             </StyledPricing>
