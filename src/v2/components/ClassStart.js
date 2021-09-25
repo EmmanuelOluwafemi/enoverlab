@@ -43,7 +43,7 @@ const ClassStart = () => {
                     data-aos-duration="500"
                 >CLASS STARTS ON 10TH OF OCTOBER, 2021
                </h3>
-               <p>{timeLeft.days} Days : {timeLeft.hours} Hours : {timeLeft.minutes} Minutes : {timeLeft.seconds} Seconds</p>
+               <p>{timeLeft.days} Days : {timeLeft.hours} Hours : <br/>{timeLeft.minutes} Minutes : {timeLeft.seconds} Seconds</p>
             </div>
         </StyledFooter>
     )
@@ -70,6 +70,9 @@ const StyledFooter = styled.footer`
         margin: 20px auto;
         font-size: 28px;
         text-align: center;
+        br {
+            display: none;
+        }
     }
 
 
@@ -84,6 +87,9 @@ const StyledFooter = styled.footer`
             margin: 20px auto;
             font-size: 16px;
             text-align: center;
+            br {
+                display: initial;
+            }
         }
     }
 

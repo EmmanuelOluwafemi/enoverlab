@@ -8,6 +8,7 @@ import What from '../components/What'
 import ClassStart from '../components/ClassStart'
 
 const Home = () => {
+    window.scrollTo(0, 0);
     return (
         <>
          <Hero />
