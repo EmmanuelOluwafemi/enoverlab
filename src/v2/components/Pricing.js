@@ -63,13 +63,30 @@ const Pricing = () => {
                 
 
             </StyledPricing>
-            <img src={jordy} alt="" />
+            <img 
+                src={jordy} alt="" 
+                data-aos="fade-left" 
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500" 
+                data-aos-delay="1000"
+            />
             
 
             <StyledPricing className="reverse-1">
                 
-                <img src={christina} alt="" />
-                <Tools>
+                <img 
+                    src={christina} alt="" 
+                    data-aos="fade-left" 
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500" 
+                    data-aos-delay="1000"
+                />
+                <Tools
+                    data-aos="fade-right" 
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500" 
+                    data-aos-delay="1000"
+                >
                     <h3>Tools you would be learning how to use</h3>
                     <ul>
                         <li>Product plan for creating roadmaps</li>
@@ -146,7 +163,6 @@ const StyledPricingWrapper = styled.div`
 
 const StyledPricing = styled.section`
     margin: 0 0;
-    /* overflow: hidden; */
     height: auto;
     padding-bottom: 3rem;
 
@@ -157,12 +173,8 @@ const StyledPricing = styled.section`
         .duration, .cost {
             border-radius: 100px;
             background: rgba(29, 182, 188, 0.3);
-            /* height: 50px; */
             padding: 15px 45px;
-            /* white-space: nowrap; */
             margin: 1rem 0;
-            /* font-size: 18px; */
-            /* font-weight: 700; */
         }
         .cost {
             margin-left: 22px;
