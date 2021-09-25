@@ -44,11 +44,18 @@ const Contact = () => {
                             <img className="logo" src={logo} alt="enoverlab logo" />
                     </Link>
                     <div className="hero-img">
-                        <img src={HeroImg} alt="hero" />
+                        <img 
+                            src={HeroImg}
+                            alt="hero" 
+                            data-aos="fade-right" 
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="500" 
+                            data-aos-delay="1200"
+                        />
                     </div>
                 </div>
                 <EnrollFormContainer>
-                    <h2>JOIN THE WAITING LIST</h2>
+                    <h2>JOIN THE <br /> WAITING LIST</h2>
                     <p>
                         Thank you for showing interest, you will be added to a waiting room for further communication
                     </p>
@@ -137,6 +144,7 @@ const StyledContact = styled.section`
             position: relative;
             display: flex;
             justify-content: center;
+            
             img {
                 margin-bottom: -15rem;
             }
@@ -156,6 +164,9 @@ const EnrollFormContainer = styled.div`
         font-size: 2.5rem;
         margin: 2rem 0;
         font-weight: 700;
+        br {
+            display: none;
+        }
     }
     p {
         font-size: 1.5rem;
@@ -165,6 +176,13 @@ const EnrollFormContainer = styled.div`
     }
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
+        h2 {
+            margin-top: 5rem;
+            font-size: 2.2rem;
+            br {
+                display: block;
+            }
+        }
     }
 
     form {

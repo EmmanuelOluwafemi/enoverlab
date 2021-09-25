@@ -4,7 +4,13 @@ import styled from "styled-components";
 
 const PricingCard = ({ primary, children, title, price, dur, objective  }) => {
     return (
-        <PricingCardWrapper className={primary ? "active" : ""}>
+        <PricingCardWrapper 
+            className={primary ? "active" : ""}
+            data-aos="fade-right" 
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500" 
+            data-aos-delay="1000"
+        >
             <h2 className="title">{title}</h2>
             <h3>Course Objectives</h3>
             <p className="objective">{objective}</p>
