@@ -1,31 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
 
 const ClassStart = () => {
-    // const startDate = new Date("Oct 10, 2021 12:00:00")
-    // const now = Date.now
-    // const {initialMinute = 0,initialSeconds = 0} = {};
-    // const [ minutes, setMinutes ] = useState(initialMinute);
-    // const [seconds, setSeconds ] =  useState(initialSeconds);
-    // useEffect(()=>{
-    // let myInterval = setInterval(() => {
-    //         if (seconds > 0) {
-    //             setSeconds(seconds - 1);
-    //         }
-    //         if (seconds === 0) {
-    //             if (minutes === 0) {
-    //                 clearInterval(myInterval)
-    //             } else {
-    //                 setMinutes(minutes - 1);
-    //                 setSeconds(59);
-    //             }
-    //         } 
-    //     }, 1000)
-    //     return ()=> {
-    //         clearInterval(myInterval);
-    //       };
-    // });
+    const calculateTimeLeft = () => {
+        // let year = new Date().getFullYear();
+        // let difference = +new Date(`10/01/${year}`) - +new Date();
+        const beginDate = new Date('10/10/2021')
+        // const today = new Date()
+        let difference = +beginDate - +new Date();
+
+        let timeLeft = {};
+    
+        if (difference > 0) {
+          timeLeft = {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60)
+        };
+      }
+    
+      return timeLeft;
+    
+    }
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        // eslint-disable-next-line no-unused-vars
+        const timer = setTimeout(() => {
+                setTimeLeft(calculateTimeLeft());
+            }, 1000);
+    }, [timeLeft]);
 
     return (
         <StyledFooter>
@@ -36,7 +43,7 @@ const ClassStart = () => {
                     data-aos-duration="500"
                 >CLASS STARTS ON 10TH OF OCTOBER, 2021
                </h3>
-               <p>12 Days : 15 Hours : 2 Minutes : 10 Seconds</p>
+               <p>{timeLeft.days} Days : {timeLeft.hours} Hours : {timeLeft.minutes} Minutes : {timeLeft.seconds} Seconds</p>
             </div>
         </StyledFooter>
     )
