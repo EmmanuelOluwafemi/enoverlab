@@ -84,6 +84,9 @@ const PricingCardWrapper = styled.div`
     }
     .content {
         font-size: 22px;
+        font-family: 'nexaregular';
+        font-weight: 400;
+        color: #1A1A1A;
     }
     @media(max-width: 765px) {
         margin-top: 3rem;

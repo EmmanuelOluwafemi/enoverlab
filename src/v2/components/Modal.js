@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import styled from "styled-components";
 
+import {ReactComponent as Smiley} from '../../assets/img/smiley.svg'
+
 const Modal = ({ text, active, setActive }) => {
     const [redirect, setRedirect] = useState(false)
     const btnClick = () => {
@@ -13,7 +15,7 @@ const Modal = ({ text, active, setActive }) => {
             {redirect ? <Redirect to="/v2" /> : ""}
             <div className="overlay" />
             <div className="content">
-                <h3>Thank you for showing interest</h3>
+                <h3>Thank you for showing interest<span><Smiley /></span></h3>
                 <p>You will be contacted by our Product Lead for further communication</p>
                 <button onClick={() => btnClick()}>Okay</button>
             </div>
@@ -72,11 +74,35 @@ const StyledModal = styled.div`
             font-weight: 700;
             font-family: 'nexaregular';
             margin: 2rem 2rem;
+            span {
+                margin-left: 15px;
+            }
         }
         p {
             font-size: 1.7rem;
             font-weight: 400;
             font-family: 'nexaregular';
+        }
+        @media(max-width: 765px) {
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                font-family: 'nexaregular';
+                margin: 2rem 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                margin-left: -15px;
+            }
+            }
+            
+            
+            p {
+                font-size: 1.3rem;
+                font-weight: 400;
+                font-family: 'nexaregular';
+            }
         }
     }
     button {
