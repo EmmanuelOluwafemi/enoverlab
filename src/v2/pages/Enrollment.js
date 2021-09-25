@@ -130,6 +130,7 @@ const EnrollFormContainer = styled.div`
         font-size: 1.5rem;
         font-weight: 400;
         margin: 25px 0;
+        max-width: 615px;
     }
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
@@ -138,6 +139,7 @@ const EnrollFormContainer = styled.div`
     form {
         .input-group {
             width: 100%;
+            max-width: 535px;
             margin-bottom: 2.5rem;
 
             @media (max-width: 768px) {
@@ -160,7 +162,7 @@ const EnrollFormContainer = styled.div`
             input, textarea {
                 width: 100%;
                 height: 3.8rem;
-                background: none;
+                background: #fff;
                 border: 1px solid #292929;
                 border-radius: 10px;
                 outline: none;
@@ -176,11 +178,15 @@ const EnrollFormContainer = styled.div`
         .button-container {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            max-width: 535px;
+            
             
 
             button {
                 margin-top: 2rem;
+                /* margin-left: auto; */
+                margin-right: auto;
                 width: 100%;
                 max-width: 295px;
                 height: 60px;
