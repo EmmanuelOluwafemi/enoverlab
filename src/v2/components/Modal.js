@@ -11,7 +11,7 @@ const Modal = ({ text, active, setActive }) => {
         setRedirect(true)
     }
     return (
-        <StyledModal className={ active ? "active" : "" }>
+        <StyledModal className={ !active ? "active" : "" }>
             {redirect ? <Redirect to="/v2" /> : ""}
             <div className="overlay" />
             <div className="content">
@@ -56,7 +56,7 @@ const StyledModal = styled.div`
         width: 90%;
         max-width: 700px;
         min-height: 250px;
-        background: #fff;
+        background: #E5E5E5;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,11 +68,10 @@ const StyledModal = styled.div`
         text-align: center;
         padding: 1rem 1.5rem;
         border-radius: 10px;
-        border-top: 5px solid #090C9B;
         h3 {
             font-size: 2.2rem;
             font-weight: 700;
-            font-family: 'nexaregular';
+            font-family: 'nexabold';
             margin: 2rem 2rem;
             span {
                 margin-left: 15px;
@@ -95,7 +94,7 @@ const StyledModal = styled.div`
                 span {
                 margin-left: -15px;
             }
-            }
+        }
             
             
             p {
