@@ -5,6 +5,7 @@ import styled from "styled-components";
 import List from './List';
 import jordy from '../../assets/img/jordy.jpg'
 import christina from '../../assets/img/christina.jpg'
+import {ReactComponent as Naira} from '../../assets/img/naira.svg'
 
 const basic = [
     "Introduction to Product Management" ,
@@ -52,7 +53,7 @@ const Pricing = () => {
                 </PricingCard>
                 <div className="cost-duration">
                     <span className="duration">Duration: <b>4 Weeks</b> </span>
-                    <span className="cost">Tuition: <b>N30,000</b></span>
+                    <span className="cost">Tuition: <b><span><Naira /></span>30,000</b></span>
                 </div>
 
                 <a className="enroll-link"
@@ -80,7 +81,7 @@ const Pricing = () => {
                 </Tools>
                 <div className="cost-duration">
                     <span className="duration">Duration: <b>10 Weeks</b> </span>
-                    <span className="cost">Tuition: <b>N100,000</b></span>
+                    <span className="cost">Tuition: <b><span><Naira /></span>100,000</b></span>
                 </div>
 
                 <a className="enroll-link"
@@ -166,6 +167,21 @@ const StyledPricing = styled.section`
         .cost {
             margin-left: 22px;
             background: rgba(252, 217, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            b {
+                margin-left: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            span {
+                svg {
+                    width: 15px;  
+                    margin-bottom: -2px; 
+                }
+            }
         }
     }
     .enroll-link {
@@ -241,6 +257,8 @@ const Tools = styled.div`
 
         li {
             font-size: 22px;
+            font-family: 'nexaregular';
+            font-weight: 400;
             color: #1A1A1A;
             margin-bottom: .5rem;
         }
