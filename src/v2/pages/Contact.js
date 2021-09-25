@@ -6,8 +6,8 @@ import { IoCall } from 'react-icons/io5';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { IoMail } from 'react-icons/io5';
 import { FaInstagram } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+// import { FaFacebookF } from 'react-icons/fa';
+// import { FaTwitter } from 'react-icons/fa';
 import Modal from '../components/Modal';
 
 const Contact = () => {
