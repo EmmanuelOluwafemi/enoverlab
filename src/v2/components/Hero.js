@@ -114,7 +114,7 @@ const StyledHero = styled.section`
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 1.9rem;
+                    font-size: 1.7rem;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }
