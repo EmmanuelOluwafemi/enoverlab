@@ -25,7 +25,6 @@ const Contact = () => {
         // e.preventDefault()
         const t = {...formData}
         t[r] = v
-        console.log(t)
         setFormData(t)
     }
 
@@ -34,7 +33,6 @@ const Contact = () => {
     const [isError, setIsError] = useState()
 
     const handleSubmit = (e) => {
-            console.log(formData)
             e.preventDefault()
             if(formData.name.length === 0 || formData.email.length === 0 || formData.phone.length === 0 || formData.plan.length === 0){
                 setIsError(true)
