@@ -47,7 +47,7 @@ const StyledFooter = styled.footer`
         padding: 0 10%;
         background: #090C9B;
         min-height: 381px;
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
         display: flex;
         align-items: center;
         
