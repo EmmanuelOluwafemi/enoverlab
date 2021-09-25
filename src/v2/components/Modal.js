@@ -1,11 +1,21 @@
+import { useState } from "react";
+import { Redirect } from "react-router-dom";
 import styled from "styled-components";
 
 const Modal = ({ text, active, setActive }) => {
+    const [redirect, setRedirect] = useState(false)
+    const btnClick = () => {
+        setActive(!active)
+        setRedirect(true)
+    }
     return (
         <StyledModal className={ active ? "active" : "" }>
-            <div onClick={() => setActive(!active)} className="overlay" />
+            {redirect ? <Redirect to="/v2" /> : ""}
+            <div className="overlay" />
             <div className="content">
-            Thank you for showing interest, you will be added to a waiting room for further communication
+                <h3>Thank you for showing interest</h3>
+                <p>You will be contacted by our Product Lead for further communication</p>
+                <button onClick={() => btnClick()}>Okay</button>
             </div>
         </StyledModal>
     )
@@ -42,19 +52,42 @@ const StyledModal = styled.div`
         position: relative;
         z-index: 2;
         width: 90%;
-        max-width: 500px;
-        min-height: 300px;
+        max-width: 700px;
+        min-height: 250px;
         background: #fff;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 2rem;
         font-weight: 700;
-        font-family: 'nexabold';
+        font-family: 'nexaregular';
         color: #090C9B;
         text-align: center;
-        padding: 2rem 1.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 10px;
         border-top: 5px solid #090C9B;
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            font-family: 'nexaregular';
+            margin: 2rem 2rem;
+        }
+        p {
+            font-size: 1.7rem;
+            font-weight: 400;
+            font-family: 'nexaregular';
+        }
+    }
+    button {
+        color: #090C9B;
+        font-size: 24px;
+        font-style: normal;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.7rem 2rem;
+        outline: none;
+        border: none;
+        background: #52DEE5;
     }
 `
