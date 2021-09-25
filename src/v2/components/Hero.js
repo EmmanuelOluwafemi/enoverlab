@@ -21,7 +21,7 @@ const Hero = () => {
                         Build up your product <br /> management skills in <br /> 10 weeks
                     </h1> 
 
-                    <Link to="/v2/enrol">Enrol Now </Link>
+                    <Link to="/pmcourse/enrol">Enrol Now </Link>
                 </div>
                 <img
                     data-aos="fade-left" 

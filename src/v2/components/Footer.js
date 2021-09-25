@@ -22,26 +22,9 @@ const Footer = () => {
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500" 
                         data-aos-delay="300"
-                    to="/v2/enrol">
+                    to="/pmcourse/enrol">
                         Enrol Now
                     </Link>
-                </div>
-            </div>
-
-            <div className="footer-content">
-                <div className="social-icons">
-                    <a href="https://instagram.com/enoverlab?utm_medium=copy_link">
-                        <FaInstagram className="icon" />
-                    </a>
-                    <a href="https://twitter.com/enoverlab?s=08">
-                        <FaTwitter className="icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/enoverlab">
-                        <FaLinkedinIn className="icon" />
-                    </a>
-                </div>
-                <div className="footer-note">
-                    Copyright@enoverlab
                 </div>
             </div>
         </StyledFooter>

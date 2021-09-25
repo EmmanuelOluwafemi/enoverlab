@@ -62,7 +62,7 @@ const Contact = () => {
 
             <StyledContact>
                 <div className="left-side">
-                    <Link to="/v2">
+                    <Link to="/pmcourse">
                             <img className="logo" src={logo} alt="enoverlab logo" />
                     </Link>
                     <div className="hero-img">

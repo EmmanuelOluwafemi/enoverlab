@@ -120,7 +120,7 @@ const Contact = () => {
                 </form>
             </ContactFormContainer>
             <Footer>
-                <div className="social-icons">
+                {/* <div className="social-icons">
                     <a href="facebook.com">
                         <FaFacebookF className="icon" />
                     </a>
@@ -133,7 +133,7 @@ const Contact = () => {
                 </div>
                 <div className="footer-note">
                     Copyright@enoverlab
-                </div>
+                </div> */}
             </Footer>
         </StyledContact>
     )
