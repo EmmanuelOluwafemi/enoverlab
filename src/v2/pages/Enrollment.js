@@ -1,31 +1,33 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components';
 import Select from 'react-select'
+import { Link } from 'react-router-dom';
 
+import logo from "../../assets/img/logo_white.svg";
 import Modal from '../components/Modal';
 import HeroImg from '../../assets/img/heroImg.png';
 
 const Contact = () => {
-    
+    window.scrollTo(0, 0);
 
-        const scriptUrl = "https://script.google.com/macros/s/AKfycbwTsbbU6MIOcdAWSgqjdYX9L76iI2BNXHKdzssWzezdyb7YdoWuKcekYdE6J96jZ4dx/exec";
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbwTsbbU6MIOcdAWSgqjdYX9L76iI2BNXHKdzssWzezdyb7YdoWuKcekYdE6J96jZ4dx/exec";
 
-        const [loading, setLoading] = useState(false)
-        const [active, setActive] = useState(false);
+    const [loading, setLoading] = useState(false)
+    const [active, setActive] = useState(false);
 
-        const formRef = useRef(null)
+    const formRef = useRef(null)
 
-        const handleSubmit = (e) => {
-                e.preventDefault()
-                setLoading(true)
+    const handleSubmit = (e) => {
+            e.preventDefault()
+            setLoading(true)
 
-                fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
-                .then(res => {
-                    setLoading(false)
-                    setActive(true)
-                })
-                .catch(err => console.log(err))
-        }
+            fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
+            .then(res => {
+                setLoading(false)
+                setActive(true)
+            })
+            .catch(err => console.log(err))
+    }
         
     const options = [
         { value: 'basic', label: 'Basic - (₦30,000 for 4 weeks)' },
@@ -37,8 +39,13 @@ const Contact = () => {
             <Modal active={active} setActive={setActive} />
 
             <StyledContact>
-                <div className="hero-img">
-                    <img src={HeroImg} alt="hero" />
+                <div className="left-side">
+                    <Link to="/v2">
+                            <img className="logo" src={logo} alt="enoverlab logo" />
+                    </Link>
+                    <div className="hero-img">
+                        <img src={HeroImg} alt="hero" />
+                    </div>
                 </div>
                 <EnrollFormContainer>
                     <h2>JOIN THE WAITING LIST</h2>
@@ -68,7 +75,7 @@ const Contact = () => {
                         </div>
                         <div className="input-group">
                             <label htmlFor="message">What plan do you want to go for?</label>
-                            <Select options={options} name="plan" id="plan"git s />
+                            <Select options={options} isSearchable={false} name="plan" id="plan"git s />
                         </div>
 
                         <div className="button-container">
@@ -90,24 +97,48 @@ const StyledContact = styled.section`
     grid-gap: 2rem;
     max-width: 100vw;
     overflow-x: hidden;
-    div.hero-img {
+    div.left-side {
+        padding: 6rem 0;
         background: #090C9B;
+
+        a {
+            margin-left: 3rem;
+        }
+    }
+    div.hero-img {
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         img {
             max-width: 100%;
         }
+        .logo {
+            background: white;
+            @media (max-width: 768px) {
+                width: 120px;
+                height: auto;
+            }
+        }
     }
+
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
-        div.hero-img {
+        /* padding-top: 0; */
+        div.left-side {
+            /* background: white; */
             padding-top: 2rem;
+            .logo {
+                margin-bottom: 3rem;
+            }
+        }
+        div.hero-img {
+            padding-top: 1rem;
             position: relative;
             display: flex;
             justify-content: center;
             img {
-                margin-bottom: -7rem;
+                margin-bottom: -15rem;
             }
         }
     }
@@ -163,7 +194,8 @@ const EnrollFormContainer = styled.div`
                 width: 100%;
                 height: 3.8rem;
                 background: #fff;
-                border: 1px solid #292929;
+                /* border: 1px solid #292929; */
+                border: none;
                 border-radius: 10px;
                 outline: none;
                 padding: 0 1rem;
