@@ -32,8 +32,8 @@ const ListStyled = styled.div`
         width: 100%;
         height: 100%;
         font-size: 20px;
-        font-weight: 700;
-        font-family: 'nexabold', sans-serif;
+        font-weight: 400;
+        font-family: 'nexaregular', sans-serif;
         line-height: 1.4;
         margin: 0;
         padding: 0;

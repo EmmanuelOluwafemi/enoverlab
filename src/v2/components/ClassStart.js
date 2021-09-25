@@ -4,10 +4,7 @@ import styled from "styled-components";
 
 const ClassStart = () => {
     const calculateTimeLeft = () => {
-        // let year = new Date().getFullYear();
-        // let difference = +new Date(`10/01/${year}`) - +new Date();
         const beginDate = new Date('10/10/2021')
-        // const today = new Date()
         let difference = +beginDate - +new Date();
 
         let timeLeft = {};

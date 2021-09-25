@@ -3,7 +3,7 @@ import PricingCard from './PricingCard'
 
 import styled from "styled-components";
 import List from './List';
-import jordy from '../../assets/img/jordy.jpg'
+import jordy from '../../assets/img/jordy-s.jpg'
 import christina from '../../assets/img/christina.jpg'
 import {ReactComponent as Naira} from '../../assets/img/naira.svg'
 
@@ -52,7 +52,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard>
                 <div className="cost-duration">
-                    <span className="duration">Duration: <b>4 Weeks</b> </span>
+                    <span className="duration">Duration: <b>4 WEEKS</b> </span>
                     <span className="cost">Tuition: <b><span><Naira /></span>30,000</b></span>
                 </div>
 
@@ -97,7 +97,7 @@ const Pricing = () => {
                     </ul>
                 </Tools>
                 <div className="cost-duration">
-                    <span className="duration">Duration: <b>10 Weeks</b> </span>
+                    <span className="duration">Duration: <b>10 WEEKS</b> </span>
                     <span className="cost">Tuition: <b><span><Naira /></span>100,000</b></span>
                 </div>
 
@@ -136,6 +136,8 @@ const StyledPricingWrapper = styled.div`
     grid-column-gap: 10%;
     img {
         margin: auto auto;
+        /* height: 100%;
+        width: 100%; */
     }
     hr {
         visibility: hidden;
@@ -175,6 +177,16 @@ const StyledPricing = styled.section`
             background: rgba(29, 182, 188, 0.3);
             padding: 15px 45px;
             margin: 1rem 0;
+            height: 3rem;
+            b {
+                font-family: 'nexablack';
+                font-size: 1.1rem;
+            }
+            .duration {
+                b {
+                    text-transform: uppercase;
+                }
+            }
         }
         .cost {
             margin-left: 22px;
@@ -187,17 +199,20 @@ const StyledPricing = styled.section`
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                font-family: 'nexablack';
+                font-size: 1.1rem;
+                font-weight: 400;
             }
             span {
                 svg {
-                    width: 15px;  
+                    width: 13px;  
                     margin-bottom: -2px; 
                 }
             }
         }
     }
     .enroll-link {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #fff;
         line-height: 104%;
         padding: 1rem 0;
@@ -205,12 +220,17 @@ const StyledPricing = styled.section`
         box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
         margin-top: 2rem;
         text-decoration: none;
-        font-weight: 700;
+        font-family: 'nexabold';
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding: 18px 21px;
+        white-space: nowrap;
+        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 195px;
+        max-width: fit-content;
         border-radius: 8px;
 
         .icons {
