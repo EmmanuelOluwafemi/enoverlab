@@ -13,7 +13,7 @@ import What from '../components/What'
 const Home = () => {
     return (
         <>
-         <Ads />
+         {/* <Ads /> */}
          <Hero />
          <About />
          <Services />
