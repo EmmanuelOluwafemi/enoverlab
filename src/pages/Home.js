@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '../components/About'
-import Ads from '../components/Ads'
+// import Ads from '../components/Ads'
 import Become from '../components/Become'
 import Details from '../components/Details'
 import Footer from '../components/Footer'
@@ -13,7 +13,7 @@ import What from '../components/What'
 const Home = () => {
     return (
         <>
-         <Ads />
+         {/* <Ads /> */}
          <Hero />
          <About />
          <Services />
