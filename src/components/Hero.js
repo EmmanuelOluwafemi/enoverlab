@@ -6,11 +6,14 @@ import heroImg from "../assets/img/heroImg.png";
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import MasterClassAd from '../components/ArtBanner'
+
 
 const Hero = () => {
     return (
         <StyledHero>
             <Header />
+            <MasterClassAd />
             <div className="content-section">
                 <div className="content">
                     <h3>TRAINING TO BE EMPLOYABLE</h3>
