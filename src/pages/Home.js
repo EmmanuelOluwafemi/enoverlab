@@ -10,10 +10,12 @@ import Testimonial from '../components/Testimonial'
 import Tools from '../components/Tools'
 import What from '../components/What'
 
+
 const Home = () => {
     return (
         <>
          {/* <Ads /> */}
+         
          <Hero />
          <About />
          <Services />
