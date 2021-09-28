@@ -30,7 +30,7 @@ const ArtBanner = () => {
             {/* <img className="logo" src={ama_session} alt="ama session logo" /> */}
             {/* <img className="logo" src={banner_character} alt="ama character" /> */}
             <div className="cta">
-                <a href="/booking">Register here</a>
+                <a href="https://forms.gle/71XJEs8ZZtmC1Txj6">Register here</a>
             </div>
         </StyledArtBanner>
     )
@@ -118,12 +118,12 @@ const StyledArtBanner = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         overflow: hidden;
-        height: 75vh;
+        height: 70vh;
         background-repeat: no-repeat;
         background-size: cover; 
         align-items: flex-start;
         padding: 0;
-        padding-top: 6rem;
+        padding-top: 4rem;
         position: relative;
         width: 100%;
         max-width: 100vw;
