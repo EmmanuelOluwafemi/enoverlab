@@ -118,7 +118,7 @@ const StyledArtBanner = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         overflow: hidden;
-        height: 70vh;
+        height: 480px;
         background-repeat: no-repeat;
         background-size: cover; 
         align-items: flex-start;

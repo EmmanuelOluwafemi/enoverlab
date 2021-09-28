@@ -61,6 +61,7 @@ const StyledHero = styled.section`
     @media (max-width: 768px) {
         max-height: auto;
         overflow-x: hidden;
+        padding: 1.5rem 0;
     }
 
     .content-section {
