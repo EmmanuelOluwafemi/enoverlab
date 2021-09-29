@@ -151,7 +151,7 @@ const DiscountWrapper = styled.div`
             display: initial;
         }
         h4 {
-            font-size: 30px;
+            font-size: 1.5rem;
             text-align: center;
             line-height: 30px;
         }
@@ -159,15 +159,17 @@ const DiscountWrapper = styled.div`
         .holder {
             display: flex;
             flex-direction: column;
+            margin-top: 30px;
             div {
-                margin-top: 2rem;
-                margin-bottom: 3rem;
+                margin-top: 1,5rem;
+                margin-bottom: 2rem;
             }
             span {
                 display: block;
+                margin-top: 5px;
             }
             .percent {
-                font-size: 120px;
+                font-size: 6rem;
             }
             span {
                 font-size: 25px;
