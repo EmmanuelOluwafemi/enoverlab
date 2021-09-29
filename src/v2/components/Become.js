@@ -46,9 +46,9 @@ const Become = () => {
 
                 <div className="card-list">
                     {
-                        data.map(({content, secondary}) => (
+                        data.map(({content, secondary, index}) => (
                             <Card 
-                                key={content}
+                                key={`${content}${index}`}
                                 content={content}
                                 secondary={secondary}
                             />
