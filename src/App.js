@@ -14,6 +14,7 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Pricing from './pages/Pricing';
+import BookASpace from './pages/BookASpace'
 import V2Home from './v2/pages/Home';
 import V2Contact from './v2/pages/Contact'
 import Enroll from "./v2/pages/Enrollment";
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route path="/pricing">
           <Pricing />
+        </Route>
+        <Route path="/booking">
+          <BookASpace />
         </Route>
         
       </Switch>

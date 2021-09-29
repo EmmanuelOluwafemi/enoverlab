@@ -8,7 +8,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const data = [
     {
-        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/jordy_GxVIHVW_Am.jpg?updatedAt=1631278518154",
+        imgUrl: "https://ik.imagekit.io/e5jim8yt6ef/samuel_O2F3j6Q_t.jpg?updatedAt=1632517642302",
         name: "Samuel Adekoya",
         location: "USA",
         content: `The product management course at Enoverlab is very detailed and 
@@ -19,7 +19,7 @@ const data = [
                 value while at the same time drive business growth.`
     },
     {
-        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/feranmi_MzfOf-rUD.jpg?updatedAt=1631278518455",
+        imgUrl: "https://ik.imagekit.io/e5jim8yt6ef/rapphiu_pXAhi-pGa.png?updatedAt=1632517645734",
         name: "RAPHIU",
         location: "KWARA",
         content: `Enover is an ideal school for anybody who wants to learn product management.  
@@ -27,11 +27,11 @@ const data = [
                 I got a job after my training. Thank you!`
     },
     {
-        imgUrl: "https://ik.imagekit.io/clg5lw23vmwy/joy_C8wrEUkgw.jpg?updatedAt=1631278518549",
+        imgUrl: "https://ik.imagekit.io/e5jim8yt6ef/joy_Uwo9E6oz6k.jpg?updatedAt=1632517638563",
         name: "JOY",
         location: "LAGOS",
-        content: `The trainining was detailed, am glad I enrolled.
-                The facillitators are experienced. Thank you EnoverLab.`
+        content: `I like how structured and practical the classes have been. I have been able to get more grounded knowledge on product management.
+        Despite coming from a technical background, I was able to relate with the lessons due to the approach of the instructor teaching from his personal experience as a product manager. The instructor is someone who is open: he not only teaches, he also listens and wants to hear my opinions which makes it more relatable to me personally.`
     },
 ]
 
@@ -57,7 +57,7 @@ const Testimonial = () => {
         },
     };
     return (
-        <SliderContainer>
+        <SliderContainer id="testimonial">
             <h2
                 data-aos="fade-top" 
                 data-aos-easing="ease-in-sine"
@@ -124,7 +124,7 @@ const SliderContainer = styled.div`
         font-size: 3.1rem;
         font-weight: 900;
         color: #090C9B;
-        font-family: 'nexabold', sans-serif;
+        font-family: 'nexablack', sans-serif;
         margin-bottom: 4rem;
 
         @media (max-width: 768px) {
@@ -209,7 +209,8 @@ const SliderContainer = styled.div`
 
                 img {
                     width: 100%;
-                    height: auto;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
 
