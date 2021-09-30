@@ -12,7 +12,7 @@ const Hero = () => {
             <Header />
             <div className="content-section">
                 <div className="content">
-                    <h3>Become a  certified Product Manager</h3>
+                    <h3>Become a  certified <br />Product Manager</h3>
                     <h1
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
@@ -101,10 +101,17 @@ const StyledHero = styled.section`
                 color: #52DEE5;
                 margin-bottom: 1.3rem;
                 margin-top: -3rem;
+                
 
                 @media (max-width: 768px) {
-                    margin-top: 0;
+                    margin-top: 1rem;
                     margin-bottom: 0;
+                    line-height: 1.7rem;
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                    br {
+                        display: block;
+                    }
                 }
             }
 
