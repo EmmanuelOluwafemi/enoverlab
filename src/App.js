@@ -18,6 +18,8 @@ import BookASpace from './pages/BookASpace'
 import V2Home from './v2/pages/Home';
 import V2Contact from './v2/pages/Contact'
 import Enroll from "./v2/pages/Enrollment";
+import DiscountHome from "./discount/pages/Home"
+import DiscountEnrollmentForm from "./discount/pages/Enrollment"
 
 function App() {
   useEffect(() => {
@@ -47,7 +49,12 @@ function App() {
         <Route path="/booking">
           <BookASpace />
         </Route>
-        
+        <Route exact path="/discount">
+            <DiscountHome />
+        </Route>
+        <Route exact path="/discount/enrol">
+            <DiscountEnrollmentForm />
+        </Route>
       </Switch>
     </Router>
   );

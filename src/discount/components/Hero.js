@@ -1,39 +1,30 @@
 import "aos/dist/aos.css";
 import styled from "styled-components";
 
-import heroImg from "../assets/img/heroImg.png";
+import heroImgv2 from "../../assets/img/heroImgv2.png";
 
-import { IoIosArrowRoundForward } from 'react-icons/io';
 import Header from './Header';
 import { Link } from 'react-router-dom';
-// import MasterClassAd from '../components/ArtBanner'
-import DiscountBanner from '../components/DiscountBanner'
-
 
 const Hero = () => {
     return (
         <StyledHero>
             <Header />
-            <DiscountBanner />
             <div className="content-section">
                 <div className="content">
-                    <h3>TRAINING TO BE EMPLOYABLE</h3>
+                    <h3>Become a  certified Product Manager</h3>
                     <h1
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        Transition into <br />Product Management</h1>
-                    <p
-                        data-aos="fade-right" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500"
-                        data-aos-delay="400"
-                    >Building product managers who will innovate products for the future</p>
+                        20% discount off your 
+                        <br className="lg" /> tuition to learn any of <br className="lg" /> 
+                        our courses
+                    </h1> 
 
-                    <Link to="/contact"
-                    >Enrol Now <IoIosArrowRoundForward className="icons"/></Link>
+                    <Link to="/discount/enrol">Enrol Now </Link>
                 </div>
                 <img
                     data-aos="fade-left" 
@@ -41,7 +32,7 @@ const Hero = () => {
                     data-aos-duration="500"
                     data-aos-delay="1000"
                     className="hero" 
-                    src={heroImg} 
+                    src={heroImgv2} 
                     alt="hero" 
                 />
             </div>
@@ -62,15 +53,14 @@ const StyledHero = styled.section`
     @media (max-width: 768px) {
         max-height: auto;
         overflow-x: hidden;
-        padding: 1.5rem 0;
     }
 
     .content-section {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 3fr 2fr;
         grid-gap: 2rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
@@ -79,6 +69,11 @@ const StyledHero = styled.section`
         img.hero {
             width: 100%;
             height: auto;
+            @media (max-width: 768px) {
+                margin-right: 2rem;
+                width: 90%;
+                margin-left: auto;
+            }
         }
 
         .content {
@@ -86,17 +81,24 @@ const StyledHero = styled.section`
             display: flex;
             flex-direction: column;
             justify-content: center;
+            br {
+                display: none;
+            }
+            
 
             @media (max-width: 768px) {
                 padding: 0 6%;
+                br {
+                    display: block;
+                }
             }
 
             h3 {
-                font-size: 1rem;
-                font-weight: 600;
+                font-size: 1.5rem;
+                font-weight: 400;
                 line-height: 1.5;
                 letter-spacing: 0.235em;
-                color: #12169B;
+                color: #52DEE5;
                 margin-bottom: 1.3rem;
                 margin-top: -3rem;
 
@@ -107,15 +109,15 @@ const StyledHero = styled.section`
             }
 
             h1 {
-                font-size: 3.35rem;
+                font-size: 45px;
                 font-weight: 800;
                 color: #090C9B;
-                max-width: 706px;
-                line-height: 1.1;
+                max-width: 721px;
+                line-height: 58px;
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }
@@ -167,17 +169,18 @@ const StyledHero = styled.section`
 
             a {
                 font-size: 1rem;
-                color: #090C9B;
+                color: #fff;
                 line-height: 104%;
                 letter-spacing: 0.02em;
                 padding: 1rem 0;
-                background: #52DEE5;
+                background: #090C9B;
                 box-shadow: 0px 0px 30px rgba(65, 135, 123, 0.25);
                 display: inline-block;
-                margin-top: 2rem;
+                margin-top: 3rem;
                 text-decoration: none;
                 font-weight: 700;
                 display: flex;
+                border-radius: 8px;
                 align-items: center;
                 justify-content: center;
                 max-width: 195px;
@@ -188,7 +191,8 @@ const StyledHero = styled.section`
                 }
 
                 &:hover {
-                    background: rgba(9, 12, 155, 0.1);
+                    background: #fff;
+                    color: #090C9B;
                 }
             }
         }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from "styled-components";
 
-import character from "../assets/img/character.jpg";
+// import character from "../../assets/img/character.jpg";
 
 const data = [
     {
@@ -32,23 +32,23 @@ const Card = ({ content, secondary }) => {
 
 const Become = () => {
     return (
-        <StyledBecome>
-            <div
-                data-aos="fade-top" 
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="500"
-                className="title"
-            >
-                Become an efficient Product Manager
-            </div>
+        <StyledBecome id="sweet-spot">
+            
             <div className="grid-container">
-                <img src={ character } alt="character" />
+                {/* <img src={ character } alt="character" /> */}
+                <div className="sweet-spot">
+                    <h2 className="caption">Our Sweet Spot</h2>
+                    <p>
+                        We are not just about teaching you core design skills, we are also particular about preparing you for the real-life work environment so you can advance in the career fast.
+                    </p>
+                    <h2 className="why">THIS IS WHY 70% <br /> OF OUR ALUMNI ARE <br />NOW EMPLOYED.</h2>
+                </div>
 
                 <div className="card-list">
                     {
-                        data.map(({content, secondary}) => (
+                        data.map(({content, secondary, index}) => (
                             <Card 
-                                key={content}
+                                key={`${content}${index}`}
                                 content={content}
                                 secondary={secondary}
                             />
@@ -85,8 +85,41 @@ const StyledBecome = styled.section`
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
 
+        .sweet-spot{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            h2.caption {
+                font-weight: 700;
+                font-size: 40px;
+                color: #121212;
+                text-align: left;
+                font-family: 'nexabold', sans-serif;
+            }
+            h2.why {
+                font-weight: 800;
+                font-size: 38px;
+                color: #34296B;
+                line-height: 55px;
+                font-family: 'nexablack', sans-serif;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                color: #121212;
+                margin: 28px 0;
+                font-family: 'nexaregular', sans-serif;
+                font-style: normal;
+            }
+        }
+
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
+           
         }
 
         img {
