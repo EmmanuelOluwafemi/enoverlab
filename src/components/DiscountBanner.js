@@ -116,6 +116,13 @@ const StyledDiscountBanner = styled.div`
         }
 
     }
+    @media (max-width: 400px) {
+        .content {
+           h3 {
+               font-size: 1.7rem;
+           }
+        }
+    }
     .cta {
         display: flex;
         align-items: center;
@@ -150,6 +157,15 @@ const StyledDiscountBanner = styled.div`
                 align-items: center;
                 justify-content: center;
                 width: 200px;
+                height: 48px;
+                font-size: 1rem;
+            }
+            @media (max-width: 400px) {
+                padding: 0 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
                 height: 48px;
                 font-size: 1rem;
             }
