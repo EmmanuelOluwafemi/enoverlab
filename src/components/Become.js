@@ -48,6 +48,7 @@ const Become = () => {
                     {
                         data.map(({content, secondary}) => (
                             <Card 
+                                key={content}
                                 content={content}
                                 secondary={secondary}
                             />

@@ -10,9 +10,9 @@ const ArtBanner = () => {
     return (
         <StyledDiscountBanner>
             <div className="content">
-                <h3>20% discount off your tuition to <br className="lg" />learn any of our courses</h3>
+                <h3>20% discount off your <br className="sm" />tuition to <br className="lg" /> learn <br className="sm" />any of our courses</h3>
             </div>
-            <img src={banner_character} alt="person with laptop" />
+            <img className="person" src={banner_character} alt="person with laptop" />
             <div className="cta">
                 <a href="/discount">Register here</a>
             </div>
@@ -71,23 +71,23 @@ const StyledDiscountBanner = styled.div`
         background-repeat: no-repeat;
         background-size: cover; 
         align-items: flex-start;
-        padding: 0;
+        /* padding-bottom: 2rem; */
         padding-top: 4rem;
         position: relative;
         width: 100%;
         max-width: 100vw;
 
-        
+        img.person {
+            max-height: 300px;
+            margin-left: auto;
+            position: absolute;
+            right: -2rem;
+            bottom: 0;
+        }
         .sm {
             display: inline-block;
         }
-        .lg {
-            display: none;
-        }
-
-        br.sm {
-            display: none;
-        }
+        
         .banner_character {
             /* display: none; */
             position: absolute;
@@ -101,12 +101,15 @@ const StyledDiscountBanner = styled.div`
             padding: 1rem;
            
             h3 {
-                br {
+                br.sm {
                     display: block;
+                }
+                br.lg {
+                    display: none;
                 }
                 margin: 5px 0;
                 font-family: "nexabold";
-                font-size: 26px;
+                font-size: 30px;
                 font-weight: 700;
                 white-space: nowrap;
             }
@@ -116,7 +119,7 @@ const StyledDiscountBanner = styled.div`
     .cta {
         display: flex;
         align-items: center;
-        
+        z-index: 50;
 
         @media (max-width: 768px) {
             order: 3;
