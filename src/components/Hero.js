@@ -7,14 +7,15 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 import Header from './Header';
 import { Link } from 'react-router-dom';
 // import MasterClassAd from '../components/ArtBanner'
-import DiscountBanner from '../components/DiscountBanner'
+// import DiscountBanner from '../components/DiscountBanner'
+import ArtBanner from '../components/ArtBanner'
 
 
 const Hero = () => {
     return (
         <StyledHero>
             <Header />
-            <DiscountBanner />
+            <ArtBanner />
             <div className="content-section">
                 <div className="content">
                     <h3>TRAINING TO BE EMPLOYABLE</h3>
