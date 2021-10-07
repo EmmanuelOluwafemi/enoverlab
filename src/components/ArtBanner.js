@@ -5,32 +5,27 @@ import styled from "styled-components";
 // import jeff from "../assets/images/jef.png";
 // import sponsors from "../assets/images/sponsor-logo.svg";
 import banner_bg from "../assets/img/banner_bg.jpg";
-// import banner_character from "../assets/images/banner_character.jpg";
+import banner_character from "../assets/img/ama_character.png";
 // import ama_session from "../assets/images/ama_session.png";
 
-// import {ReactComponent as AmaSession} from "../assets/images/ama_session.svg";
-import {ReactComponent as BigThree} from "../assets/img/3.svg";
-import {ReactComponent as BannerCharacter} from "../assets/img/ama_character.svg";
+import {ReactComponent as AmaSession} from "../assets/img/ama_session.svg";
+// import {ReactComponent as AmaCharacter} from "../assets/images/ama_character.svg";
+// import {ReactComponent as AmaCharactermb} from "../assets/images/ama_character.svg";
 
 const ArtBanner = () => {
     return (
         <StyledArtBanner>
-            <div className="count">
-                <BigThree />
-                <span className="days sm">Days</span>
+            <div>
+                <AmaSession />
+                <img className="sm" src={banner_character} alt="ama session character" />
             </div>
             <div className="content">
-                <div className="ad__theme">
-                     <span className="days lg">Days</span>
-                     <h2>FREE MASTERCLASS</h2>
-                </div>
-                <h3>Transition into <br className="sm" />Product Management </h3>
+                <h4>This week virtual session topic:</h4>
+                <h3>Communication hacks for <br className=""/>product managers</h3>
             </div>
-            <BannerCharacter className="banner_character" />
-            {/* <img className="logo" src={ama_session} alt="ama session logo" /> */}
-            {/* <img className="logo" src={banner_character} alt="ama character" /> */}
+            <img className="lg" src={banner_character} alt="" />
             <div className="cta">
-                <a href="https://forms.gle/71XJEs8ZZtmC1Txj6">Register here</a>
+                <a href="/booking">Register here</a>
             </div>
         </StyledArtBanner>
     )
@@ -41,24 +36,19 @@ export default ArtBanner
 const StyledArtBanner = styled.div`
     background: url(${banner_bg});
     background-position: center;
-    height: 183px;
+    height: 133px;
     /* background-repeat: no-repeat; */
-    background-size: cover; 
+    background-size: contain; 
     max-width: 100vw;
-    padding: 2rem 8%;
+    padding: 2rem 6%;
     /* padding-top: 4rem; */
     position: relative;
     /* background: #363576; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: flex-start;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    overflow: hidden;
-
-    .banner_character {
-        margin-left: -40px;
-    }
 
     .sm {
         display: none;
@@ -85,145 +75,96 @@ const StyledArtBanner = styled.div`
     br.sm {
         display: none;
     }
-    .content {
-        
-        .ad__theme {
-            display: flex;
-            align-items: center;
-            .days {
-                font-family: "nexablack";
-                font-size: 35px;
-                font-weight: 900;
-                color: #131795;
-                background: #52DEE5;
-                padding: 0.5rem 1rem;
-            }
-            h2 {
-                font-family: "nexabold";
-                font-size: 35px;
-                font-weight: 700;
-                color: #FFFFFF;
-                margin-left: 10px;
-            }
-            
+    .content{
+        margin: auto 6rem;
+    }
+
+    @media (max-width: 1115px) {
+        margin-left: 1rem;
+        h4 {
+            font-size: 16px;
         }
         h3 {
-            margin: 5px 0;
-            font-family: "nexabold";
-            font-size: 26px;
-            font-weight: 700;
+            font-size: 24px;
         }
+        .content{
+            margin: auto 2rem;
+        }
+        
     }
 
     @media (max-width: 768px) {
         flex-direction: column;
         overflow: hidden;
-        height: 480px;
+        padding-top: 2rem;
+        height: 60vh;
         background-repeat: no-repeat;
         background-size: cover; 
         align-items: flex-start;
-        padding: 0;
-        padding-top: 4rem;
-        position: relative;
-        width: 100%;
-        max-width: 100vw;
-
         
-        .sm {
+        br.sm {
             display: inline-block;
         }
-        .lg {
+        br.lg {
             display: none;
+        }
+      
+
+        h4 {
+            margin-top: 40px;
         }
 
-        br.sm {
+        h3 {
+            font-size: 24px;
+            margin: 7px 0 0 0;
+        }
+      
+        img.lg {
             display: none;
         }
-        .banner_character {
-            /* display: none; */
-            position: absolute;
-            right: -2rem;
-            bottom: 0;
-            /* left: 10rem; */
+        img.sm {
+            display: inline-block;
+            max-height: 103px;
         }
-        .count {
-            display: flex;
-            align-items: center;
-            max-height: 63px;
-            svg {
-                height: 100%;
-            }
-            .days {
-                font-family: "nexablack";
-                font-size: 35px;
-                font-weight: 900;
-                color: #131795;
-                background: #52DEE5;
-                padding: 0.5rem 1rem;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                margin-left: 0.3rem;
-            }
-        }
-        .content {
-            height: fit-content;
-            padding: 1rem;
-            .ad__theme {
-                display: flex;
-                align-items: center;
-                
-                h2 {
-                    font-family: "nexaregular", sans-serif;
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    color: #FFFFFF;
-                    margin: 1.2rem 0;
-                    white-space: nowrap;
-                }
-                
-            }
-            h3 {
-                br {
-                    display: block;
-                }
-                margin: 5px 0;
-                font-family: "nexabold";
-                font-size: 26px;
-                font-weight: 700;
-                white-space: nowrap;
-            }
+        .content{
+            margin: auto 0;
         }
 
     }
     .cta {
         display: flex;
         align-items: center;
+        margin-left: 3rem;
         
 
         @media (max-width: 768px) {
             order: 3;
-            margin: 1rem 0 0 6%;
-
+            margin: 2rem 0;
         }
+
         
         a {
             padding: 1rem 2.5rem;
             background: #52DEE5;
             color: #090C9B;
-            font-size: 1.5rem;
-            /* max-height: 48px; */
-            /* border-radius: 5px; */
-            font-weight: 700;
+            font-size: 1.3rem;
+            max-height: 48px;
             text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 transform: scale(1.05);
-                color: #090C9B;
-                background: #FFFFFF;
-                /* border: 1px solid #FCD900; */
+                color: #FCD900;
+                background: #34296B;
+                border: 1px solid #FCD900;
             }
 
+            @media(max-width: 1115px) {
+                padding: .8rem 0.8rem;
+                font-size: .8rem;
+            }
             @media (max-width: 768px) {
                 padding: 0;
                 display: flex;
@@ -231,7 +172,6 @@ const StyledArtBanner = styled.div`
                 justify-content: center;
                 width: 200px;
                 height: 48px;
-                font-size: 1rem;
             }
         }
     }
