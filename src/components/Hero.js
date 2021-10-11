@@ -15,7 +15,7 @@ const Hero = () => {
     return (
         <StyledHero>
             <Header />
-            <ArtBanner />
+            {/* <ArtBanner /> */}
             <div className="content-section">
                 <div className="content">
                     <h3>TRAINING TO BE EMPLOYABLE</h3>
