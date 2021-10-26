@@ -20,6 +20,7 @@ import V2Contact from './v2/pages/Contact'
 import Enroll from "./v2/pages/Enrollment";
 import DiscountHome from "./discount/pages/Home"
 import DiscountEnrollmentForm from "./discount/pages/Enrollment"
+import Register from './pages/Register';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/register">
+            <Register />
+        </Route>
         <Route exact path="/pmcourse">
             <V2Home />
         </Route>
