@@ -17,10 +17,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>Acquisition and Engagement Metrics; 
-                    which is most important?
-                </h2>
-
+                <h2>Ensuring Allignment Among Stakeholders</h2>
             </div>
             <img src={character} className="characterWeb" alt="character" />
             <Link to="/register">Register here</Link>
