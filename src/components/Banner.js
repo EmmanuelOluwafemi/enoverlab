@@ -5,8 +5,8 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/imageCharacter.jpg';
-import { Link } from 'react-router-dom';
+import character from '../assets/img/banji.jpg';
+// import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -17,10 +17,11 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>Ensuring Allignment Among Stakeholders</h2>
+                <h2>The Tech Industry In Nigeria</h2>
             </div>
             <img src={character} className="characterWeb" alt="character" />
-            <Link to="/register">Register here</Link>
+            {/* <Link to="/register">Register here</Link> */}
+            <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
         </StyledBanner>
     )
 }
@@ -45,6 +46,9 @@ const StyledBanner = styled.section`
     }
 
     .characterWeb {
+        width: 90.63px;
+        height: auto;
+
         @media (max-width: 768px) {
             display: none;
         }
