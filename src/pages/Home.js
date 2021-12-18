@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <>
          {/* <Ads /> */}
-         <Banner />
+         {/* <Banner /> */}
          <Hero />
          <About />
          <Services />
