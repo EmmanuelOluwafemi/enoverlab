@@ -16,7 +16,7 @@ const Footer = () => {
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                    >Learn the skills to build products that will thrive into the future</h4>
+                    >Installment Payment is also Available</h4>
                     <Link 
                         data-aos="fade-left" 
                         data-aos-easing="ease-in-sine"
