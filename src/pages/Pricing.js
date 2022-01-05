@@ -77,7 +77,7 @@ const Pricing = () => {
                     </Tools>
                 </PricingCard>
             </StyledPricing>
-            <Footer />
+            <Footer pricing />
         </StyledPricingWrapper>
     )
 }

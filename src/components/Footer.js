@@ -7,7 +7,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ pricing }) => {
     return (
         <StyledFooter>
             <div className="cta">
@@ -17,14 +17,27 @@ const Footer = () => {
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                     >Installment Payment is also Available</h4>
-                    <Link 
-                        data-aos="fade-left" 
-                        data-aos-easing="ease-in-sine"
-                        data-aos-duration="500" 
-                        data-aos-delay="300"
-                    to="/Pricing">
-                        Enrol Now
-                    </Link>
+                    {
+                        !pricing ? (
+                            <Link 
+                                data-aos="fade-left" 
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500" 
+                                data-aos-delay="300"
+                            to="/pricing">
+                                Enrol Now
+                            </Link>): (
+                            <a 
+                                data-aos="fade-left" 
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500" 
+                                data-aos-delay="300"
+                                href="https://wa.me/2349063124595?text=%27Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course."
+                            >
+                                Enrol Now
+                            </a>
+                            )
+                    }
                 </div>
             </div>
 
@@ -77,7 +90,7 @@ const StyledFooter = styled.footer`
             align-items: center;
 
             h4 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
                 font-weight: 400;
                 color: #fff;
                 max-width: 670px;
