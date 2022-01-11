@@ -18,14 +18,14 @@ const Hero = () => {
             {/* <ArtBanner /> */}
             <div className="content-section">
                 <div className="content">
-                    <h3>TRAINING TO BE EMPLOYABLE</h3>
+                    <h3>GET A PRODUCT MANAGER JOB IN 3 MONTHS</h3>
                     <h1
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        Transition into <br />Product Management</h1>
+                        Learn the required skills to become a skilled Product Manager</h1>
                     <p
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
@@ -33,7 +33,7 @@ const Hero = () => {
                         data-aos-delay="400"
                     >Building product managers who will innovate products for the future</p>
 
-                    <Link to="/contact"
+                    <Link to="/enrol"
                     >Enrol Now <IoIosArrowRoundForward className="icons"/></Link>
                 </div>
                 <img
@@ -108,11 +108,11 @@ const StyledHero = styled.section`
             }
 
             h1 {
-                font-size: 3.35rem;
+                font-size: 2.2rem;
                 font-weight: 800;
                 color: #090C9B;
                 max-width: 706px;
-                line-height: 1.1;
+                line-height: 1.4;
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {

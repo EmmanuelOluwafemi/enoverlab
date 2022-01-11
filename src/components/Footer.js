@@ -24,7 +24,7 @@ const Footer = ({ pricing }) => {
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500" 
                                 data-aos-delay="300"
-                            to="/pricing">
+                            to="/enrol">
                                 Enrol Now
                             </Link>): (
                             <a 

@@ -12,7 +12,7 @@ const PricingCard = ({ primary, children, title, price, dur, subtitle  }) => {
             </div>
             <p>{subtitle}</p>
             { children }
-            <a href="https://wa.me/2349063124595?text='Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course.">Enroll for this plan</a>
+            <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">Enroll for this plan</a>
         </PricingCardWrapper>
     )
 }
