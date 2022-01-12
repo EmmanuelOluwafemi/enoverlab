@@ -47,7 +47,7 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/enrol">
+        <Route path="/pricing">
           <Pricing />
         </Route>
         <Route path="/booking">
