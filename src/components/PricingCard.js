@@ -2,17 +2,16 @@ import React from 'react'
 
 import styled from "styled-components";
 
-const PricingCard = ({ primary, children, title, price, dur, subtitle  }) => {
+const PricingCard = ({ primary, children, title, price, subtitle  }) => {
     return (
         <PricingCardWrapper className={primary ? "active" : ""}>
             <h4>{title}</h4>
+            <p>{subtitle}</p>
             <div className="price-tag">
                 <h6>{price}</h6>
-                <p>FOR {dur}</p>
             </div>
-            <p>{subtitle}</p>
             { children }
-            <a href="https://wa.me/2349063124595?text='Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course.">Enroll for this plan</a>
+            <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">Enroll for this plan</a>
         </PricingCardWrapper>
     )
 }
@@ -65,7 +64,7 @@ const PricingCardWrapper = styled.div`
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 700;
         font-family: 'nexabold', sans-serif;
         color: #090C9B;
@@ -78,10 +77,10 @@ const PricingCardWrapper = styled.div`
         padding: 10px 12px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         background: #ABFBFF;
         border-radius: 19px;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         margin-top: .75rem;
 
         h6 {
@@ -90,21 +89,12 @@ const PricingCardWrapper = styled.div`
             font-weight: 700;
             font-family: 'nexabold', sans-serif;
         }
-
-        p {
-            font-size: .9rem;
-            font-weight: 400;
-            font-family: 'nexaregular', sans-serif;
-            color: #090C9B;
-            margin: 0;
-            padding: 0;
-        }
     }
 
     p {
         font-size: .9rem;
         font-weight: 800;
         font-family: 'nexabold', sans-serif;
-        margin-bottom: 2.4rem;
+        margin-bottom: .8rem;
     }
 `

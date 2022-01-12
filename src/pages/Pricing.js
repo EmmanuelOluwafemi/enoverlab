@@ -45,9 +45,8 @@ const Pricing = () => {
             <Header />
             <StyledPricing>
                 <PricingCard 
-                    title="BASIC" 
-                    price="N30,000" 
-                    dur="4 WEEKS" 
+                    title="BASIC PROGRAM (4 WEEKS)" 
+                    price="₦30,000"
                     subtitle="Learn the foundation of Product Management"
                 >
                     {basic.map((item, index) => (
@@ -56,9 +55,8 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard primary
-                    title="ADVANCE"
-                    price="N100,000"
-                    dur="10 WEEKS"
+                    title="ADVANCE PROGRAM (10 WEEKS)"
+                    price="₦100,000"
                     subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
                 >
                     {advance.map((item, index) => (

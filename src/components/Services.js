@@ -42,7 +42,7 @@ const Card = ({ imgUrl, title, headTitle, i, link }) => {
 
             {
                 !link ?
-                <Link to="/pricing">
+                <Link to="/enrol">
                     See Pricing
                     <IoIosArrowRoundForward className="icon" />
                 </Link>:
