@@ -175,7 +175,7 @@ const StyledHero = styled.section`
             }
 
             a {
-                font-size: 1rem;
+                font-size: 1.25rem;
                 color: #090C9B;
                 line-height: 104%;
                 letter-spacing: 0.02em;
