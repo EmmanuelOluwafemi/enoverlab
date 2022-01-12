@@ -1,9 +1,8 @@
 import "aos/dist/aos.css";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 import heroImg from "../assets/img/heroImg.png";
 
-import { IoIosArrowRoundForward } from 'react-icons/io';
 import Header from './Header';
 import { Link } from 'react-router-dom';
 // import MasterClassAd from '../components/ArtBanner'
@@ -18,7 +17,6 @@ const Hero = () => {
             {/* <ArtBanner /> */}
             <div className="content-section">
                 <div className="content">
-                    <h3>GET A PRODUCT MANAGER JOB IN 3 MONTHS</h3>
                     <h1
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
@@ -33,8 +31,8 @@ const Hero = () => {
                         data-aos-delay="400"
                     >Learn the core skills, frameworks and tools you need to become a proficient Product Manager in 10 weeks</p>
 
-                    <Link to="/enrol"
-                    >Enrol Now <IoIosArrowRoundForward className="icons"/></Link>
+                    <Link to="/pricing"
+                    >Enrol Now</Link>
                 </div>
                 <img
                     data-aos="fade-left" 
@@ -51,6 +49,16 @@ const Hero = () => {
 }
 
 export default Hero
+
+const animate = keyframes`
+    from {
+        transform: scale(.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+`
 
 const StyledHero = styled.section`
     height: 100%;
@@ -182,6 +190,7 @@ const StyledHero = styled.section`
                 align-items: center;
                 justify-content: center;
                 max-width: 195px;
+                animation: ${animate} 1s ease-in-out infinite; 
 
                 .icons {
                     margin-left: .8rem;
