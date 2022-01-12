@@ -25,13 +25,13 @@ const Hero = () => {
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        Learn the required skills to become a skilled Product Manager</h1>
+                        In-depth training and mentorship program for product managers</h1>
                     <p
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="400"
-                    >Building product managers who will innovate products for the future</p>
+                    >Learn the core skills, frameworks and tools you need to become a proficient Product Manager in 10 weeks</p>
 
                     <Link to="/enrol"
                     >Enrol Now <IoIosArrowRoundForward className="icons"/></Link>
@@ -124,7 +124,7 @@ const StyledHero = styled.section`
             
             p {
                 font-size: 1.25rem;
-                font-weight: 300;
+                font-weight: 400;
                 color: #090C9B;
                 margin-top: 1.3rem;
                 max-width: 480px;

@@ -12,6 +12,13 @@ const Footer = ({ pricing }) => {
         <StyledFooter>
             <div className="cta">
                 <div className="text-content">
+                    <h3>Important Info</h3>
+                    <ul>
+                        <li>All classes are held online via Google Meet.</li>    
+                        <li>Class holds twice a week at selected days.</li>    
+                        <li>Each class runs for 2 hrs between 8 - 10pm.</li>    
+                    </ul>
+                    
                     <h4
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
@@ -32,7 +39,7 @@ const Footer = ({ pricing }) => {
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500" 
                                 data-aos-delay="300"
-                                href="https://wa.me/2349063124595?text=%27Hello%20EnoverLab%20%0AI%20will%20like%20to%20enrol%20for%20Product%20Management%20Course."
+                                href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp"
                             >
                                 Enrol Now
                             </a>
@@ -69,7 +76,7 @@ const StyledFooter = styled.footer`
     max-width: 100vw;
 
     @media (max-width: 768px) {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     
     .cta {
@@ -80,6 +87,11 @@ const StyledFooter = styled.footer`
         margin-bottom: 4rem;
         display: flex;
         align-items: center;
+
+        @media (max-width: 768px) {
+            min-height: 500px;
+            padding: 0 6%;
+        }
         
         .text-content {
             width: 100%;
@@ -88,6 +100,45 @@ const StyledFooter = styled.footer`
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #f2f2f2;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 1.5rem;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 2rem;
+                }
+
+                
+                li {
+                    margin-left: 2rem;
+                    font-size: 1rem;
+                    color: #c2c2c2;
+
+                    @media (max-width: 768px) {
+                        margin-left: 0;
+                        margin-bottom: 1rem;
+                        font-size: 0.9rem;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
 
             h4 {
                 font-size: 2.5rem;
@@ -99,7 +150,7 @@ const StyledFooter = styled.footer`
                 line-height: 1.7;
 
                 @media (max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
                 }
             }
 
