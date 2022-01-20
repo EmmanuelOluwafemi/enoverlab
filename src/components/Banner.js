@@ -17,7 +17,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>Communication hacks for product managers</h2>
+                <h2>Collaborating effectively with UI/UX designers</h2>
             </div>
             <img src={character} className="characterWeb" alt="character" />
             {/* <Link to="/register">Register here</Link> */}
