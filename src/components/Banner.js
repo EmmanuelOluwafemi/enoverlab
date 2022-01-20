@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banji.jpg';
+import character from '../assets/img/charactertop.jpg';
 // import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -17,7 +17,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>How to increase your earning potential as a tech talent</h2>
+                <h2>Communication hacks for product managers</h2>
             </div>
             <img src={character} className="characterWeb" alt="character" />
             {/* <Link to="/register">Register here</Link> */}
