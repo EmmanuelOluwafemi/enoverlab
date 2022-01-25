@@ -13,13 +13,25 @@ const Banner = () => {
         <StyledBanner>
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
-                <img src={character} className="characterMobile" alt="character" />
+                <div className='cont'>
+                    <img src={character} className="characterMobile" alt="character" />
+                    <div className="details mobile">
+                        <h4>Evelyn Ebo</h4>
+                        <p>Product Manager, Advans Nigeria</p>
+                    </div>
+                </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
                 <h2>What you need to focus on as an aspiring PRODUCT MANAGER</h2>
             </div>
-            <img src={character} className="characterWeb" alt="character" />
+            <div className="cont">
+                <img src={character} className="characterWeb" alt="character" />
+                <div className="details web">
+                    <h4>Evelyn Ebo</h4>
+                    <p>Product Manager, Advans Nigeria</p>
+                </div>
+            </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
         </StyledBanner>
@@ -76,6 +88,45 @@ const StyledBanner = styled.section`
         .logo {
             width: 73px;
             height: auto;
+        }
+    }
+
+    .cont {
+        display: flex;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 1rem;
+        max-width: 150px;
+
+        h4 {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: .3rem;
+        }
+
+        p {
+            font-size: .75rem;
+            color: #f2f2f2dd;
+        }
+
+        &.mobile {
+            display: none;
+    
+            @media(max-width: 768px) {
+                display: flex;
+            }
+        }
+
+        &.web {
+            display: flex;
+
+            @media(max-width: 768px) {
+                display: none;
+            }
         }
     }
 
