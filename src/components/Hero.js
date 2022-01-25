@@ -29,7 +29,7 @@ const Hero = () => {
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="400"
-                    >Learn the core skills, frameworks and tools you need to become a proficient Product Manager in 10 weeks</p>
+                    >Learn the core skills, frameworks and tools you need to become a proficient Product Manager.</p>
 
                     <Link to="/pricing"
                     >Enrol Now</Link>
