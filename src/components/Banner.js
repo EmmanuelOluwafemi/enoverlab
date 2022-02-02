@@ -27,8 +27,8 @@ const Banner = () => {
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                    <h4>Evelyn Ebo</h4>
-                    <p>Product Manager, Advans Nigeria</p>
+                    <h4>Oluwatobi Bamidele</h4>
+                    <p>Product Professional</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
