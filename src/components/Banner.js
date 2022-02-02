@@ -5,8 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/charactertop.jpg';
-// import { Link } from 'react-router-dom';
+import character from '../assets/img/banner-character.jpg';
 
 const Banner = () => {
     return (
@@ -16,14 +15,14 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>Evelyn Ebo</h4>
-                        <p>Product Manager, Advans Nigeria</p>
+                        <h4>Oluwatobi Bamidele</h4>
+                        <p>Product Professional</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>What you need to focus on as an aspiring PRODUCT MANAGER</h2>
+                <h2>Managing Stakeholders as a new Product Manager</h2>
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
