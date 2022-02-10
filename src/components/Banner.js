@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banner-character.jpg';
+import character from '../assets/img/character.jpeg';
 
 const Banner = () => {
     return (
@@ -15,20 +15,20 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>Oluwatobi Bamidele</h4>
-                        <p>Product Professional</p>
+                        <h4>Tosin Onibon-oje</h4>
+                        <p>Snr Product Manager</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>Managing Stakeholders as a new Product Manager</h2>
+                <h2>Can Product Managers work in any other industry aside from Tech</h2>
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                    <h4>Oluwatobi Bamidele</h4>
-                    <p>Product Professional</p>
+                    <h4>Tosin Onibon-oje</h4>
+                    <p>Snr Product Manager</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
