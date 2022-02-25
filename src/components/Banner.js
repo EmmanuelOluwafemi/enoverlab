@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/character.jpeg';
+import character from '../assets/img/bannerCharacter.jpg';
 
 const Banner = () => {
     return (
@@ -15,8 +15,9 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>Tosin Onibon-oje</h4>
+                        <h4>Tobi Adesanya</h4>
                         <p>Snr Product Manager</p>
+                        <p>Jetstream Africa Accra Ghana</p>
                     </div>
                 </div>
             </div>
@@ -27,8 +28,9 @@ const Banner = () => {
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                    <h4>Tosin Onibon-oje</h4>
+                    <h4>Tobi Adesanya</h4>
                     <p>Snr Product Manager</p>
+                    <p>Jetstream Africa Accra Ghana</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
