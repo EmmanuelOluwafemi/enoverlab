@@ -23,7 +23,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>Can Product Managers work in any other industry aside from Tech</h2>
+                <h2>Common challenges new Product Managers face and how to deal with them</h2>
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
