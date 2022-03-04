@@ -29,7 +29,7 @@ const Banner = () => {
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
                     <h4>Emilia Korczynska</h4>
-                    <p>Snr Product Manager</p>
+                    <p>Head of Marketing</p>
                     <p>UserPilot</p>
                 </div>
             </div>
