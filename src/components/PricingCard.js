@@ -11,7 +11,7 @@ const PricingCard = ({ primary, children, title, price, subtitle  }) => {
                 <h6>{price}</h6>
             </div>
             { children }
-            <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">Enroll for this plan</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdb9FzORkYtCCwYkEufnkhqdoNlxlgBboepgpk_TLm1vUP2xQ/viewform">Enroll for this plan</a>
         </PricingCardWrapper>
     )
 }
