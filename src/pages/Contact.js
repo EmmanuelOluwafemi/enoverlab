@@ -17,7 +17,7 @@ const Contact = () => {
         const [loading, setLoading] = useState(false)
         const [active, setActive] = useState(false);
 
-        const formRef = useRef(null)
+            const formRef = useRef(null)
 
         const handleSubmit = (e) => {
                 e.preventDefault()
@@ -97,7 +97,7 @@ const Contact = () => {
                     onSubmit={handleSubmit}
                     name="forms"
                 >
-                    <div className="input-group">
+                   <div className="input-group">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
                     </div>
