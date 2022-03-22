@@ -7,12 +7,12 @@ import sarah from '../assets/img/sarah.mp4'
 import matthew from '../assets/img/matthew.mp4'
 
 import sarahImg from '../assets/img/Sarac.png'
-import matthewImg from '../assets/img/Matc.png'
+ import matthewImg from '../assets/img/Matc.png'
 
 import overlayImg from '../assets/img/overlayImg.png'
 import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-icons/ai'
 
-import ModalVideo from 'react-modal-video'
+
 
 import VidModal from './VidModal'
 
@@ -81,7 +81,7 @@ const VideoSlider = (props) => {
                             </div>
                
                
-                            {/* <video className='testimonialVideo' src={videoUrl} autoPlay loop muted /> */}
+
                          </div>
                     </div>
                 </div>    

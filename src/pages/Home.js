@@ -10,7 +10,7 @@ import Services from '../components/Services'
 import Testimonial from '../components/Testimonial'
 import Tools from '../components/Tools'
 import What from '../components/What'
-import VideoSlider from '../components/VideoSlider'
+// import VideoSlider from '../components/VideoSlider'
 
 const Home = () => {
     return (
