@@ -7,7 +7,6 @@ import Slider from 'react-slick'
 import sarahImg from '../assets/img/Sarac.png'
  import matthewImg from '../assets/img/Matc.png'
 
-import overlayImg from '../assets/img/overlayImg.png'
 import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-icons/ai'
 
 
@@ -115,12 +114,6 @@ const VideoSlider = (props) => {
 
 export default VideoSlider
 
-const DotsContainer = styled.div`
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: red;
-`
 
 const SliderContainer = styled.div`
     position: relative;
