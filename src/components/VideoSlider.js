@@ -3,19 +3,17 @@ import React from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick'
 
-import sarah from '../assets/img/sarah.mp4'
-import matthew from '../assets/img/matthew.mp4'
 
 import sarahImg from '../assets/img/Sarac.png'
  import matthewImg from '../assets/img/Matc.png'
 
-import overlayImg from '../assets/img/overlayImg.png'
 import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-icons/ai'
 
 
 
 import VidModal from './VidModal'
-
+const  sarah = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648231078/Sarah_s_Testimonial_pu1cbt.mp4"
+const matthew = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648230656/Mathew_s_testimonial_apflcz.mp4"
 const Data = [
     {
         id: 0,
@@ -61,9 +59,19 @@ const VideoSlider = (props) => {
     };
   return (
     <SliderContainer id="testimonial">
-    <div className='slide-container'>     
+    <div className="textContainer">
+        <h1  data-aos="fade-top" 
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="20000">Testimonials</h1>
+    </div>
+
+
+    <div className='slide-container'  >     
     
-            <Slider ref={slider} className="slider" {...settings}> 
+            <Slider ref={slider} className="slider" {...settings} data-aos="fade-left" 
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500" 
+                data-aos-delay="300"> 
             {Data.map(({videoUrl, name, id, imgUrl}, i) => (
                 <div key={id}>
                   
@@ -106,19 +114,24 @@ const VideoSlider = (props) => {
 
 export default VideoSlider
 
-const DotsContainer = styled.div`
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: red;
-`
 
 const SliderContainer = styled.div`
     position: relative;
     width: 99%;
     height: 100%;
     overflow-x: hidden;
-    padding: 0 5%;
+    padding: 5% 5%;
+
+    .textContainer{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        color: #130C9B;
+        h1{
+            font-weight: 800;
+        }
+    }
+
     .slide-container {
         position: relative;
         width: 100%;

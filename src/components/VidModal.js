@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from  'styled-components' 
 
 import { IoCloseOutline } from 'react-icons/io5'
@@ -9,7 +9,7 @@ const VidModal = ({videoSrc, closeModal}) => {
     
   return (
     <ModalStyle>
-        <div className="modal-align">
+        <div className="modal-align" >
             <div className="modal-content">
                 <IoCloseOutline className='modal-close' aria-label='Close modal' onClick={closeModal}/>
                 <div className="modal-video">
