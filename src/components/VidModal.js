@@ -9,7 +9,7 @@ const VidModal = ({videoSrc, closeModal}) => {
     
   return (
     <ModalStyle>
-        <div className="modal-align">
+        <div className="modal-align" >
             <div className="modal-content">
                 <IoCloseOutline className='modal-close' aria-label='Close modal' onClick={closeModal}/>
                 <div className="modal-video">
