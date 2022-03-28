@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '../components/About'
-import Banner from '../components/Banner'
+// import Banner from '../components/Banner'
 // import Ads from '../components/Ads'
 import Become from '../components/Become'
 // import Details from '../components/Details'
@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <>
          {/* <Ads /> */}
-         <Banner />
+         {/* <Banner /> */}
          <Hero />
          <About />
          
