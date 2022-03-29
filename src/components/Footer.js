@@ -16,7 +16,7 @@ const Footer = ({ pricing }) => {
                     <ul>
                         <li>All classes are held online via Google Meet.</li>    
                         <li>Class holds twice a week at selected days.</li>    
-                        <li>Each class runs for 2 hrs between 8 - 10pm.</li>    
+                        <li>Each class runs for 2 hrs </li>    
                     </ul>
                     
                     <h4

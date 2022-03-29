@@ -1,6 +1,6 @@
 import React from 'react'
 import PricingCard from '../components/PricingCard'
-
+import VideoSlider from '../components/VideoSlider';
 import styled from "styled-components";
 import List from '../components/List';
 import Header from '../components/Header';
@@ -75,6 +75,7 @@ const Pricing = () => {
                     </Tools>
                 </PricingCard>
             </StyledPricing>
+            <VideoSlider/>
             <Footer pricing />
         </StyledPricingWrapper>
     )
