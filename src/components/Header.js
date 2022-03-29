@@ -15,7 +15,7 @@ const Header = () => {
             <Link to="/">
                 <img className="logo" src={logo} alt="enoverlab logo" />
             </Link>
-            <FiMenu onClick={() => setActive(!active)} className="first-icon" onClick={() => setActive(!active)} />
+            <FiMenu onClick={() => setActive(!active)} className="first-icon"/>
 
             <div className={active ? "menu active" : "menu"}>
                 <NavHashLink activeClassName="active" to="/#about">About</NavHashLink>

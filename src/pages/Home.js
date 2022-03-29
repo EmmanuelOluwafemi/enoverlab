@@ -2,7 +2,7 @@ import React from 'react'
 import About from '../components/About'
 // import Banner from '../components/Banner'
 // import Ads from '../components/Ads'
-import Become from '../components/Become'
+// import Become from '../components/Become'
 // import Details from '../components/Details'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -23,11 +23,12 @@ const Home = () => {
          <Services />
          {/* <Details /> */}
         <VideoSlider/>
+        <Testimonial />
+ 
          <What />
-         <Become />
+         {/* <Become /> */}
          <Tools />
-         <Testimonial />
-         <Footer />   
+               {/* <Footer />    */}
         </>
     )
 }

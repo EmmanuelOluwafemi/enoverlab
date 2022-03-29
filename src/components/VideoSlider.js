@@ -62,7 +62,7 @@ const VideoSlider = (props) => {
     <div className="textContainer">
         <h1  data-aos="fade-top" 
         data-aos-easing="ease-in-sine"
-        data-aos-duration="20000">Testimonials</h1>
+        data-aos-duration="20000">Hear what our students have to say</h1>
     </div>
 
 
@@ -130,6 +130,11 @@ const SliderContainer = styled.div`
         h1{
             font-weight: 800;
         }
+        padding: 1.5em 0;
+
+        @media (max-width: 768px) {
+            font-size: 0.5em;
+        }
     }
 
     .slide-container {
@@ -171,10 +176,10 @@ const SliderContainer = styled.div`
                 justify-content: center;
                 width: 100%;
                 margin: 0 auto;
-                
+                padding: 1em 0;
                 .button{
-                    width: 4.375em;
-                    height: 4.375em;
+                    width: 2.375em;
+                    height: 2.375em;
                     border-radius: 50%;
                     background: #C4C4C4;
                     border: none;
@@ -198,7 +203,7 @@ const SliderContainer = styled.div`
 
                     .icon{
                         font-size: 1.7rem;
-                    color: #fff;
+                         color: #fff;
 
                     @media (max-width: 768px) {
                         font-size: 1.25rem;
