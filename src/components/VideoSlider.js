@@ -133,7 +133,7 @@ const SliderContainer = styled.div`
         padding: 1.5em 0;
 
         @media (max-width: 768px) {
-            font-size: 0.5em;
+            font-size: 0.95em;
         }
     }
 

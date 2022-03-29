@@ -1,10 +1,11 @@
 import React from 'react'
+import Cta from '../components/Cta';
+import List from '../components/List';
+import styled from "styled-components";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import PricingCard from '../components/PricingCard'
 import VideoSlider from '../components/VideoSlider';
-import styled from "styled-components";
-import List from '../components/List';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const basic = [
     "Introduction to Product Management" ,
@@ -75,8 +76,9 @@ const Pricing = () => {
                     </Tools>
                 </PricingCard>
             </StyledPricing>
+            <Cta />
             <VideoSlider/>
-            <Footer pricing />
+            <Footer/>
         </StyledPricingWrapper>
     )
 }

@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Testimonial from '../components/Testimonial'
-import Tools from '../components/Tools'
+// import Tools from '../components/Tools'
 import What from '../components/What'
 import VideoSlider from '../components/VideoSlider'
 
@@ -27,8 +27,8 @@ const Home = () => {
  
          <What />
          {/* <Become /> */}
-         <Tools />
-               {/* <Footer />    */}
+         {/* <Tools /> */}
+               <Footer />   
         </>
     )
 }
