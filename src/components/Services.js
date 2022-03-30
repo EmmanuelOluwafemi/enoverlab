@@ -11,18 +11,18 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 const data = [
     {
         imgUrl: beginner,
-        title: "BEGINNER",
+        title: "BASIC",
         headTitle: "TRAINING AND MENTORSHIP",
     },
     {
         imgUrl: intermediate,
-        title: "INTERMEDIATE",
+        title: "ADVANCED",
         headTitle: "TRAINING AND MENTORSHIP",
     },
     {
         imgUrl: community,
         title: "COMMUNITY",
-        link: "https://chat.whatsapp.com/IiuNYXny8xSBhUzJfXW9A1"
+        link: "https://chat.whatsapp.com/E2dsEi3oo0z8sUNibl4y9L"
     },
 ]
 
