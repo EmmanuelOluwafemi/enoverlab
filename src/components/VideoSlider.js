@@ -1,19 +1,21 @@
 import React from 'react'
-
-import styled from 'styled-components'
 import Slider from 'react-slick'
+import VidModal from './VidModal'
+import styled from 'styled-components'
 
-
+import EniImg from '../assets/img/Enii.png'
+import ChiomImg from '../assets/img/Chiom.png'
 import sarahImg from '../assets/img/Sarac.png'
- import matthewImg from '../assets/img/Matc.png'
+import matthewImg from '../assets/img/Matc.png'
 
 import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-icons/ai'
 
 
 
-import VidModal from './VidModal'
 const  sarah = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648231078/Sarah_s_Testimonial_pu1cbt.mp4"
 const matthew = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648230656/Mathew_s_testimonial_apflcz.mp4"
+const enii = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648639824/Eniola_h953mh.mp4"
+const chiom = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648640292/Chioma_fpjoqt.mp4"
 const Data = [
     {
         id: 0,
@@ -26,6 +28,18 @@ const Data = [
         videoUrl: matthew,
         imgUrl: matthewImg,
         name: "Matthew"
+    },
+    {
+        id: 2,
+        videoUrl: chiom,
+        imgUrl: ChiomImg,
+        name: "Chioma"
+    },
+    {
+        id: 3,
+        videoUrl: enii,
+        imgUrl: EniImg,
+        name: "Enii"
     }
 
 ]
@@ -34,6 +48,8 @@ const VideoSlider = (props) => {
     const [currentSlide, setCurrentSlide] = React.useState(0);
     const slider = React.useRef(null);
     const [modal, setModal] = React.useState(false);
+
+    const videoSrc = Data[currentSlide].videoUrl;
 
     const openModal = () => {
         setModal(!modal);
@@ -98,14 +114,14 @@ const VideoSlider = (props) => {
         }
         </Slider>
         {
-                                    modal ? (<VidModal videoSrc={currentSlide === 0 ? sarah : matthew} closeModal={openModal}/>) : null
+                                    modal ? (<VidModal videoSrc={videoSrc} closeModal={openModal}/>) : null
                                 }
         <div className="button-container">
             <button className={currentSlide === 0 ? "button backward" : "button backward show"} onClick={previous}>
             <AiOutlineArrowLeft className="icon" /> 
             </button>
             
-            <button className={currentSlide >= 1 ? "button forward" : "button forward show"} onClick={next}><AiOutlineArrowRight className='icon'/></button>
+            <button className={currentSlide >= 3 ? "button forward" : "button forward show"} onClick={next}><AiOutlineArrowRight className='icon'/></button>
         </div>
     </div>
     </SliderContainer>
