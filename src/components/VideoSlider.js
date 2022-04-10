@@ -95,13 +95,12 @@ const VideoSlider = (props) => {
                         <div className="image-wrapper">
                         <div className="image-container" 
                         style={{
-                                    backgroundImage: `url(${imgUrl})`,
+                                    backgroundImage: `url(${imgUrl})`
                                 }}>
                             <img src={imgUrl} alt="" />
                             
                             <div className="playIcon" onClick={openModal} >
                                 <AiFillPlayCircle className='play' />
-                               
                             </div>
                
                
