@@ -42,7 +42,9 @@ const advance = [
 const Pricing = () => {
     return (
         <StyledPricingWrapper id="plans">
+           
             <StyledPricing>
+
                 <PricingCard 
                     title="BASIC CLASS" 
                     objective="Learn the foundation of Product Management"
@@ -129,7 +131,7 @@ export default Pricing
 const StyledPricingWrapper = styled.div`
     max-width: 100vw;
     background: rgba(82, 222, 229, 0.05);
-    padding: 3rem 12%;
+    /* padding: 3rem 12%; */
     overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -161,6 +163,9 @@ const StyledPricingWrapper = styled.div`
             margin-top: 3rem;
         }
     }
+
+   
+
 `;
 
 const StyledPricing = styled.section`

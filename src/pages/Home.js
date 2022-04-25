@@ -11,12 +11,14 @@ import Testimonial from '../components/Testimonial'
 // import Tools from '../components/Tools'
 import What from '../components/What'
 import VideoSlider from '../components/VideoSlider'
+import DiscountBanner from '../components/DiscountBannerNew'
 
 const Home = () => {
     return (
         <>
          {/* <Ads /> */}
-         <Banner />
+         {/* <Banner /> */}
+         <DiscountBanner/>
          <Hero />
          <About />
          

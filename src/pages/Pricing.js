@@ -6,6 +6,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PricingCard from '../components/PricingCard'
 import VideoSlider from '../components/VideoSlider';
+import triangle from '../assets/img/triangle.svg'
+import triangleMobile from "../assets/img/triangleMobile.svg"
 
 const basic = [
     "Introduction to Product Management" ,
@@ -43,6 +45,18 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
+             <div className="adbox">
+                <div className="text-box-1">
+                    <h3>30% early bird <br/>  discount for all our <br/>  programs in May</h3>
+                </div>
+                <div className="text-box-2">
+                    <img className="triangleWeb" src={triangle} alt="" />
+                    <img src={triangleMobile} className="triangleMobile" alt="" />
+                </div>
+                <div className="text-box-3">
+                    <p>Pay half your tuition on or before the <br/> 30th of April and get a 30% off the <br/> balance</p>
+                </div>
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -87,7 +101,90 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 2rem 0;
+    padding: 0rem 0;
+
+    .adbox {
+        /* padding: 3.3rem 12rem 4.4rem 5rem; */
+        /* min-height: 183px; */
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        @media(max-width: 768px) {
+            flex-direction: column;
+            height: 100vh;
+        }
+        .text-box-1{
+            background-color: #1DB6BC;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         @media(max-width: 768px) {
+            width: 100%;
+            height: 30vh;
+             }
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                color: #0E1098;
+                font-size: 2.5rem;
+                @media(max-width: 768px) {
+                    font-size: 2.0rem;
+             }
+            }
+        } 
+
+
+        .text-box-2{
+          background-color: #1DB6BC;
+          height: auto;
+          width: auto;
+        .triangleWeb{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media (max-width:768px) {
+                display: none;
+                /* transform: rotate(90deg); */
+            }
+        }
+        .triangleMobile{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+            @media (max-width:768px) {
+                display: block;
+                /* display: none; */
+            }
+        }  
+
+        }
+        
+        
+        .text-box-3{
+            background: #0E1098;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media(max-width: 768px) {
+            width: 100%;
+            height: 30vh;
+            padding:.9rem;
+             }
+            p{
+                font-family: 'Montserrat', 'sans-serif';
+                font-size: 2.16rem;
+                color: #fff;
+                line-height: 2.5rem;
+                @media(max-width: 768px) {
+                    font-size: 1.5rem;
+             }
+
+            }
+        }
+    }
 `;
 
 const StyledPricing = styled.section`

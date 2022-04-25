@@ -1,4 +1,6 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap');
+b{
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'nexabold', 'proxima nova',  'Montserrat', sans-serif;
 }

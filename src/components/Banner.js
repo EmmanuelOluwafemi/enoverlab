@@ -17,7 +17,7 @@ const Banner = () => {
                     <div className="details mobile">
                         <h4>  James Amattey   </h4>
                         <p>Product & Engineering Manager</p>
-                        {/* <p>Enoverlab</p> */}
+                        <p>Enoverlab</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const Banner = () => {
                 <div className="details web">
                 <h4>  James Amattey  </h4>
                 <p>Product & Engineering Manager</p>
-                {/* <p>Enoverlab</p> */}
+                <p>Enoverlab</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
