@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import PricingCard from '../components/PricingCard'
 import VideoSlider from '../components/VideoSlider';
 import triangle from '../assets/img/triangle.svg'
-import triangleMobile from "../assets/img/triangleMobile.svg"
+import triangleMobile from "../assets/img/triangleMobile.png"
 
 const basic = [
     "Introduction to Product Management" ,
