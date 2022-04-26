@@ -7,13 +7,35 @@ const DiscountBanner = () => {
     <DiscountBannerStyle>
         <div className="container">
             <div className="text-container">
-               <p> 30% Early <br/> bird discount</p>
+               <p
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+
+               > 30% Early <br/> bird discount</p>
             </div>
             <div className="detailsContainer">
-                <p className='web'>Pay half your tuition on or before the 30th <br/> of April and get a 30% off the balance</p>
-                <p className='mobile'>Pay half your tuition on or before the 30th of April and get a 30% off the balance</p>
+                <p 
+                 data-aos="fade-left" 
+                 data-aos-easing="ease-in-sine"
+                 data-aos-duration="500" 
+                 data-aos-delay="300"
+                className='web'>Pay half your tuition on or before the 30th <br/> of April and get a 30% off the balance</p>
+                <p 
+                 data-aos="fade-left" 
+                 data-aos-easing="ease-in-sine"
+                 data-aos-duration="500" 
+                 data-aos-delay="300"
+                className='mobile'>Pay half your tuition on or before the 30th of April and get a 30% off the balance</p>
             </div>
-            <Link to="/pricing">APPLY HERE</Link>
+            <Link
+             data-aos="fade-left" 
+             data-aos-easing="ease-in-sine"
+             data-aos-duration="500" 
+             data-aos-delay="300"
+            
+            to="/pricing">APPLY HERE</Link>
         </div>
     </DiscountBannerStyle>
   )
@@ -29,7 +51,7 @@ const DiscountBannerStyle = styled.div`
 
     @media(max-width: 768px){
         padding: 3.3rem 2rem 4.4rem 2rem;
-        height: 65vh;
+        height: 50vh;
     }
 
     .container{
