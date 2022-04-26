@@ -54,7 +54,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p>Pay half your tuition on or before the <br/> 30th of April and get a 30% off the <br/> balance</p>
+                    <p className='web-text'>Pay half your tuition on or before the <br/> 30th of April and get a 30% off the <br/> balance</p>
+                    <p className='mobile-text'>Pay half your tuition on or before the 30th of April and get a 30% off the  balance</p>
                 </div>
             </div>
             <Header />
@@ -111,7 +112,7 @@ const StyledPricingWrapper = styled.div`
         width: 100%;
         @media(max-width: 768px) {
             flex-direction: column;
-            height: 100vh;
+            height: 75vh;
         }
         .text-box-1{
             background-color: #1DB6BC;
@@ -171,17 +172,27 @@ const StyledPricingWrapper = styled.div`
             @media(max-width: 768px) {
             width: 100%;
             height: 30vh;
-            padding:.9rem;
+            padding: 1.2rem;
              }
-            p{
+            .web-text{
                 font-family: 'Montserrat', 'sans-serif';
                 font-size: 2.16rem;
                 color: #fff;
                 line-height: 2.5rem;
                 @media(max-width: 768px) {
                     font-size: 1.5rem;
+                    display: none;
              }
-
+            }
+            .mobile-text{
+                font-family: 'Montserrat', 'sans-serif';
+                font-size: 1.1rem;
+                color: #fff;
+                line-height: 1.5rem;
+                display: none;
+                @media(max-width: 768px) {
+                        display: block;
+                }
             }
         }
     }
