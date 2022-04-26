@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from "styled-components";
 
-const PricingCard = ({ primary, children, title, price, subtitle  }) => {
+const PricingCard = ({ primary, children, title, price, subtitle, enrolText  }) => {
     return (
         <PricingCardWrapper className={primary ? "active" : ""}>
             <h4>{title}</h4>
@@ -11,7 +11,7 @@ const PricingCard = ({ primary, children, title, price, subtitle  }) => {
                 <h6>{price}</h6>
             </div>
             { children }
-            <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">Enroll for this plan</a>
+            <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">{enrolText}</a>
         </PricingCardWrapper>
     )
 }
