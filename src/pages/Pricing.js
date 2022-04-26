@@ -64,6 +64,7 @@ const Pricing = () => {
                     title="BASIC PROGRAM (4 WEEKS)" 
                     price="₦30,000"
                     subtitle="Learn the foundation of Product Management"
+                    enrolText="Enrol Now"
                 >
                     {basic.map((item, index) => (
                         <List key={index} text={item} />
@@ -74,6 +75,7 @@ const Pricing = () => {
                     title="ADVANCE PROGRAM (10 WEEKS)"
                     price="₦100,000"
                     subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
+                    enrolText="Enrol Now, Get 30% off"
                 >
                     {advance.map((item, index) => (
                         <List key={index} text={item} />
