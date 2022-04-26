@@ -110,6 +110,7 @@ const StyledPricingWrapper = styled.div`
         box-sizing: border-box;
         display: flex;
         width: 100%;
+        margin-bottom: 3rem;
         @media(max-width: 768px) {
             flex-direction: column;
             height: 75vh;
@@ -186,9 +187,9 @@ const StyledPricingWrapper = styled.div`
             }
             .mobile-text{
                 font-family: 'Montserrat', 'sans-serif';
-                font-size: 1.1rem;
+                font-size: 1.4rem;
                 color: #fff;
-                line-height: 1.5rem;
+                line-height: 1.7rem;
                 display: none;
                 @media(max-width: 768px) {
                         display: block;
