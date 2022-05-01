@@ -75,7 +75,7 @@ const Pricing = () => {
                     title="ADVANCE PROGRAM (10 WEEKS)"
                     price="₦100,000"
                     subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
-                    enrolText="Enrol Now, Get 30% off"
+                    enrolText="Enrol Now"
                 >
                     {advance.map((item, index) => (
                         <List key={index} text={item} />
@@ -104,7 +104,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 3rem 0;
+    padding: 3  rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
