@@ -45,7 +45,7 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             <div className="adbox">
+             {/* <div className="adbox">
                 <div className="text-box-1">
                     <h3>30% early bird <br/>  discount for all our <br/>  programs in May</h3>
                 </div>
@@ -57,7 +57,7 @@ const Pricing = () => {
                     <p className='web-text'>Pay half your tuition on or before the <br/> 30th of April and get a 30% off the <br/> balance</p>
                     <p className='mobile-text'>Pay half your tuition on or before the 30th of April and get a 30% off the  balance</p>
                 </div>
-            </div>
+            </div> */}
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -104,7 +104,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 0rem 0;
+    padding: 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
