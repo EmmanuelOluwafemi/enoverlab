@@ -47,15 +47,15 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3>Admission closing soon <br/> classes start on the <br/> 9th of May</h3>
+                    <h3>Admission closing soon <br/> Classes start on the <br/> 9th of May</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Installment payment option available<br/> <span>Enrol below</span></p>
-                    <p className='mobile-text'>Installment payment option available <br/> <span>Enrol below</span></p>
+                    <p className='web-text'>Installment payment option available<br/> <span>Enroll below</span></p>
+                    <p className='mobile-text'>Installment payment option available <br/> <span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
