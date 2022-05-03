@@ -47,15 +47,16 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3>Admission closing soon <br/> classes start on the <br/> 9th of May</h3>
+                    <h3 className='web-text'>Admission closing soon <br/> Classes start on the <br/> 9th of May</h3>
+                    <h3 className='mobile-text'>Admission closing soon Classes start on the  9th of May</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Installment payment option available<br/> <span>Enrol below</span></p>
-                    <p className='mobile-text'>Installment payment option available <br/> <span>Enrol below</span></p>
+                    <p className='web-text'>Installment payment option available<br/> <span>Enroll below</span></p>
+                    <p className='mobile-text'>Installment payment option available <br/> <span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -123,18 +124,32 @@ const StyledPricingWrapper = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            
          @media(max-width: 768px) {
             width: 100%;
             height: 30vh;
-             }
-            h3{
+            padding: 0rem 0.5rem;    
+        }
+            .web-text{
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 color: #0E1098;
                 font-size: 2.5rem;
                 @media(max-width: 768px) {
                     font-size: 2.0rem;
-             }
+                    display: none;
+             } 
+            }
+            .mobile-text{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                color: #0E1098;
+                display: none;
+                font-size: 2.0rem;
+                @media(max-width: 768px) {
+                    display: block;
+                    text-align: center;
+                }   
             }
         } 
 
@@ -200,6 +215,7 @@ const StyledPricingWrapper = styled.div`
                 color: #fff;
                 line-height: 1.7rem;
                 display: none;
+                text-align: center;
                 span{
                     background-color: #1DB6BC;
                     color: #0E1098;
