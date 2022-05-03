@@ -113,9 +113,11 @@ const StyledPricingWrapper = styled.div`
         box-sizing: border-box;
         display: flex;
         width: 100%;
+        margin-bottom: 3rem;
         @media(max-width: 768px) {
             flex-direction: column;
             height: 75vh;
+            margin-bottom: 0rem;
         }
         .text-box-1{
             background-color: #1DB6BC;
