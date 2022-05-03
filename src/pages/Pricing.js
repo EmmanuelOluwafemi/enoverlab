@@ -47,8 +47,8 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Admission closing soon <br/> Classes start on the <br/> 9th of May</h3>
-                    <h3 className='mobile-text'>Admission closing soon Classes start on the  9th of May</h3>
+                    <h3 className='web-text'>Admission closing soon; <br/> Classes start on the <br/> 9th of May</h3>
+                    <h3 className='mobile-text'>Admission closing soon; Classes start on the  9th of May</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
@@ -145,7 +145,7 @@ const StyledPricingWrapper = styled.div`
                 font-weight: 900;
                 color: #0E1098;
                 display: none;
-                font-size: 2.0rem;
+                font-size: 1.5rem;
                 @media(max-width: 768px) {
                     display: block;
                     text-align: center;
@@ -221,7 +221,8 @@ const StyledPricingWrapper = styled.div`
                     color: #0E1098;
                     padding: 0.2rem;
                     font-weight: 800;
-                    line-height: 3rem;
+                    line-height: 6rem;
+                 
                 }
                 @media(max-width: 768px) {
                         display: block;
