@@ -134,7 +134,7 @@ const StyledPricingWrapper = styled.div`
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 color: #0E1098;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 @media(max-width: 768px) {
                     font-size: 2.0rem;
                     display: none;
@@ -194,7 +194,7 @@ const StyledPricingWrapper = styled.div`
              }
             .web-text{
                 font-family: 'Montserrat', 'sans-serif';
-                font-size: 2.16rem;
+                font-size: 1.7rem;
                 color: #fff;
                 line-height: 2.5rem;
                 span{
@@ -211,7 +211,7 @@ const StyledPricingWrapper = styled.div`
             }
             .mobile-text{
                 font-family: 'Montserrat', 'sans-serif';
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 color: #fff;
                 line-height: 1.7rem;
                 display: none;
