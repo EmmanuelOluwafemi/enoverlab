@@ -48,7 +48,7 @@ const Pricing = () => {
              <div className="adbox">
                 <div className="text-box-1">
                     <h3 className='web-text'>Admission closing soon; <br/> Classes start on the <br/> 9th of May</h3>
-                    <h3 className='mobile-text'>Admission closing soon; Classes start on the  9th of May</h3>
+                    <h3 className='mobile-text'>Admission closing soon; Classes start on the <br/>  9th of May</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
