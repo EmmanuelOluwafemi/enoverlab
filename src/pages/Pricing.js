@@ -45,19 +45,19 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+             <div className="adbox">
                 <div className="text-box-1">
-                    <h3>30% early bird <br/>  discount for all our <br/>  programs in May</h3>
+                    <h3>Admission closing soon <br/> classes start on the <br/> 9th of May</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Pay half your tuition on or before the <br/> 30th of April and get a 30% off the <br/> balance</p>
-                    <p className='mobile-text'>Pay half your tuition on or before the 30th of April and get a 30% off the  balance</p>
+                    <p className='web-text'>Installment payment option available<br/> <span>Enrol below</span></p>
+                    <p className='mobile-text'>Installment payment option available <br/> <span>Enrol below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -182,6 +182,13 @@ const StyledPricingWrapper = styled.div`
                 font-size: 2.16rem;
                 color: #fff;
                 line-height: 2.5rem;
+                span{
+                    background-color: #1DB6BC;
+                    color: #0E1098;
+                    padding: 0.2rem;
+                    font-weight: 800;
+                    line-height: 3rem;
+                }
                 @media(max-width: 768px) {
                     font-size: 1.5rem;
                     display: none;
@@ -193,6 +200,13 @@ const StyledPricingWrapper = styled.div`
                 color: #fff;
                 line-height: 1.7rem;
                 display: none;
+                span{
+                    background-color: #1DB6BC;
+                    color: #0E1098;
+                    padding: 0.2rem;
+                    font-weight: 800;
+                    line-height: 3rem;
+                }
                 @media(max-width: 768px) {
                         display: block;
                 }
