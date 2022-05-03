@@ -105,7 +105,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 3  rem 0;
+    padding: 0rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
@@ -113,7 +113,6 @@ const StyledPricingWrapper = styled.div`
         box-sizing: border-box;
         display: flex;
         width: 100%;
-        margin-bottom: 3rem;
         @media(max-width: 768px) {
             flex-direction: column;
             height: 75vh;
