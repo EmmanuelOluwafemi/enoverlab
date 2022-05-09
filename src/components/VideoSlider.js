@@ -155,11 +155,11 @@ const SliderContainer = styled.div`
     .slide-container {
         position: relative;
         width: 100%;
-        .slick-slider{
-            position: relative;
-            display: block;
-            box-sizing: border-box;
-        }
+            .slick-slider{
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+            }
 
         .slick-dots{ 
             display: flex;
