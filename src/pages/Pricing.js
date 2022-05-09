@@ -47,8 +47,8 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Indepth product management <br/>  training for absolute beginners</h3>
-                    <h3 className='mobile-text'>Indepth product management training<br/>for absolute beginners</h3>
+                    <h3 className='web-text'>In-depth product management <br/>  training for absolute beginners</h3>
+                    <h3 className='mobile-text'>In-depth product management training<br/>for absolute beginners</h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
