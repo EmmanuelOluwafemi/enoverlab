@@ -63,7 +63,7 @@ const Pricing = () => {
             <StyledPricing>
                 <PricingCard 
                     title="BASIC PROGRAM (4 WEEKS)" 
-                    price="₦30,000"
+                    price="₦40,000"
                     subtitle="Learn the foundation of Product Management"
                     enrolText="Enrol Now"
                 >
@@ -74,7 +74,7 @@ const Pricing = () => {
 
                 <PricingCard primary
                     title="ADVANCE PROGRAM (10 WEEKS)"
-                    price="₦100,000"
+                    price="₦120,000"
                     subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
                     enrolText="Enrol Now"
                 >
