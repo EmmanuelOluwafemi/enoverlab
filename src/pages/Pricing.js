@@ -141,7 +141,7 @@ const StyledPricingWrapper = styled.div`
         }
         .text-box-1{
             background-color: #1DB6BC;
-            width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -157,7 +157,7 @@ const StyledPricingWrapper = styled.div`
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 color: #0E1098;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: .5rem;
                 
                 @media(max-width: 768px) {
@@ -209,7 +209,7 @@ const StyledPricingWrapper = styled.div`
         
         .text-box-3{
             background: #0E1098;
-            width: 40%;
+            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
