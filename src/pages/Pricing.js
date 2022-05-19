@@ -307,8 +307,8 @@ const Tools = styled.div`
     }
 
     h6 {
-        font-size: .85rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 800;
         font-family: 'nexabold', sans-serif;
         color: #090C9B;
         margin-bottom: .5rem;
