@@ -8,7 +8,13 @@ import PricingCard from '../components/PricingCard'
 import VideoSlider from '../components/VideoSlider';
 import triangle from '../assets/img/triangle.svg'
 import triangleMobile from "../assets/img/triangleMobile.png"
-import {SiJira, SiTrello, SiFigma, SiGoogleanalytics} from 'react-icons/si'
+import analyticsLogo from '../assets/img/logos/analytics-logo.png'
+import figmaLogo from '../assets/img/logos/Figma-logo.png'
+import hotjar from '../assets/img/logos/hotjar.svg'
+import jiraLogo from '../assets/img/logos/jira.png'
+import trelloLogo from '../assets/img/logos/trello-logo.png'
+import productPlan from '../assets/img/logos/productplan-logo.svg'
+
 import TestimVid from '../components/TestimVid';
 
 
@@ -26,10 +32,11 @@ const basic = [
 ]
 
 const advance = [
-    "Minimum Viable Product (MVP)" ,
+  
     "Introduction to product management, product thinking, and understanding product life-cycle" ,
     "Customer development: understanding users, conducting user research; creating user personas, writing user stories and user segmentation" ,
     "Competitive Market Analysis",
+    "Minimum Viable Product (MVP)" ,
     "Product Metrics: define, track, analyse and measure success" ,
     "Product Strategy: increasing the business viability of the product" ,
     "Product Prioritization" ,
@@ -50,8 +57,8 @@ const Pricing = () => {
              <div className="adbox">
                 <div className="text-box-1">
                     <h3 className='web-text'>Learn product management with our practical trainings <br/></h3>
-                    <h3 className='web-text'>Become a skilled product manager in few weeks<br/></h3>
-                    <h3 className='mobile-text'>Learn product management with our practical trainings <br/>Become a skilled product manager in few weeks</h3>
+                    <h3 className='web-text'><span>Become a skilled product manager in few weeks</span><br/></h3>
+                    <h3 className='mobile-text'>Learn product management with our practical trainings <br/><span>Become a skilled product manager in few weeks</span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
@@ -87,22 +94,31 @@ const Pricing = () => {
 
                     <Tools>
                         <h6>Tools you would be learning how to use</h6>
+                        <div className="tools-container">
                         <div className="tools-list">
                             <div className="tools">
-                             <SiFigma className="tool-icon" />   Figma for creating prototypes
+                                <img src={analyticsLogo} alt="analytics" />
                             </div>
                             <div className="tools">
-                             <SiTrello className="tool-icon" />   Trello for prioritization
+                                <img src={figmaLogo} alt="figma" />
                             </div>
                             <div className="tools">
-                             <SiJira className="tool-icon" />  Jira for task management
-                            </div>
-
-                            <div className="tools">
-                                <SiGoogleanalytics className="tool-icon" /> Google Analytics for tracking web-based data
+                                <img src={hotjar} alt="hotjar" />
                             </div>
                         </div>
+                        <div className="tools-list">
+                            <div className="tools">
+                                <img src={jiraLogo} alt="jira" />
+                            </div>
+                            <div className="tools">
+                                <img src={trelloLogo} alt="trello" />
+                            </div>
+                            <div className="tools">
+                                <img src={productPlan} alt="trello" />
+                            </div>
                         
+                        </div>
+                        </div>
                         {/* <ul>
                             <li>Productplan for creating roadmaps</li>
                             <li>Figma for creating prototypes</li>
@@ -114,7 +130,7 @@ const Pricing = () => {
                 </PricingCard>
             </StyledPricing>
             <Cta />
-            {/* <VideoSlider/> */}
+            <VideoSlider/>
             {/* <TestimVid/> */}
             <Footer/>
         </StyledPricingWrapper>
@@ -164,6 +180,10 @@ const StyledPricingWrapper = styled.div`
                     font-size: 2.0rem;
                     display: none;
              } 
+
+             .span{
+                font-weight: 600;
+             }
             }
             .mobile-text{
                 font-family: 'Montserrat', sans-serif;
@@ -172,6 +192,9 @@ const StyledPricingWrapper = styled.div`
                 display: none;
                 line-height: 2rem;
                 font-size: 1.5rem;
+                span{
+                    font-weight: 600;
+                }
                 @media(max-width: 768px) {
                     display: block;
                     text-align: center;
@@ -277,6 +300,12 @@ const StyledPricing = styled.section`
 const Tools = styled.div`
     width: 100%;
 
+    .tools-container{
+        display: flex;
+        column-gap: 3rem;
+        justify-content: center;
+    }
+
     h6 {
         font-size: .85rem;
         font-weight: 700;
@@ -294,8 +323,12 @@ const Tools = styled.div`
             column-gap: .5rem;
             font-size: 0.875rem;
             font-weight: normal;
-            .tool-icon{
-                color: #130C9B;
+            width: 5rem;
+            height: 5rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }

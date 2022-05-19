@@ -8,6 +8,7 @@ const Cta = ({pricing}) => {
           <div className="text-content">
                     <h3>Important Info</h3>
                     <ul>
+                    <li>All classes are for absolute beginners</li>    
                         <li>All classes are held online via Google Meet.</li>    
                         <li>Class holds twice a week at selected days.</li>    
                         <li>Each class runs for 2 hrs </li>    
