@@ -3,43 +3,43 @@ import Slider from 'react-slick'
 import VidModal from './VidModal'
 import styled from 'styled-components'
 
-import EniImg from '../assets/img/Enii.png'
-import ChiomImg from '../assets/img/Chiom.png'
-import sarahImg from '../assets/img/Sarac.png'
-import matthewImg from '../assets/img/Matc.png'
+import BunmiImg from '../assets/img/Bunmi.png'
+import DamilolaImg from '../assets/img/Damilola.png'
+// import TunjiImg from '../assets/img/Tunji.png'
+import ItunuImg from '../assets/img/Itunu.png'
 
 import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-icons/ai'
 
 
 
-const  sarah = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648231078/Sarah_s_Testimonial_pu1cbt.mp4"
-const matthew = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648230656/Mathew_s_testimonial_apflcz.mp4"
-const enii = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648639824/Eniola_h953mh.mp4"
-const chiom = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648640292/Chioma_fpjoqt.mp4"
+const  itunu = "https://res.cloudinary.com/perxels/video/upload/v1653129859/Upload_1_cyp9tf.mp4"
+const damilola = "https://res.cloudinary.com/perxels/video/upload/v1653130009/upload_3_bh7kd3.mp4"
+const bunmi = "https://res.cloudinary.com/perxels/video/upload/v1653128825/upload_4_ovgd6i.mp4"
+// const chiom = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648640292/Chioma_fpjoqt.mp4"
 const Data = [
     {
         id: 0,
-        videoUrl: sarah,
-        imgUrl: sarahImg,
-        name: "Sarah"
+        videoUrl: bunmi,
+        imgUrl: BunmiImg,
+        name: "Bunmi"
     },
     {
         id: 1,
-        videoUrl: matthew,
-        imgUrl: matthewImg,
-        name: "Matthew"
+        videoUrl: damilola,
+        imgUrl: DamilolaImg,
+        name: "Damilola"
     },
-    {
-        id: 2,
-        videoUrl: chiom,
-        imgUrl: ChiomImg,
-        name: "Chioma"
-    },
+    // {
+    //     id: 2,
+    //     videoUrl: chiom,
+    //     imgUrl: TunjiImg,
+    //     name: "Tunji"
+    // },
     {
         id: 3,
-        videoUrl: enii,
-        imgUrl: EniImg,
-        name: "Enii"
+        videoUrl: itunu,
+        imgUrl: ItunuImg,
+        name: "Itunu"
     }
 
 ]
