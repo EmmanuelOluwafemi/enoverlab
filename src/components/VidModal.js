@@ -32,6 +32,7 @@ const ModalStyle = styled.section`
   height: 100%;
   background: rgba(28, 28, 28, 0.19);
   backdrop-filter: blur(6px);
+  overflow-y: scroll;
   opacity: 1;
   animation-timing-function: ease-out;
   animation-duration: 0.3s;
@@ -53,8 +54,8 @@ const ModalStyle = styled.section`
     }
 
     .modal-content{
-        width: 50em;
-        height: 31.25em;
+        width: 50rem;
+        height: 31.25rem;
         border-radius: 1.25em;
         background: transparent;
         color: #000;
@@ -66,7 +67,7 @@ const ModalStyle = styled.section`
         border-radius: 50%;
         cursor: pointer;
         position: relative;
-        bottom: 3.125em;
+        bottom: 5.125rem;
         width: 2em;
         height: 2em;
         padding: 0;
@@ -75,8 +76,9 @@ const ModalStyle = styled.section`
     .modal-video{
         display: flex;
         position: relative;
-        bottom: 2.3125em;
-
+        bottom: 5.3125em;
+        max-width: 30rem;
+        max-height: 30rem;
         .vid{
             width: 100%;
             height: 100%;
