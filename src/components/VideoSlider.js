@@ -78,7 +78,7 @@ const VideoSlider = (props) => {
     <div className="textContainer">
         <h1  data-aos="fade-top" 
         data-aos-easing="ease-in-sine"
-        data-aos-duration="20000">Hear what our students have to say</h1>
+        data-aos-duration="20000">See the products our trained students have worked on</h1>
     </div>
 
 
