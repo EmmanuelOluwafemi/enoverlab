@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerCharacter.jpeg';
+import character from '../assets/img/banjiNew.jpg';
 
 const Banner = () => {
     return (
@@ -15,22 +15,23 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>  Favour Olusoji  </h4>
-                        <p>Product Manager</p>
-                        <p>SeamlessHR</p>
+                        <h4>  Olabanji Ewenla  </h4>
+                        <p>Co-founder</p>
+                        <p> Enover Lab</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>The Untold truth about Product Management</h2>
+                <h2>5 lessons to learn from popular failed products</h2>
+                <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p>
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4> Favour Olusoji   </h4>
-                <p>Product Manager</p>
-                <p>SeamlessHR</p>
+                <h4>  Olabanji Ewenla  </h4>
+                <p>Co-founder</p>
+                <p> Enover Lab</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
@@ -112,6 +113,7 @@ const StyledBanner = styled.section`
         p {
             font-size: .75rem;
             color: #f2f2f2dd;
+           
         }
 
         &.mobile {
@@ -151,6 +153,14 @@ const StyledBanner = styled.section`
                 font-size: 1.25rem;
                 max-width: 271px;
                 margin-bottom: 1.5rem;
+            }
+        }
+        p {
+            font-size: .75rem;
+            color: #f2f2f2dd;
+            @media (max-width: 768px) {
+                max-width: 271px;
+                margin-bottom: 1rem;
             }
         }
     }
