@@ -53,6 +53,7 @@ const VideoSlider = (props) => {
 
     const openModal = () => {
         setModal(!modal);
+     
     }  
 
     const next = () => {
