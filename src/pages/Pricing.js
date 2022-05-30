@@ -56,17 +56,17 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Learn product management with our practical trainings <br/></h3>
-                    <h3 className='web-text'><span>Become a skilled product manager in few weeks</span><br/></h3>
-                    <h3 className='mobile-text'>Learn product management with our practical trainings <br/><span>Become a skilled product manager in few weeks</span></h3>
+                    <h3 className='web-text'>10% early bird discount for all programs in June<br/></h3>
+                    {/* <h3 className='web-text'><span>Become a skilled product manager in few weeks</span><br/></h3> */}
+                    <h3 className='mobile-text'>10% early bird discount for all programs in June <br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Admission into our next <br/> cohort is closing June 4!<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Admission into our next <br/>  cohort is closing June 4!<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Pay half of your tuition on or before the 4th of June, get 10% off the balance<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Pay half of your tuition on or before the  4th of June, get 10% off the balance<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -265,6 +265,7 @@ const StyledPricingWrapper = styled.div`
                 color: #fff;
                 line-height: 2rem;
                 display: none;
+                text-align: left;
                 text-align: center;
                 span{
                     background-color: #1DB6BC;
@@ -272,7 +273,11 @@ const StyledPricingWrapper = styled.div`
                     padding: 0.2rem;
                     font-weight: 800;
                     line-height: 6rem;
-                 
+                    text-align: center;
+                    /* text-align: center; */
+                    /* display: flex;
+                    justify-content: center;
+                    align-items: center; */
                 }
                 @media(max-width: 768px) {
                         display: block;
