@@ -50,14 +50,15 @@ const advance = [
     "Certificate of completion" ,
 ]
 
-const fast = [
-    " Learn the most important aspect of product management based on your need",
+const blitz = [
+    "Learn the most important aspect of product management based on your need",
     "One-on-one training and mentorship",
-    "Personalized classes ",
+    "Personalized classes",
     "Access to exclusive product management resources",
-    "Work on real-life case study ",
+    " Work on real-life case study",
     "After training support and guidance"
 ]
+
 
 const Pricing = () => {
     window.scrollTo(0, 0);
@@ -83,7 +84,7 @@ const Pricing = () => {
                 <PricingCard 
                     title="BASIC" 
                     price="₦40,000"
-                    weeks = "FOR 4 WEEKS"                    
+                    weeks="(4 weeks)"
                     subtitle="For those who want to understand the fundamentals of product management"
                     enrolText="Enrol Now"
                 >
@@ -94,8 +95,8 @@ const Pricing = () => {
 
                 <PricingCard primary
                     title="ADVANCE"
+                    weeks="(10 weeks)"
                     price="₦120,000"
-                    weeks = "FOR 10 WEEKS"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
@@ -141,17 +142,16 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard 
-                    title="Blitz Program" 
+                    title="BLITZ" 
                     price="₦200,000"
-                    weeks = "FOR 4-6 WEEKS"                    
+                    weeks="(4-6 weeks)"
                     subtitle="For those who want personalized product management training"
                     enrolText="Enrol Now"
                 >
-                    {fast.map((item, index) => (
+                    {basic.map((item, index) => (
                         <List key={index} text={item} />
                     ))}
                 </PricingCard>
-
             </StyledPricing>
             <Cta />
             <VideoSlider/>
@@ -310,7 +310,7 @@ const StyledPricingWrapper = styled.div`
 
 const StyledPricing = styled.section`
     width: 100%;
-    max-width: 1173px;
+    max-width: 1191px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
