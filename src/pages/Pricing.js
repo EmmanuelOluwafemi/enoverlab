@@ -51,11 +51,12 @@ const advance = [
 ]
 
 const fast = [
+    " Learn the most important aspect of product management based on your need",
     "One-on-one training and mentorship",
-    "Learn the most important aspect of product management based on your need",
-    "Personalized classes",
-    "Access to exclusive management product resources",
-    "Work on real-life case study "
+    "Personalized classes ",
+    "Access to exclusive product management resources",
+    "Work on real-life case study ",
+    "After training support and guidance"
 ]
 
 const Pricing = () => {
@@ -81,9 +82,9 @@ const Pricing = () => {
             <StyledPricing>
                 <PricingCard 
                     title="BASIC" 
-                    price="₦30,000"
+                    price="N40,000"
                     weeks = "FOR 4 WEEKS"                    
-                    subtitle="Learn the foundation of Product Management"
+                    subtitle="For those who want to understand the fundamentals of product management"
                     enrolText="Enrol Now"
                 >
                     {basic.map((item, index) => (
@@ -93,9 +94,9 @@ const Pricing = () => {
 
                 <PricingCard primary
                     title="ADVANCE"
-                    price="₦100,000"
+                    price="N120,000"
                     weeks = "FOR 10 WEEKS"
-                    subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
+                    subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
                     {advance.map((item, index) => (
@@ -140,10 +141,10 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard 
-                    title="Fast Tracked Advanced Program" 
+                    title="Blitz Program" 
                     price="₦200,000"
                     weeks = "FOR 4-6 WEEKS"                    
-                    subtitle="For professionals who want personalised product management training"
+                    subtitle="For those who want personalized product management training"
                     enrolText="Enrol Now"
                 >
                     {fast.map((item, index) => (
