@@ -5,18 +5,18 @@ import styled from "styled-components";
 const PricingCard = ({ primary, children, title, price, subtitle, enrolText, weeks  }) => {
     return (
         <PricingCardWrapper className={primary ? "active" : ""}>
+            <div className="title-tag">
             <h4>{title}</h4>
-            
-            <div className="price-tag">
-                <h6>{price}</h6>
-                <h5 className='weeksText'>{weeks}</h5>
+            <h6>{weeks}</h6>
             </div>
             <p>{subtitle}</p>
+            <div className="price-tag">
+                <h6>{price}</h6>
+            </div>
             { children }
             <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">{enrolText}</a>
         </PricingCardWrapper>
     )
-            
 }
 
 export default PricingCard
@@ -66,49 +66,51 @@ const PricingCardWrapper = styled.div`
         max-height: 1400px;
     }
 
-    h4 {
+    .title-tag {
+        display: flex;
+        column-gap: 0.3rem;
+        align-items: center;
+
+        h4 {
         font-size: 1.25rem;
         font-weight: 700;
         font-family: 'nexabold', sans-serif;
         color: #090C9B;
         text-transform: uppercase;
     }
+    h6{
+        font-size: 0.875rem;
+        color: #090C9B;
+        font-weight: 700;
+        font-family: 'nexabold', sans-serif;
+    }
+    }
+   
 
     .price-tag {
         width: 100%;
         max-width: 281px;
         padding: 10px 12px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
         background: #ABFBFF;
-        
         border-radius: 19px;
-        margin-bottom: 0.75rem;
+        margin-bottom: 2rem;
         margin-top: .75rem;
 
         h6 {
             color: #090C9B;
             font-size: 1.5rem;
             font-weight: 700;
-            line-height: 1.5rem;
             font-family: 'nexabold', sans-serif;
-        }
-
-        h5{
-            font-size: 0.875rem;
-            line-height: 0.875rem;
-            color: #090C9B;
-            font-weight: 700;
-            font-family: 'nexabold', sans-serif;
-            
         }
     }
 
-    p{
+    p {
         font-size: .9rem;
         font-weight: 800;
         font-family: 'nexabold', sans-serif;
-        margin-bottom: 2.5625rem;
+        margin-bottom: .8rem;
     }
 `
