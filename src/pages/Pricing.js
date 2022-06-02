@@ -50,6 +50,14 @@ const advance = [
     "Certificate of completion" ,
 ]
 
+const fast = [
+    "One-on-one training and mentorship",
+    "Learn the most important aspect of product management based on your need",
+    "Personalized classes",
+    "Access to exclusive management product resources",
+    "Work on real-life case study "
+]
+
 const Pricing = () => {
     window.scrollTo(0, 0);
     return (
@@ -72,8 +80,9 @@ const Pricing = () => {
             <Header />
             <StyledPricing>
                 <PricingCard 
-                    title="BASIC PROGRAM (4 WEEKS)" 
-                    price="₦40,000"
+                    title="BASIC" 
+                    price="₦30,000"
+                    weeks = "FOR 4 WEEKS"                    
                     subtitle="Learn the foundation of Product Management"
                     enrolText="Enrol Now"
                 >
@@ -83,8 +92,9 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard primary
-                    title="ADVANCE PROGRAM (10 WEEKS)"
-                    price="₦120,000"
+                    title="ADVANCE"
+                    price="₦100,000"
+                    weeks = "FOR 10 WEEKS"
                     subtitle="Learn the core skills, frameworks and tools needed to become a Product Manager"
                     enrolText="Enrol Now"
                 >
@@ -128,6 +138,19 @@ const Pricing = () => {
                         </ul> */}
                     </Tools>
                 </PricingCard>
+
+                <PricingCard 
+                    title="Fast Tracked Advanced Program" 
+                    price="₦200,000"
+                    weeks = "FOR 4-6 WEEKS"                    
+                    subtitle="For professionals who want personalised product management training"
+                    enrolText="Enrol Now"
+                >
+                    {fast.map((item, index) => (
+                        <List key={index} text={item} />
+                    ))}
+                </PricingCard>
+
             </StyledPricing>
             <Cta />
             <VideoSlider/>
@@ -274,10 +297,7 @@ const StyledPricingWrapper = styled.div`
                     font-weight: 800;
                     line-height: 6rem;
                     text-align: center;
-                    /* text-align: center; */
-                    /* display: flex;
-                    justify-content: center;
-                    align-items: center; */
+                   
                 }
                 @media(max-width: 768px) {
                         display: block;
@@ -289,9 +309,9 @@ const StyledPricingWrapper = styled.div`
 
 const StyledPricing = styled.section`
     width: 100%;
-    max-width: 774px;
+    max-width: 1173px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
     margin: 0 auto;
     margin-top: 4rem;
