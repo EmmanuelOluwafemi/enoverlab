@@ -2,18 +2,21 @@ import React from 'react'
 
 import styled from "styled-components";
 
-const PricingCard = ({ primary, children, title, price, subtitle, enrolText  }) => {
+const PricingCard = ({ primary, children, title, price, subtitle, enrolText, weeks  }) => {
     return (
         <PricingCardWrapper className={primary ? "active" : ""}>
             <h4>{title}</h4>
-            <p>{subtitle}</p>
+            
             <div className="price-tag">
                 <h6>{price}</h6>
+                <h5 className='weeksText'>{weeks}</h5>
             </div>
+            <p>{subtitle}</p>
             { children }
             <a href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp">{enrolText}</a>
         </PricingCardWrapper>
     )
+            
 }
 
 export default PricingCard
@@ -76,25 +79,36 @@ const PricingCardWrapper = styled.div`
         max-width: 281px;
         padding: 10px 12px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
         background: #ABFBFF;
+        
         border-radius: 19px;
-        margin-bottom: 2rem;
+        margin-bottom: 0.75rem;
         margin-top: .75rem;
 
         h6 {
             color: #090C9B;
             font-size: 1.5rem;
             font-weight: 700;
+            line-height: 1.5rem;
             font-family: 'nexabold', sans-serif;
+        }
+
+        h5{
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            color: #090C9B;
+            font-weight: 700;
+            font-family: 'nexabold', sans-serif;
+            
         }
     }
 
-    p {
+    p{
         font-size: .9rem;
         font-weight: 800;
         font-family: 'nexabold', sans-serif;
-        margin-bottom: .8rem;
+        margin-bottom: 2.5625rem;
     }
 `
