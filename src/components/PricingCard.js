@@ -72,7 +72,7 @@ const PricingCardWrapper = styled.div`
         align-items: center;
 
         h4 {
-        font-size: 1.25rem;
+        font-size: 1.29rem;
         font-weight: 700;
         font-family: 'nexabold', sans-serif;
         color: #090C9B;
