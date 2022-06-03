@@ -82,7 +82,7 @@ const Pricing = () => {
             <Header />
             <StyledPricing>
                 <PricingCard 
-                    title="BASIC PLAN" 
+                    title="BASIC PROGRAM" 
                     price="₦40,000"
                     weeks="(4 weeks)"
                     subtitle="For those who want to understand the fundamentals of product management"
@@ -94,7 +94,7 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard primary
-                    title="ADVANCE PLAN"
+                    title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
                     price="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
@@ -142,7 +142,7 @@ const Pricing = () => {
                 </PricingCard>
 
                 <PricingCard 
-                    title="BLITZ PLAN" 
+                    title="BLITZ PROGRAM" 
                     price="₦200,000"
                     weeks="(4-6 weeks)"
                     subtitle="For those who want personalized product management training"
