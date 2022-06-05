@@ -64,10 +64,10 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             <div className="adbox">
+             {/* <div className="adbox">
                 <div className="text-box-1">
                     <h3 className='web-text'>10% early bird discount for all programs in June<br/></h3>
-                    {/* <h3 className='web-text'><span>Become a skilled product manager in few weeks</span><br/></h3> */}
+                  
                     <h3 className='mobile-text'>10% early bird discount for all programs in June <br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
@@ -78,7 +78,7 @@ const Pricing = () => {
                     <p className='web-text'>Pay half of your tuition on or before the 4th of June, get 10% off the balance<br/>  <span>Enroll below</span></p>
                     <p className='mobile-text'>Pay half of your tuition on or before the  4th of June, get 10% off the balance<br/><span>Enroll below</span></p>
                 </div>
-            </div>
+            </div> */}
             <Header />
             <StyledPricing>
                 <PricingCard 
