@@ -145,7 +145,7 @@ const Pricing = () => {
                     title="BLITZ PROGRAM" 
                     price="₦200,000"
                     weeks="(4-6 weeks)"
-                    subtitle="For those who want personalized product management training"
+                    subtitle="For experienced professionals who want personalized product management training"
                     enrolText="Enrol Now"
                 >
                     {blitz.map((item, index) => (
