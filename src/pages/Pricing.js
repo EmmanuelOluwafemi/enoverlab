@@ -96,7 +96,7 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦120,000"
+                    price="₦100,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
@@ -141,7 +141,7 @@ const Pricing = () => {
                     </Tools>
                 </PricingCard>
 
-                <PricingCard 
+                {/* <PricingCard 
                     title="BLITZ PROGRAM" 
                     price="₦200,000"
                     weeks="(4-6 weeks)"
@@ -151,7 +151,7 @@ const Pricing = () => {
                     {blitz.map((item, index) => (
                         <List key={index} text={item} />
                     ))}
-                </PricingCard>
+                </PricingCard> */}
             </StyledPricing>
             <Cta />
             <VideoSlider/>
