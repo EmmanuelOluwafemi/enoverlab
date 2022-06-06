@@ -16,8 +16,8 @@ const Banner = () => {
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
                         <h4>  Grace Omole  </h4>
-                        {/* <p>Co-founder</p> */}
-                        {/* <p> Enover Lab</p> */}
+                        <p>Blockchain App Developer & Tech Lead</p>
+                        <p>  Niyo Enterprise</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,8 @@ const Banner = () => {
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
                 <h4>  Grace Omole</h4> 
-                {/* <p> Enover Lab</p> */}
+                <p>Blockchain App Developer & Tech Lead</p>
+                <p> Niyo Enterprise</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
