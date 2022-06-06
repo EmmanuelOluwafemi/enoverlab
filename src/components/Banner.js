@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banjiNew.jpg';
+import character from '../assets/img/bannerCharacter.jpeg';
 
 const Banner = () => {
     return (
@@ -15,23 +15,22 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>  Olabanji Ewenla  </h4>
-                        <p>Co-founder</p>
-                        <p> Enover Lab</p>
+                        <h4>  Grace Omole  </h4>
+                        {/* <p>Co-founder</p> */}
+                        {/* <p> Enover Lab</p> */}
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>5 lessons to learn from popular failed products</h2>
-                <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p>
+                <h2>What is Blockchain?</h2>
+                {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>  Olabanji Ewenla  </h4>
-                <p>Co-founder</p>
-                <p> Enover Lab</p>
+                <h4>  Grace Omole</h4> 
+                {/* <p> Enover Lab</p> */}
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
