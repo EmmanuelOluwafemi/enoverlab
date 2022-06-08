@@ -83,7 +83,7 @@ const Pricing = () => {
             <StyledPricing>
                 <PricingCard 
                     title="BASIC PROGRAM" 
-                    price="₦30,000"
+                    price="₦36,000"
                     discount="₦40,000"
                     weeks="(4 weeks)"
                     subtitle="For those who want to understand the fundamentals of product management"
