@@ -34,7 +34,7 @@ const Cta = ({pricing}) => {
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500" 
                                 data-aos-delay="300"
-                                href="https://chat.whatsapp.com/D4zeW75paNi4I3dxFXOgRp"
+                                href="https://forms.gle/2Ymz8FovVJEX6uDD9"
                             >
                                 Enrol Now
                             </a>
