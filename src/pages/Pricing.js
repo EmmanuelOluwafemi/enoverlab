@@ -64,26 +64,27 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+             <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>10% early bird discount for all programs in June<br/></h3>
+                    <h3 className='web-text'>Register now, get a 10% DISCOUNT off the tuition for any of the programs<br/></h3>
                   
-                    <h3 className='mobile-text'>10% early bird discount for all programs in June <br/><span></span></h3>
+                    <h3 className='mobile-text'>Register now, get a 10% DISCOUNT off the tuition for any of the programs<br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Pay half of your tuition on or before the 4th of June, get 10% off the balance<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Pay half of your tuition on or before the  4th of June, get 10% off the balance<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Installmental payment plan is also available<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Installmental payment plan is also available<br/><span>Enroll below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
                     title="BASIC PROGRAM" 
-                    price="₦40,000"
+                    price="₦30,000"
+                    discount="₦40,000"
                     weeks="(4 weeks)"
                     subtitle="For those who want to understand the fundamentals of product management"
                     enrolText="Enrol Now"
@@ -96,7 +97,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦100,000"
+                    price="₦90,000"
+                    discount="₦100,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
