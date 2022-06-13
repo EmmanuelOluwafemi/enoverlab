@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerCharacter.jpeg';
+import character from '../assets/img/bannerCharacter.jpg';
 
 const Banner = () => {
     return (
