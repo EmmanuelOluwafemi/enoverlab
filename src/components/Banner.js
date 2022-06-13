@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerCharacter.jpeg';
+import character from '../assets/img/bannerCharacter.jpg';
 
 const Banner = () => {
     return (
@@ -15,23 +15,23 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>  Grace Omole  </h4>
-                        <p>Blockchain App Developer & Tech Lead</p>
-                        <p>  Niyo Enterprise</p>
+                        <h4> Joy Chukwukere </h4>
+                        <p>Product Manager</p>
+                        <p> Max</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week virtual session topic:</h5>
-                <h2>What is Blockchain?</h2>
+                <h2>What does being a product manager in a startup look like?</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>  Grace Omole</h4> 
-                <p>Blockchain App Developer & Tech Lead</p>
-                <p> Niyo Enterprise</p>
+                <h4> Joy Chukwukere </h4>
+                <p>Product Manager</p>
+                <p> Max</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
