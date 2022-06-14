@@ -22,7 +22,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="content">
-                <h5>This week virtual session topic:</h5>
+                <h5>This week product session topic:</h5>
                 <h2>What does being a product manager in a startup look like?</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
