@@ -97,8 +97,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦90,000"
-                    discount="₦100,000"
+                    price="₦96,000"
+                    discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
