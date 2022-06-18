@@ -66,9 +66,9 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Register now, get a 10% DISCOUNT off the tuition for any of the programs<br/></h3>
+                    <h3 className='web-text'>Join our next cohort training starting in July<br/></h3>
                   
-                    <h3 className='mobile-text'>Register now, get a 10% DISCOUNT off the tuition for any of the programs<br/><span></span></h3>
+                    <h3 className='mobile-text'>Join our next cohort training starting in July<br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
@@ -83,8 +83,7 @@ const Pricing = () => {
             <StyledPricing>
                 <PricingCard 
                     title="BASIC PROGRAM" 
-                    price="₦36,000"
-                    discount="₦40,000"
+                    price="₦40,000"
                     weeks="(4 weeks)"
                     subtitle="For those who want to understand the fundamentals of product management"
                     enrolText="Enrol Now"
@@ -97,8 +96,7 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦96,000"
-                    discount="₦120,000"
+                    price="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >

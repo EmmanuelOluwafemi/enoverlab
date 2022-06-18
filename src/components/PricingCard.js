@@ -75,14 +75,13 @@ const PricingCardWrapper = styled.div`
         display: flex;
         column-gap: 0.3rem;
         align-items: center;
-
         h4 {
         font-size: 1.2rem;
         font-weight: 700;
         font-family: 'nexabold', sans-serif;
         color: #090C9B;
         text-transform: uppercase;
-    }
+        }
     h6{
         font-size: 0.75rem;
         color: #090C9B;
@@ -100,7 +99,7 @@ const PricingCardWrapper = styled.div`
         display: flex;
         align-items: center;
         column-gap:1rem;
-        justify-content: flex-start;
+        justify-content: center;
         background: #ABFBFF;
         border-radius: 19px;
         margin-bottom: 2rem;
