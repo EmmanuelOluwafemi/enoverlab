@@ -6,6 +6,8 @@ import styled from 'styled-components'
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
 import character from '../assets/img/bannerCharacter.jpg';
+import character2 from '../assets/img/banner-character.jpg';
+import character3 from '../assets/img/banjiNew.jpg';
 
 const Banner = () => {
     return (
@@ -14,25 +16,30 @@ const Banner = () => {
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
-                    <div className="details mobile">
+                    <img src={character2} className="characterMobile" alt="character" />
+                    <img src={character3} className="characterMobile" alt="character" />
+                   
+                    {/* <div className="details mobile">
                         <h4> Joy Chukwukere </h4>
                         <p>Product Manager</p>
                         <p> Max</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="content">
-                <h5>This week product session topic:</h5>
-                <h2>What does being a product manager in a startup look like?</h2>
+                <h5>A FREE Product Masterclass:</h5>
+                <h2>How to become a Product Manager in your current industry</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
-                <div className="details web">
+                <img src={character2} className="characterWeb" alt="character" />
+                <img src={character3} className="characterWeb" alt="character" />
+                {/* <div className="details web">
                 <h4> Joy Chukwukere </h4>
                 <p>Product Manager</p>
                 <p> Max</p>
-                </div>
+                </div> */}
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
@@ -60,7 +67,7 @@ const StyledBanner = styled.section`
     }
 
     .characterWeb {
-        width: 90.63px;
+        width: 80.63px;
         height: auto;
 
         @media (max-width: 768px) {
@@ -95,6 +102,7 @@ const StyledBanner = styled.section`
 
     .cont {
         display: flex;
+        column-gap: 0.5rem;
     }
 
     .details {
