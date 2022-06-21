@@ -67,8 +67,9 @@ const StyledBanner = styled.section`
     }
 
     .characterWeb {
-        width: 80.63px;
+        width: 85.63px;
         height: auto;
+        object-fit: contain;
 
         @media (max-width: 768px) {
             display: none;
