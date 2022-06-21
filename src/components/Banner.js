@@ -13,10 +13,10 @@ const Banner = () => {
     return (
         <StyledBanner>
             <div className="topImage">
-                <img className="logo" src={ama} alt="ama section" />
+                {/* <img className="logo" src={ama} alt="ama section" /> */}
                 <div className='cont'>
-                    <img src={character} className="characterMobile" alt="character" />
                     <img src={character2} className="characterMobile" alt="character" />
+                    <img src={character} className="characterMobile" alt="character" />
                     <img src={character3} className="characterMobile" alt="character" />
                    
                     {/* <div className="details mobile">
@@ -32,8 +32,8 @@ const Banner = () => {
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
+            <img src={character2} className="characterWeb" alt="character" />
                 <img src={character} className="characterWeb" alt="character" />
-                <img src={character2} className="characterWeb" alt="character" />
                 <img src={character3} className="characterWeb" alt="character" />
                 {/* <div className="details web">
                 <h4> Joy Chukwukere </h4>
