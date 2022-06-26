@@ -6,40 +6,33 @@ import styled from 'styled-components'
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
 import character from '../assets/img/bannerCharacter.jpg';
-import character2 from '../assets/img/banner-character.jpg';
-import character3 from '../assets/img/banjiNew.jpg';
 
 const Banner = () => {
     return (
         <StyledBanner>
             <div className="topImage">
-                {/* <img className="logo" src={ama} alt="ama section" /> */}
+                <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-                    <img src={character2} className="characterMobile" alt="character" />
                     <img src={character} className="characterMobile" alt="character" />
-                    <img src={character3} className="characterMobile" alt="character" />
-                   
-                    {/* <div className="details mobile">
-                        <h4> Joy Chukwukere </h4>
+                    <div className="details mobile">
+                        <h4> Tomisin Agbaje </h4>
                         <p>Product Manager</p>
-                        <p> Max</p>
-                    </div> */}
+                        {/* <p> Max</p> */}
+                    </div>
                 </div>
             </div>
             <div className="content">
-                <h5>A FREE Product Masterclass:</h5>
-                <h2>How to become a Product Manager in your current industry</h2>
+                <h5>This week product session topic:</h5>
+                <h2>How to lead a development team as a new Product Manager</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
-            <img src={character2} className="characterWeb" alt="character" />
                 <img src={character} className="characterWeb" alt="character" />
-                <img src={character3} className="characterWeb" alt="character" />
-                {/* <div className="details web">
-                <h4> Joy Chukwukere </h4>
+                <div className="details web">
+                <h4> Tomisin Agbaje </h4>
                 <p>Product Manager</p>
-                <p> Max</p>
-                </div> */}
+                {/* <p> Max</p> */}
+                </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
@@ -60,33 +53,25 @@ const StyledBanner = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .characterWeb {
-        width: 85.63px;
+        width: 90.63px;
         height: auto;
-        object-fit: contain;
-
         @media (max-width: 768px) {
             display: none;
         }
     }
-
     .topImage {
         display: flex;
         align-items: center;
-
         @media (max-width: 768px) {
             margin-bottom: 2.5rem;
         }
-
         .characterMobile {
             display: none;
-
             @media (max-width: 768px) {
                 display: block;
                 width: 73px;
@@ -94,37 +79,30 @@ const StyledBanner = styled.section`
                 margin-left: .75rem;
             }
         }
-
         .logo {
             width: 73px;
             height: auto;
         }
     }
-
     .cont {
         display: flex;
-        column-gap: 0.5rem;
     }
-
     .details {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         margin-left: 1rem;
         max-width: 150px;
-
         h4 {
             font-size: 1rem;
             color: #fff;
             margin-bottom: .3rem;
         }
-
         p {
             font-size: .75rem;
             color: #f2f2f2dd;
            
         }
-
         &.mobile {
             display: none;
     
@@ -132,32 +110,26 @@ const StyledBanner = styled.section`
                 display: flex;
             }
         }
-
         &.web {
             display: flex;
-
             @media(max-width: 768px) {
                 display: none;
             }
         }
     }
-
     .content {
         max-width: 491px;
-
         h5 {
             font-size: 1.1rem;
             color: #52DEE5;
             font-weight: 400;
             margin-bottom: 1rem;
         }
-
         h2 {
             font-size: 1.8rem;
             font-weight: 700;
             color: #fff;
             line-height: 1.5;
-
             @media (max-width: 768px) {
                 font-size: 1.25rem;
                 max-width: 271px;
@@ -173,7 +145,6 @@ const StyledBanner = styled.section`
             }
         }
     }
-
     a {
         padding: 1rem 2rem;
         background: #090C9B;
@@ -184,7 +155,6 @@ const StyledBanner = styled.section`
         text-decoration: none;
         cursor: pointer;
         transition: all .3s ease-in-out;
-
         &:hover {
             background: #52DEE5;
             color: #090C9B;

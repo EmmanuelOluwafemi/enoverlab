@@ -66,17 +66,17 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Join our next cohort training starting in July<br/></h3>
+                    <h3 className='web-text'>20% early bird discount for the first 20 applicants<br/></h3>
                   
-                    <h3 className='mobile-text'>Join our next cohort training starting in July<br/><span></span></h3>
+                    <h3 className='mobile-text'>20% early bird discount for the first 20 applicants<br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Installmental payment plan is also available<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Installmental payment plan is also available<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Admission is closing on the 4th of July<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Admission is closing on the 4th of July<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
