@@ -96,7 +96,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦120,000"
+                    price="₦96,000"
+                    discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
@@ -165,7 +166,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 1rem 0 3rem 0;
+    padding: 0rem 0 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
