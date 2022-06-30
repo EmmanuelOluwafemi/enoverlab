@@ -22,7 +22,7 @@ const data = [
     {
         imgUrl: community,
         title: "COMMUNITY",
-        link: "https://chat.whatsapp.com/E2dsEi3oo0z8sUNibl4y9L"
+        link: "https://chat.whatsapp.com/JGPn6vdQjhxBqFHThLDNBA"
     },
 ]
 
