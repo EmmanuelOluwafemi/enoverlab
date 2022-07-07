@@ -75,8 +75,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Admission is closing on the 5th of July<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Admission is closing on the 5th of July<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Learn everything you need to launch your career in product management<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Learn everything you need to launch your career in product management<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
