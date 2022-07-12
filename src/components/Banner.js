@@ -7,6 +7,7 @@ import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
 import character from '../assets/img/bannerCharacter.jpeg';
 
+
 const Banner = () => {
     return (
         <StyledBanner>
@@ -18,20 +19,25 @@ const Banner = () => {
                         <h4> Ndukwe Igbokwe </h4>
                         <p>Senior Product Manager, Max</p>
                         {/* <p> Max</p> */}
+
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
+
                 <h2> Soft skills to thrive as a product manager</h2>
+
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
+
                 <h4>  Ndukwe Igbokwe </h4>
                 <p>Senior Product Manager, Max</p>
                 {/* <p> Max</p> */}
+
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
