@@ -25,7 +25,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>A product manager and a product owner; the differences and similarities?</h2>
+                <h2> A product manager and a product owner; let's stop the confusion!</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
