@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerCharacter.jpeg';
+import character from '../assets/img/banner_character.jpeg';
 
 const Banner = () => {
     return (
@@ -15,22 +15,22 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4> Ndukwe Igbokwe </h4>
-                        <p>Senior Product Manager, Max</p>
+                        <h4>Fumnanya Okeleke-Kooper </h4>
+                        <p>Product Owner, SeamlessHR</p>
                         {/* <p> Max</p> */}
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2> Soft skills to thrive as a product manager</h2>
+                <h2>A product manager and a product owner; the differences and similarities?</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>  Ndukwe Igbokwe </h4>
-                <p>Senior Product Manager, Max</p>
+                <h4>Fumnanya Okeleke-Kooper</h4>
+                <p>Product Owner, SeamlessHR</p>
                 {/* <p> Max</p> */}
                 </div>
             </div>
