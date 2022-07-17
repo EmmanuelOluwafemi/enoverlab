@@ -7,6 +7,7 @@ import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
 import character from '../assets/img/banner_character.jpeg';
 
+
 const Banner = () => {
     return (
         <StyledBanner>
@@ -18,12 +19,14 @@ const Banner = () => {
                         <h4>Fumnanya Okeleke-Kooper </h4>
                         <p>Product Owner, SeamlessHR</p>
                         {/* <p> Max</p> */}
+
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
                 <h2>A product manager and a product owner; the differences and similarities?</h2>
+
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -32,6 +35,7 @@ const Banner = () => {
                 <h4>Fumnanya Okeleke-Kooper</h4>
                 <p>Product Owner, SeamlessHR</p>
                 {/* <p> Max</p> */}
+
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
