@@ -17,7 +17,7 @@ const Banner = () => {
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
                      <h4>Kehinde Olukoga </h4>
-                     <p>Product Manager, Primera Bank</p>
+                     <p>Product Manager, Primera MFBank</p>
                         {/* <p> Max</p> */}
 
                     </div>
@@ -33,7 +33,7 @@ const Banner = () => {
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
                 <h4>Kehinde Olukoga </h4>
-                <p>Product Manager, Primera Bank</p>
+                <p>Product Manager, Primera MFBank</p>
                 {/* <p> Max</p> */}
 
                 </div>
