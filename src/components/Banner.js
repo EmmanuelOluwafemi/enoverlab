@@ -16,8 +16,8 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                        <h4>Fumnanya Okeleke-Kooper </h4>
-                        <p>Product Owner, SeamlessHR</p>
+                     <h4>Kehinde Olukoga </h4>
+                     <p>Product Manager, Primera Bank</p>
                         {/* <p> Max</p> */}
 
                     </div>
@@ -25,15 +25,15 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2> A product manager and a product owner; let's stop the confusion!</h2>
+                <h2>The basics of building a Fintech product</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>Fumnanya Okeleke-Kooper</h4>
-                <p>Product Owner, SeamlessHR</p>
+                <h4>Kehinde Olukoga </h4>
+                <p>Product Manager, Primera Bank</p>
                 {/* <p> Max</p> */}
 
                 </div>

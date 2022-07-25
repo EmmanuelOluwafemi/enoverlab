@@ -75,8 +75,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Learn everything you need to launch your career in product management<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Learn everything you need to launch your career in product management<br/><span>Enroll below</span></p>
+                    <p className='web-text'>20% early bird discount is available. Discount closes on the 1st of August<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>20% early bird discount is available. Discount closes on the 1st of August<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -261,6 +261,7 @@ const StyledPricingWrapper = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left: 0.9rem;
             @media(max-width: 768px) {
             width: 100%;
             height: 30vh;
