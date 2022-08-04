@@ -75,8 +75,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>20% early bird discount is available. Discount closes on the 1st of August<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>20% early bird discount is available. Discount closes on the 1st of August<br/><span>Enroll below</span></p>
+                    <p className='web-text'>20% early bird discount is available. Discount closes on the 10th of August<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>20% early bird discount is available. Discount closes on the 10th of August<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -96,8 +96,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦100,000"
-                    discount="₦120,000"
+                    price="₦120,000"
+                    // discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
