@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerCharacter.jpg';
+import character from '../assets/img/banner-character.jpg';
 
 
 const Banner = () => {
@@ -16,8 +16,8 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                     <h4> Yewande Oyebo  </h4>
-                     <p>Product Owner, JustEatTakeaway.com</p>
+                     <h4>Anthony Isichei  </h4>
+                     <p>Senior Product Manager, Pagatech Limited</p>
                         {/* <p> Max</p> */}
 
                     </div>
@@ -25,15 +25,15 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>How to get an International Product Management job</h2>
+                <h2>Understanding the different type of Product Managers</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4> Yewande Oyebo  </h4>
-                <p>Product Owner, JustEatTakeaway.com</p>
+                <h4>Anthony Isichei  </h4>
+                <p>Senior Product Manager, Pagatech Limited</p>
                 {/* <p> Max</p> */}
 
                 </div>
