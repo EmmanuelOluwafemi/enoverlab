@@ -64,21 +64,21 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+             <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>In-depth training and mentorship for aspiring product managers<br/></h3>
+                    <h3 className='web-text'>Launch your product management career, become a skilled product manager<br/></h3>
                   
-                    <h3 className='mobile-text'>In-depth training and mentorship for aspiring product managers<br/><span></span></h3>
+                    <h3 className='mobile-text'>Launch your product management career, become a skilled product manager<br/><span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Classes are starting on the 10th of August.<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Classes are starting on the 10th of August.<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Early Bird Discount is Available - Get as much as N20,000 off the tuition<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Early Bird Discount is Available - Get as much as N20,000 off the tuition<br/><span>Enroll below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -166,7 +166,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 2srem 0 3rem 0;
+    padding: 0rem 0 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
