@@ -121,11 +121,11 @@ const StyledHero = styled.section`
                 font-weight: 800;
                 color: #090C9B;
                 max-width: 706px;
-                line-height: 1.4;
+                line-height: 1;
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 1.9rem;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }
