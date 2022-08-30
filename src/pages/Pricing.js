@@ -66,9 +66,9 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Launch your product management career, become a skilled product manager<br/></h3>
+                    <h3 className='web-text'>Launch your product management career <br/>Training starts on September 9, 2022</h3>
                   
-                    <h3 className='mobile-text'>Launch your product management career, become a skilled product manager<br/><span></span></h3>
+                    <h3 className='mobile-text'>Launch your product management career<br/> Training starts on September 9, 2022<span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
