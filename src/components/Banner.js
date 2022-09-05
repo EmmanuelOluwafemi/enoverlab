@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banjiNew.jpg';
+import character from '../assets/img/banner_character.jpeg';
 
 
 const Banner = () => {
@@ -16,8 +16,8 @@ const Banner = () => {
                 <div className='cont'>
                     <img src={character} className="characterMobile" alt="character" />
                     <div className="details mobile">
-                    <h4>Olabanji Ewenla</h4>
-                    <p> Product Manager, Dashouts</p>
+                    <h4>Lydia Ezeakor </h4>
+                    <p> Product Manager, Logistics</p>
                         {/* <p> Max</p> */}
 
                     </div>
@@ -25,15 +25,15 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2> Building your product thinking skills</h2>
+                <h2> Understanding Agile Product Management</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>Olabanji Ewenla</h4>
-                <p> Product Manager, Dashouts</p>
+                <h4>Lydia Ezeakor </h4>
+                <p> Product Manager, Logistics</p>
                 {/* <p> Max</p> */}
 
                 </div>
