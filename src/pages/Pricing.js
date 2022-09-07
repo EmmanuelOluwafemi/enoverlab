@@ -66,17 +66,17 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Launch your product management career <br/>Training starts on September 9, 2022</h3>
+                    <h3 className='web-text'>Launch your product management career <br/></h3>
                   
-                    <h3 className='mobile-text'>Launch your product management career<br/> Training starts on September 9, 2022<span></span></h3>
+                    <h3 className='mobile-text'>Launch your product management career<br/> <span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Early Bird Discount is Available - Get as much as N20,000 off the tuition<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Early Bird Discount is Available - Get as much as N20,000 off the tuition<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Training starts on September 9, 2022<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>Training starts on September 9, 2022<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -96,8 +96,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦100,000"
-                    discount="₦120,000"
+                    price="₦120,000"
+                    // discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
