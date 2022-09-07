@@ -68,7 +68,7 @@ const Pricing = () => {
                 <div className="text-box-1">
                     <h3 className='web-text'>Learn product management indepthly, Launch your product manager career  <br/></h3>
                   
-                    <h3 className='mobile-text'>Launch your product management career, Launch your product manager career<br/> <span></span></h3>
+                    <h3 className='mobile-text'>Learn product management indepthly, Launch your product manager career<br/> <span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
