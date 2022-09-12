@@ -64,7 +64,7 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             <div className="adbox">
+             {/* <div className="adbox">
                 <div className="text-box-1">
                     <h3 className='web-text'>Learn product management indepthly, Launch your product manager career  <br/></h3>
                   
@@ -78,7 +78,7 @@ const Pricing = () => {
                     <p className='web-text'>Training starts on September 12, 2022<br/>  <span>Enroll below</span></p>
                     <p className='mobile-text'>Training starts on September 12, 2022<br/><span>Enroll below</span></p>
                 </div>
-            </div>
+            </div> */}
             <Header />
             <StyledPricing>
                 <PricingCard 
