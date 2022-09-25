@@ -83,7 +83,7 @@ const VideoSlider = (props) => {
     </div>
 
 
-    <div className='slide-container'  >     
+    {/* <div className='slide-container'  >     
     
             <Slider ref={slider} className="slider" {...settings} data-aos="fade-left" 
                 data-aos-easing="ease-in-sine"
@@ -122,6 +122,15 @@ const VideoSlider = (props) => {
             </button>
             
             <button className={currentSlide >= 3 ? "button forward" : "button forward show"} onClick={next}><AiOutlineArrowRight className='icon'/></button>
+        </div>
+    </div> */}
+    <div className='video-container'>
+        <div className="video-wrapper">
+            <video src="https://res.cloudinary.com/dqyu8yphl/video/upload/v1664139637/idara_zwvrlr.mp4" 
+            autoPlay
+            muted
+            controls
+            loop />
         </div>
     </div>
     </SliderContainer>
@@ -282,5 +291,21 @@ const SliderContainer = styled.div`
         } 
     }
         
+    .video-container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 5% 5%;
+        .video-wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     
 `
