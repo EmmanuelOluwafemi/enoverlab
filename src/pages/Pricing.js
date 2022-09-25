@@ -64,21 +64,21 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+             <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Learn product management indepthly, Launch your product manager career  <br/></h3>
+                    <h3 className='web-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US <br/></h3>
                   
-                    <h3 className='mobile-text'>Learn product management indepthly, Launch your product manager career<br/> <span></span></h3>
+                    <h3 className='mobile-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US<br/> <span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Training starts on September 12, 2022<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>Training starts on September 12, 2022<br/><span>Enroll below</span></p>
+                    <p className='web-text'>This can be you in the next 3-4 months, if you enrol today<br/>  <span>Enroll below</span></p>
+                    <p className='mobile-text'>This can be you in the next 3-4 months, if you enrol today<br/><span>Enroll below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -96,8 +96,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦120,000"
-                    // discount="₦120,000"
+                    price="₦100,000"
+                    discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
@@ -154,7 +154,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            <Cta />
+            <Cta  pricing/>
             <VideoSlider/>
             {/* <TestimVid/> */}
             <Footer/>
@@ -216,7 +216,7 @@ const StyledPricingWrapper = styled.div`
                 color: #0E1098;
                 display: none;
                 line-height: 2rem;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 span{
                     font-weight: 600;
                 }
@@ -289,7 +289,7 @@ const StyledPricingWrapper = styled.div`
                 font-family: 'Montserrat', 'sans-serif';
                 font-size: 1.3rem;
                 color: #fff;
-                line-height: 2rem;
+                line-height: 1.8rem;
                 display: none;
                 text-align: left;
                 text-align: center;
