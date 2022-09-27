@@ -68,15 +68,17 @@ const Pricing = () => {
                 <div className="text-box-1">
                     <h3 className='web-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US <br/></h3>
                   
-                    <h3 className='mobile-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US<br/> <span></span></h3>
+                    <h3 className='mobile-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US<br/>
+                  
+                     <span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>This can be you in the next 3-4 months, if you enrol today<br/>  <span>Enroll below</span></p>
-                    <p className='mobile-text'>This can be you in the next 3-4 months, if you enrol today<br/><span>Enroll below</span></p>
+                    <p className='web-text'>This can be you in the next 3-4 months, if you enrol today. Application closes October 5 <br/>   <span>Enroll below</span></p>
+                    <p className='mobile-text'>This can be you in the next 3-4 months, if you enrol today.  Application closes October 5 <br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
