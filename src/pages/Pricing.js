@@ -66,9 +66,9 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US <br/></h3>
+                    <h3 className='web-text'>20% Discount available for the first 10 applicants of the Advanced Program!<br/></h3>
                   
-                    <h3 className='mobile-text'>In the last 8 weeks, 8 of our trained Product Manager's have gotten employed with companies in Nigeria, Germany and US<br/>
+                    <h3 className='mobile-text'>20% Discount available for the first 10 applicants of the Advanced Program!<br/>
                   
                      <span></span></h3>
                 </div>
@@ -77,8 +77,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>This can be you in the next 3-4 months, if you enrol today. Application closes October 5 <br/>   <span>Enroll below</span></p>
-                    <p className='mobile-text'>This can be you in the next 3-4 months, if you enrol today.  Application closes October 5 <br/><span>Enroll below</span></p>
+                    <p className='web-text'>Admission closes on October 3, 2022 <br/>   <span>Enroll below</span></p>
+                    <p className='mobile-text'>Admission closes on October 3, 2022 <br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -156,7 +156,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            <Cta  pricing/>
+            <Cta  pricing timer/>
             <VideoSlider/>
             {/* <TestimVid/> */}
             <Footer/>
@@ -168,7 +168,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 0rem 0 3rem 0;
+    padding: 0rem 0 5rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
