@@ -49,7 +49,10 @@ const Timer = () => {
 
   return (
     <StyledCountdown>
+      <div className="timer-container">
+      <h1>DISCOUNT ENDS OCTOBER 3</h1>
         <div className="countdown">
+          
             <div className="countdown__item">
                 <div className="countdown__time">{countdownTime.countdownDays}</div>
                 <div className="countdown__text">Days</div>
@@ -67,6 +70,8 @@ const Timer = () => {
                 <div className="countdown__text">Seconds</div>
             </div>
         </div>
+        </div>
+    
     </StyledCountdown>
   )
 }
@@ -74,14 +79,29 @@ const Timer = () => {
 export default Timer
 
 const StyledCountdown = styled.div`
+    margin: 4rem 0;
+    padding: 0 16%;
+    .timer-container{
+      background-color: #090C9B;
+    padding: 2rem 0;
+    @media(max-width: 768px) {
+   
+    }
+    }
+    h1{
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+        }
     .countdown{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4rem auto;
+      
         /* margin: 0 auto; */
         width: 100%;
         padding: 2rem 0;
+       
         .countdown__item{
             display: flex;
             flex-direction: column;
@@ -90,11 +110,11 @@ const StyledCountdown = styled.div`
             margin: 0 1rem;
             .countdown__time{
                 font-size: 3rem;
-                color:  #090C9B;
+                color:  #fff;
             }
             .countdown__text{
                 font-size: 2rem;
-                color:  #090C9B;
+                color:  #fff;
             }
         }
     @media(max-width: 768px){
