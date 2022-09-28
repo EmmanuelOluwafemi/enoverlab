@@ -81,11 +81,14 @@ export default Timer
 const StyledCountdown = styled.div`
     margin: 4rem 0;
     padding: 0 16%;
+    @media (max-width: 768px) {
+        padding: 0 10%;
+    }
     .timer-container{
       background-color: #090C9B;
     padding: 2rem 0;
     @media(max-width: 768px) {
-   
+   q
     }
     }
     h1{
