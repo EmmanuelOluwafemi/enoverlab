@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Timer from './Timer'
 
-const Cta = ({pricing, timer}) => {
+const Cta = ({pricing}) => {
   return (
     <StyledCta>
           <div className="text-content">
@@ -16,10 +16,8 @@ const Cta = ({pricing, timer}) => {
                         <li>Each class runs for 2 hrs </li>    
                     </ul>
 
-                   {
-                          timer && <Timer />
-                   }
-
+                  
+                  
                     <h4
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
@@ -58,7 +56,7 @@ const StyledCta = styled.div`
         padding: 3em 10%;
         background: #090C9B;
         min-height: 381px;
-        margin-top: 8rem;
+        margin-top: 4rem;
         margin-bottom: 4rem;
         display: flex;
         align-items: center;

@@ -74,13 +74,14 @@ const Timer = () => {
 export default Timer
 
 const StyledCountdown = styled.div`
-    .countdown {
+    .countdown{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 4rem auto;
+        /* margin: 0 auto; */
         width: 100%;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
         .countdown__item{
             display: flex;
             flex-direction: column;
@@ -89,11 +90,11 @@ const StyledCountdown = styled.div`
             margin: 0 1rem;
             .countdown__time{
                 font-size: 3rem;
-                color: #fff;
+                color:  #090C9B;
             }
             .countdown__text{
                 font-size: 2rem;
-                color: #fff;
+                color:  #090C9B;
             }
         }
     @media(max-width: 768px){
