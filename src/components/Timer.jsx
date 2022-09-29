@@ -79,6 +79,14 @@ const Timer = () => {
 export default Timer
 
 const StyledCountdown = styled.div`
+
+@keyframes cssAnimation_0 {
+  to {
+    transform: translate(0px, 0px) scale(1.05, 1.05);
+  }
+}
+
+
     margin: 4rem 0;
     padding: 0 16%;
     @media (max-width: 768px) {
@@ -98,6 +106,7 @@ const StyledCountdown = styled.div`
         align-items: center;
         background-color: #090C9B;
        padding: 2rem 0;
+       animation: cssAnimation_0 1245ms infinite ease-in-out;
       @media(max-width: 768px) {
           
       }
