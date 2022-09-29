@@ -82,25 +82,25 @@ const StyledCountdown = styled.div`
     margin: 4rem 0;
     padding: 0 16%;
     @media (max-width: 768px) {
-        padding: 0 10%;
+        padding: 0 4%;
     }
     .timer-container{
-      background-color: #090C9B;
-    padding: 2rem 0;
-    @media(max-width: 768px) {
-   q
-    }
+   
     }
     h1{
-            font-size: 2rem;
-            color: #fff;
+            font-size: 1.5rem;
+            color:  #090C9B;
             text-align: center;
         }
     .countdown{
         display: flex;
         justify-content: center;
         align-items: center;
-      
+        background-color: #090C9B;
+       padding: 2rem 0;
+      @media(max-width: 768px) {
+          
+      }
         /* margin: 0 auto; */
         width: 100%;
         padding: 2rem 0;
