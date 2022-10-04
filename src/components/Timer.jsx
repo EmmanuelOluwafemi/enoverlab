@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import styled from 'styled-components';
 
 const Timer = () => {
-    const [expiryTime, setExpiryTime] = useState("3 oct 2022 11:59:00");
+    const [expiryTime, setExpiryTime] = useState("7 oct 2022 11:59:00");
     const [countdownTime, setCountdownTime] = useState({
         countdownDays: "",
         countdownHours: "",
@@ -11,7 +11,7 @@ const Timer = () => {
         });
     
         const countdownTimer = () => {
-            const timeInterval = setInterval(() => {
+              const timeInterval = setInterval(() => {
               const countdownDateTime = new Date(expiryTime).getTime();
               const currentTime = new Date().getTime();
               const remainingDayTime = countdownDateTime - currentTime;
@@ -50,7 +50,7 @@ const Timer = () => {
   return (
     <StyledCountdown>
       <div className="timer-container">
-      <h1>DISCOUNT ENDS OCTOBER 3</h1>
+      <h1>DISCOUNT ENDS OCTOBER 7</h1>
         <div className="countdown">
           
             <div className="countdown__item">
@@ -79,6 +79,13 @@ const Timer = () => {
 export default Timer
 
 const StyledCountdown = styled.div`
+
+@keyframes cssAnimation_0 {
+  to {
+    transform: translate(0px, 0px) scale(1.05, 1.05);
+  }
+}
+
     margin: 4rem 0;
     padding: 0 16%;
     @media (max-width: 768px) {
@@ -98,6 +105,7 @@ const StyledCountdown = styled.div`
         align-items: center;
         background-color: #090C9B;
        padding: 2rem 0;
+       animation: cssAnimation_0 1245ms infinite ease-in-out;
       @media(max-width: 768px) {
           
       }
