@@ -78,8 +78,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Admission closes on October 3, 2022 <br/>   <span>Enroll below</span></p>
-                    <p className='mobile-text'>Admission closes on October 3, 2022 <br/><span>Enroll below</span></p>
+                    <p className='web-text'>Admission closes on October 7, 2022 <br/>   <span>Enroll below</span></p>
+                    <p className='mobile-text'>Admission closes on October 7, 2022 <br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
