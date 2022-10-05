@@ -96,7 +96,7 @@ const StyledBanner = styled.section`
     .cont {
         display: flex;
          /* mew */
-        column-gap: 0.5rem;
+        column-gap: 0.4rem;
         /* new */
     }
     .details {
