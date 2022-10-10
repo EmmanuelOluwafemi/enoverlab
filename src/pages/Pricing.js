@@ -170,7 +170,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 0rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
