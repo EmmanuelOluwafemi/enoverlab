@@ -4,10 +4,9 @@ import styled from 'styled-components'
 
 // images
 import banner from '../assets/img/bannerBackground.jpg';
+import character2 from '../assets/img/banner_character.jpeg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/bannerImg1.png';
-import character2 from "../assets/img/bannerImg2.png"
-import character3 from "../assets/img/bannerImg3.png"
+import character from '../assets/img/banner_charater.jpeg';
 
 const Banner = () => {
     return (
@@ -17,7 +16,7 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />
                 <img src={character2} className="characterMobile" alt="character" />
-                <img src={character3} className="characterMobile" alt="character" />
+            
                     {/* <div className="details mobile">
                     <h4>Michael Oragwa  </h4>
                     <p> Product Manager, Topflight Apps</p>
@@ -28,20 +27,19 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2> Getting a product manager role at a top tech company</h2>
+                <h2>The Business of building Products & What it takes to have a successful Product Manager career?</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <img src={character2} className="characterWeb" alt="character" />
-                <img src={character3} className="characterWeb" alt="character" />
-                {/* <div className="details web"> */}
-                {/* <h4>Michael Oragwa  </h4>
-                    <p> Product Manager, Topflight Apps</p> */}
-                {/* <p> Max</p> */}
+                {/* <div className="details web">
+                <h4>Michael Oragwa  </h4>
+                    <p> Product Manager, Topflight Apps</p>
+                <p> Max</p>
 
-                {/* </div> */}
+                </div> */}
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
