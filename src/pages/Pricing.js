@@ -65,7 +65,7 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             <div className="adbox">
+             {/* <div className="adbox">
                 <div className="text-box-1">
                     <h3 className='web-text'>20% Discount available for the first 10 applicants of the Advanced Program!<br/></h3>
                   
@@ -81,7 +81,7 @@ const Pricing = () => {
                     <p className='web-text'>Admission closes on October 7, 2022 <br/>   <span>Enroll below</span></p>
                     <p className='mobile-text'>Admission closes on October 7, 2022 <br/><span>Enroll below</span></p>
                 </div>
-            </div>
+            </div> */}
             <Header />
             <StyledPricing>
                 <PricingCard 
