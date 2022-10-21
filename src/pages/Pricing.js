@@ -181,7 +181,7 @@ const StyledPricingWrapper = styled.div`
         margin-bottom: 3rem;
         @media(max-width: 768px) {
             flex-direction: column;
-            height: 75vh;
+            height: 65vh;
             margin-bottom: 0rem;
         }
         .text-box-1{
@@ -195,8 +195,8 @@ const StyledPricingWrapper = styled.div`
 
          @media(max-width: 768px) {
             width: 100%;
-            height: 30vh;
-            padding: 0rem 0.9rem;    
+            height: 25vh;
+            padding: 0rem 0.5rem;    
         }
             .web-text{
                 font-family: 'Montserrat', sans-serif;
@@ -268,8 +268,8 @@ const StyledPricingWrapper = styled.div`
             padding-left: 0.9rem;
             @media(max-width: 768px) {
             width: 100%;
-            height: 30vh;
-            padding: 1.2rem;
+            height: 25vh;
+            padding: 1rem;
              }
             .web-text{
                 font-family: 'Montserrat', 'sans-serif';
