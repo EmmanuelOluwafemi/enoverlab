@@ -65,12 +65,12 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+             <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>20% Discount available for the first 10 applicants of the Advanced Program!<br/></h3>
+                    <h3 className='web-text'>Give yourself a headstart in product management going into 2023<br/>Start your PM training today!</h3>
                   
-                    <h3 className='mobile-text'>20% Discount available for the first 10 applicants of the Advanced Program!<br/>
-                  
+                    <h3 className='mobile-text'>Give yourself a headstart in product management going into 2023<br/>
+                    Start your PM training today!
                      <span></span></h3>
                 </div>
                 <div className="text-box-2">
@@ -78,10 +78,10 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Admission closes on October 7, 2022 <br/>   <span>Enroll below</span></p>
-                    <p className='mobile-text'>Admission closes on October 7, 2022 <br/><span>Enroll below</span></p>
+                    <p className='web-text'>Admission closes on November 7, 2022 <br/>   <span>Enroll below</span></p>
+                    <p className='mobile-text'>Admission closes on November 7, 2022 <br/><span>Enroll below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
                 <PricingCard 
@@ -99,8 +99,8 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦120,000"
-                    // discount="₦120,000"
+                    price="₦100,000"
+                    discount="₦120,000"
                     subtitle="For those who want to learn all the required product management skills to launch their product manager career"
                     enrolText="Enrol Now"
                 >
@@ -157,7 +157,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            {/* <Timer/> */}
+            <Timer/>
             <Cta  pricing timer/>
             <VideoSlider/>
             {/* <TestimVid/> */}
@@ -170,7 +170,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 3rem 0 3rem 0;
+    padding: 0rem 0 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
@@ -202,7 +202,7 @@ const StyledPricingWrapper = styled.div`
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 color: #0E1098;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 padding-top: .5rem;
                 
                 @media(max-width: 768px) {
