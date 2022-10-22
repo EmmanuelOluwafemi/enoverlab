@@ -87,7 +87,7 @@ const StyledCountdown = styled.div`
 }
 
     margin: 4rem 0;
-    padding: 0 16%;
+    padding: 0 20%;
     @media (max-width: 768px) {
         padding: 0 4%;
     }
@@ -98,6 +98,11 @@ const StyledCountdown = styled.div`
             font-size: 1.5rem;
             color:  #090C9B;
             text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+                
+            }
         }
     .countdown{
         display: flex;
