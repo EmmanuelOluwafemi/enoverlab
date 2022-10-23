@@ -191,7 +191,7 @@ const StyledPricingWrapper = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding: 0rem 1.2rem 0rem 1.5rem;
+            padding: 0rem 1.2rem 0rem 10%;
 
          @media(max-width: 768px) {
             width: 100%;
