@@ -4,9 +4,8 @@ import styled from 'styled-components'
 
 // images
 import banner from '../assets/img/bannerBackground.jpg';
-import character2 from '../assets/img/banner_character.jpeg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banner_charater.jpeg';
+import character from '../assets/img/banner_character.jpeg';
 
 const Banner = () => {
     return (
@@ -14,32 +13,27 @@ const Banner = () => {
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-                <img src={character} className="characterMobile" alt="character" />
-                <img src={character2} className="characterMobile" alt="character" />
-            
-                    {/* <div className="details mobile">
-                    <h4>Michael Oragwa  </h4>
-                    <p> Product Manager, Topflight Apps</p>
-                        <p> Max</p>
-
-                    </div> */}
+                <img src={character} className="characterMobile" alt="character" />            
+                    <div className="details mobile">
+                    <h4>Chinyere Tony-Eke  </h4>
+                    <p> Group Head, Digital Banking, Globus Banks</p>
+                    </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>The Business of building Products & What it takes to have a successful Product Manager career?</h2>
+                <h2>Growing your product management career</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
-                <img src={character2} className="characterWeb" alt="character" />
-                {/* <div className="details web">
-                <h4>Michael Oragwa  </h4>
-                    <p> Product Manager, Topflight Apps</p>
+                <div className="details web">
+                <h4>Chinyere Tony-Eke  </h4>
+                    <p> Group Head, Digital Banking, Globus Banks</p>
                 <p> Max</p>
 
-                </div> */}
+                </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
@@ -94,7 +88,7 @@ const StyledBanner = styled.section`
     .cont {
         display: flex;
          /* mew */
-        column-gap: 0.4rem;
+       
         /* new */
     }
     .details {
