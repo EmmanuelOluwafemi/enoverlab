@@ -196,7 +196,10 @@ const StyledPricingWrapper = styled.div`
          @media(max-width: 768px) {
             width: 100%;
             height: 25vh;
-            padding: 0rem 0.5rem;    
+            padding: 0rem 0.5rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
         }
             .web-text{
                 font-family: 'Montserrat', sans-serif;
@@ -227,6 +230,7 @@ const StyledPricingWrapper = styled.div`
                 @media(max-width: 768px) {
                     display: block;
                     text-align: center;
+                    
                 }   
             }
         } 
