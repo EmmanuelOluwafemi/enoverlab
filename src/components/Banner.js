@@ -15,22 +15,22 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />            
                     <div className="details mobile">
-                    <h4>Chinyere Tony-Eke  </h4>
-                    <p> Group Head, Digital Banking, Globus Banks</p>
+                    <h4>Esther Omikunle  </h4>
+                    <p> Technical Product Manager, Cowrywise</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>Growing your product management career</h2>
+                <h2>Becoming a Technical Product Manager</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>Chinyere Tony-Eke  </h4>
-                    <p> Group Head, Digital Banking, Globus Banks</p>
+                <h4>Esther Omikunle  </h4>
+                    <p> Technical Product Manager, Cowrywise</p>
                 <p> Max</p>
 
                 </div>
