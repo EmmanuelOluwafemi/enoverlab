@@ -31,7 +31,7 @@ const Banner = () => {
                 <div className="details web">
                 <h4>Esther Omikunle  </h4>
                     <p> Technical Product Manager, Cowrywise</p>
-                <p> Max</p>
+               
 
                 </div>
             </div>
