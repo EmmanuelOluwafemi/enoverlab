@@ -159,7 +159,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            {/* <Timer/> */}
+            <Timer/>
             <Cta  pricing timer/>
             <VideoSlider/>
             {/* <TestimVid/> */}
