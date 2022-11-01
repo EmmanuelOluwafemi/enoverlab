@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import styled from 'styled-components';
 
 const Timer = () => {
-    const [expiryTime, setExpiryTime] = useState("1 nov 2022 11:59:00");
+    const [expiryTime, setExpiryTime] = useState("1 nov 2022 23:59:00");
     const [countdownTime, setCountdownTime] = useState({
         countdownDays: "",
         countdownHours: "",
