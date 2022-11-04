@@ -67,9 +67,11 @@ const Pricing = () => {
         <StyledPricingWrapper>
              <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>Start your PM training today! </h3>
+                    <h3 className='web-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>
+                     </h3>
                   
-                    <h3 className='mobile-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>Start your PM training today!<br/>
+                    <h3 className='mobile-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>
+                    <br/>
                     
                      <span></span></h3>
                 </div>
@@ -78,10 +80,10 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>20% discount for the first <br/>
-                    10 persons to apply <br/>   <span>Enroll below</span></p>
-                    <p className='mobile-text'>20% discount for the first <br/>
-                    10 persons to apply <br/> <br/><span>Enroll below</span></p>
+                    <p className='web-text'>20% discount for the first 10 persons to apply<br/>
+                   <br/>   <span>Enroll below</span></p>
+                    <p className='mobile-text'> 20% discount for the first 10 persons to apply<br/>
+                    <br/><br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
