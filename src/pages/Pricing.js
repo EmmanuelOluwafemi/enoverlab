@@ -80,8 +80,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Exclusive Training starts November 9 <br/> <span>Enroll below</span></p>
-                    <p className='mobile-text'> Exclusive Training starts November 9<br/><span>Enroll below</span></p>
+                    <p className='web-text'>Final training for the year 2022 starts on November 12<br/> <span>Enroll below</span></p>
+                    <p className='mobile-text'> Final training for the year 2022 starts on November 12<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
