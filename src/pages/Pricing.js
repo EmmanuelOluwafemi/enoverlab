@@ -74,7 +74,7 @@ const Pricing = () => {
                     <h3 className='web-text'>Be ahead of the game  <br />Start 2023 strong <br /> Join the waitlist of the January Cohort <br />
                     </h3>
 
-                    <h3 className='mobile-text'>Be ahead of the game<br />Start 2023 strong<br />  Join the waitlist of the January Cohort <br />
+                    <h3 className='mobile-text'>Be ahead of the game<br />Start 2023 strong<br />  Join the waitlist of the <br/> January Cohort <br />
                         <br />
 
                         <span></span></h3>
@@ -84,23 +84,13 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>20% Early Bird Discount<br />Registration closes December 20, 2022 <br /> <span>Enroll below</span></p>
-                    <p className='mobile-text'>20% Early Bird Discount<br />Registration closes December 20, 2022 <br /><span>Enroll below</span></p>
+                    <p className='web-text'>20% Early Bird Discount<br />Registration closes December 21, 2022 <br /> <span>Enroll below</span></p>
+                    <p className='mobile-text'>20% Early Bird Discount<br />Registration closes December 21, 2022 <br /><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
             <StyledPricing>
-                <PricingCard
-                    title="LevelUP PROGRAM"
-                    price="₦40,000"
-                    weeks="(4 weeks)"
-                    subtitle="For working Product Managers looking to LevelUP their product management skills to take their products to the next level"
-                    enrolText="Enrol Now"
-                >
-                    {basic.map((item, index) => (
-                        <List key={index} text={item} />
-                    ))}
-                </PricingCard>
+               
 
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
@@ -151,6 +141,18 @@ const Pricing = () => {
                     </Tools>
                 </PricingCard>
 
+                <PricingCard
+                    title="LevelUP PROGRAM"
+                    price="₦150,000"
+                    weeks="(7 weeks)"
+                    subtitle="For working Product Managers looking to LevelUP their product management skills to take their products to the next level"
+                    enrolText="Enrol Now"
+                >
+                    {basic.map((item, index) => (
+                        <List key={index} text={item} />
+                    ))}
+                </PricingCard>
+
                 {/* <PricingCard 
                     title="BLITZ PROGRAM" 
                     price="₦200,000"
@@ -163,7 +165,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            {/* <Timer/> */}
+            <Timer/>
             <Cta pricing timer />
             <VideoSlider />
             {/* <TestimVid/> */}
