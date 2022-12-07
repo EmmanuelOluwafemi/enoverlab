@@ -28,7 +28,7 @@ export default PricingCard
 
 const PricingCardWrapper = styled.div`
     width: 100%;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1.5rem 3.5rem 1.5rem;
     background: #52DEE5;
     border: none;
     max-height: 643px;
