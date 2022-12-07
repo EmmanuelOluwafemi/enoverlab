@@ -20,35 +20,39 @@ import Timer from '../components/Timer';
 
 
 const basic = [
-    "Introduction to Product Management" ,
-    "Product thinking" ,
-    "Understanding Product Lifecycle" ,
-    "Conducting user research" ,
-    "Creating user personas" ,
-    "Writing user stories" ,
-    "Competitive Market Analysis" ,
-    "Mock Interviews: showcasing your skills" ,
-    "Positioning yourself for Internships and APM roles" ,
-    "Certificate of Completion" ,
+    "Product Management Fundamentals",
+    "Customer Journey Map; understand customers better, drive seamless product delivery",
+    "UX design: designing experiences beyond the products ",
+    "Product Metrics",
+    "Market Leading Strategy",
+    "Prioritization",
+    "Product-Led Growth ",
+    "Product Analytics",
+    "Stakeholder Management",
+    "Certificate of Completion ",
 ]
 
 const advance = [
-  
-    "Introduction to product management, product thinking, and understanding product life-cycle" ,
-    "Customer development: understanding users, conducting user research; creating user personas, writing user stories and user segmentation" ,
-    "Competitive Market Analysis",
-    "Minimum Viable Product (MVP)" ,
-    "Product Metrics: define, track, analyse and measure success" ,
-    "Product Strategy: increasing the business viability of the product" ,
-    "Product Prioritization" ,
-    "Product Roadmap: connect the product vision, strategy, and development process in line with metrics" ,
-    "Basics of UIUX Design: design thinking process, using Figma and creating prototypes" ,
-   
-    "Product Launch: strategically releasing the product to the marketplace" ,
-    "Product Growth: systems to drive growth for the product " ,
-    "Stakeholder Management: working effectively with multiple teams" ,
-    "Prepare for the PM role workplace" ,
-    "Certificate of completion" ,
+
+    "Introduction to Product Management ",
+    "Product Thinking",
+    "Conducting User Research",
+    "Understanding Product Life Cycle",
+    "User Segmentation & Personas",
+    "Writing User Stories",
+    "Creating Userflows, Prototypes & Wireframes",
+    "Agile Product Development",
+    "Product Roadmap",
+    "Competitive Analysis",
+    "Product Metrics",
+    "Prioritization frameworks",
+    "Product Strategy",
+    "Minimum Viable Product",
+    "Product Launch; Go - to - market strategy",
+    "Tracking & analyzing product data",
+    "Certificate of Completion",
+    "6 weeks Internship placement",
+    ,
 ]
 
 const blitz = [
@@ -65,32 +69,32 @@ const Pricing = () => {
     window.scrollTo(0, 0);
     return (
         <StyledPricingWrapper>
-             {/* <div className="adbox">
+            <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>
-                     </h3>
-                  
-                    <h3 className='mobile-text'>Give yourself a headstart   <br/>in product management <br/> going into 2023 <br/>
-                    <br/>
-                    
-                     <span></span></h3>
+                    <h3 className='web-text'>Be ahead of the game  <br />Start 2023 strong <br /> Join the waitlist of the January Cohort <br />
+                    </h3>
+
+                    <h3 className='mobile-text'>Be ahead of the game<br />Start 2023 strong<br />  Join the waitlist of the January Cohort <br />
+                        <br />
+
+                        <span></span></h3>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Final training for the year 2022 starts on November 12<br/> <span>Enroll below</span></p>
-                    <p className='mobile-text'> Final training for the year 2022 starts on November 12<br/><span>Enroll below</span></p>
+                    <p className='web-text'>20% Early Bird Discount<br />Registration closes December 20, 2022 <br /> <span>Enroll below</span></p>
+                    <p className='mobile-text'>20% Early Bird Discount<br />Registration closes December 20, 2022 <br /><span>Enroll below</span></p>
                 </div>
-            </div> */}
+            </div>
             <Header />
             <StyledPricing>
-                <PricingCard 
-                    title="BASIC PROGRAM" 
+                <PricingCard
+                    title="LevelUP PROGRAM"
                     price="₦40,000"
                     weeks="(4 weeks)"
-                    subtitle="For those who want to understand the fundamentals of product management"
+                    subtitle="For working Product Managers looking to LevelUP their product management skills to take their products to the next level"
                     enrolText="Enrol Now"
                 >
                     {basic.map((item, index) => (
@@ -102,8 +106,8 @@ const Pricing = () => {
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
                     price="₦120,000"
-                    // discount="₦120,000"
-                    subtitle="For those who want to learn all the required product management skills to launch their product manager career"
+                    discount="₦150,000"
+                    subtitle="For anyone just starting out in product management to learn the required knowledge, skills & tools to become a skilled Product Manager"
                     enrolText="Enrol Now"
                 >
                     {advance.map((item, index) => (
@@ -113,29 +117,29 @@ const Pricing = () => {
                     <Tools>
                         <h6>Tools you would be learning how to use</h6>
                         <div className="tools-container">
-                        <div className="tools-list">
-                            <div className="tools">
-                                <img src={analyticsLogo} alt="analytics" />
+                            <div className="tools-list">
+                                <div className="tools">
+                                    <img src={analyticsLogo} alt="analytics" />
+                                </div>
+                                <div className="tools">
+                                    <img src={figmaLogo} alt="figma" />
+                                </div>
+                                <div className="tools">
+                                    <img src={hotjar} alt="hotjar" />
+                                </div>
                             </div>
-                            <div className="tools">
-                                <img src={figmaLogo} alt="figma" />
+                            <div className="tools-list">
+                                <div className="tools">
+                                    <img src={jiraLogo} alt="jira" />
+                                </div>
+                                <div className="tools">
+                                    <img src={trelloLogo} alt="trello" />
+                                </div>
+                                <div className="tools">
+                                    <img src={productPlan} alt="trello" />
+                                </div>
+
                             </div>
-                            <div className="tools">
-                                <img src={hotjar} alt="hotjar" />
-                            </div>
-                        </div>
-                        <div className="tools-list">
-                            <div className="tools">
-                                <img src={jiraLogo} alt="jira" />
-                            </div>
-                            <div className="tools">
-                                <img src={trelloLogo} alt="trello" />
-                            </div>
-                            <div className="tools">
-                                <img src={productPlan} alt="trello" />
-                            </div>
-                        
-                        </div>
                         </div>
                         {/* <ul>
                             <li>Productplan for creating roadmaps</li>
@@ -160,10 +164,10 @@ const Pricing = () => {
                 </PricingCard> */}
             </StyledPricing>
             {/* <Timer/> */}
-            <Cta  pricing timer/>
-            <VideoSlider/>
+            <Cta pricing timer />
+            <VideoSlider />
             {/* <TestimVid/> */}
-            <Footer/>
+            <Footer />
         </StyledPricingWrapper>
     )
 }
@@ -172,7 +176,7 @@ export default Pricing
 
 const StyledPricingWrapper = styled.div`
     width: 100%;
-    padding: 2rem 0 3rem 0;
+    padding: 0rem 0 3rem 0;
 
     .adbox {
         /* padding: 3.3rem 12rem 4.4rem 5rem; */
