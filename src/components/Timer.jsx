@@ -50,7 +50,7 @@ const Timer = () => {
   return (
     <StyledCountdown>
       <div className="timer-container">
-      <h1>DISCOUNT ENDS DECEMBER 21</h1>
+      <h1>REGISTRATION CLOSES DECEMBER 21</h1>
         <div className="countdown">
           
             <div className="countdown__item">

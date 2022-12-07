@@ -97,7 +97,7 @@ const Pricing = () => {
                     weeks="(10 weeks)"
                     price="₦120,000"
                     discount="₦150,000"
-                    subtitle="For anyone just starting out in product management to learn the required knowledge, skills & tools to become a skilled Product Manager"
+                    subtitle="For anyone just starting out to learn the required skills to become a Product Manager"
                     enrolText="Enrol Now"
                 >
                     {advance.map((item, index) => (
@@ -143,9 +143,10 @@ const Pricing = () => {
 
                 <PricingCard
                     title="LevelUP PROGRAM"
-                    price="₦150,000"
+                    price="₦160,000"
+                    discount="₦200,000"
                     weeks="(7 weeks)"
-                    subtitle="For working Product Managers looking to LevelUP their product management skills to take their products to the next level"
+                    subtitle="For working Product Managers looking to LevelUp their product management skills"
                     enrolText="Enrol Now"
                 >
                     {basic.map((item, index) => (
@@ -204,7 +205,7 @@ const StyledPricingWrapper = styled.div`
          @media(max-width: 768px) {
             width: 100%;
             height: 25vh;
-            padding: 0rem 0.5rem;
+            padding: 0rem 0.5rem 0rem 0rem;
             justify-content: center;
             display: flex;
             align-items: center;
