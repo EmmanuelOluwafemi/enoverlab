@@ -119,7 +119,7 @@ const StyledHeader = styled.header`
     }
 
     .logo {
-
+        width: 160px;
         @media (max-width: 768px) {
             width: 120px;
             height: auto;
