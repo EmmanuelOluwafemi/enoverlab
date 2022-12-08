@@ -20,19 +20,16 @@ import Timer from '../components/Timer';
 
 
 const basic = [
-   " Product Management Fundamentals",
-    "Customer Journey Map; to learn more about customers, connect, understand & deliver better value to them",
-    "UX design: designing experiences beyond the product",
+    "Product Management Fundamentals",
+    "Customer Journey Map; understand customers better, drive seamless product delivery",
+    "UX design: designing experiences beyond the products ",
+    "Product Metrics",
     "Market Leading Strategy",
-    "Metrics for product success",
-    "Building platform products ",
-    "Understanding network effects",  
-    "Prioritization ",
-    "Product-Led Growth", 
+    "Prioritization",
+    "Product-Led Growth ",
     "Product Analytics",
-    "Innovation for Product Managers",
     "Stakeholder Management",
-    "Team Leadership",
+    "Certificate of Completion ",
 ]
 
 const advance = [
@@ -87,8 +84,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>25% Early Bird Discount<br />Registration closes December 25, 2022 <br /> <span>Enroll below</span></p>
-                    <p className='mobile-text'>25% Early Bird Discount<br />Registration closes December 25, 2022 <br /><span>Enroll below</span></p>
+                    <p className='web-text'>20% Early Bird Discount<br />Registration closes December 21, 2022 <br /> <span>Enroll below</span></p>
+                    <p className='mobile-text'>20% Early Bird Discount<br />Registration closes December 21, 2022 <br /><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -98,7 +95,7 @@ const Pricing = () => {
                 <PricingCard primary
                     title="ADVANCE PROGRAM"
                     weeks="(10 weeks)"
-                    price="₦112,500"
+                    price="₦120,000"
                     discount="₦150,000"
                     subtitle="For anyone just starting out to learn the required skills to become a Product Manager"
                     enrolText="Enrol Now"
@@ -146,7 +143,7 @@ const Pricing = () => {
 
                 <PricingCard
                     title="LevelUP PROGRAM"
-                    price="₦150,000"
+                    price="₦160,000"
                     discount="₦200,000"
                     weeks="(7 weeks)"
                     subtitle="For working Product Managers looking to LevelUp their product management skills"

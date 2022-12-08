@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
 
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logo.svg";
 import { FiMenu } from 'react-icons/fi';
 import { Link, NavLink } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
