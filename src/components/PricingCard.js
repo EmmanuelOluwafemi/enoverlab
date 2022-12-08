@@ -31,7 +31,7 @@ const PricingCardWrapper = styled.div`
     padding: 2.5rem 1.5rem 3.5rem 1.5rem;
     background: #52DEE5;
     border: none;
-    max-height: 700px;
+    max-height: 750px;
     position: relative;
 
     @media (max-height: 400px) {
