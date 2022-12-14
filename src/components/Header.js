@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
 
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.png";
 import { FiMenu } from 'react-icons/fi';
 import { Link, NavLink } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
@@ -119,7 +119,7 @@ const StyledHeader = styled.header`
     }
 
     .logo {
-
+        width: 160px;
         @media (max-width: 768px) {
             width: 120px;
             height: auto;

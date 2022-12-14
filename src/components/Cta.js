@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Timer from './Timer'
 
 const Cta = ({pricing}) => {
   return (
@@ -8,12 +9,15 @@ const Cta = ({pricing}) => {
           <div className="text-content">
                     <h3>Important Info</h3>
                     <ul>
-                        <li>All our programs are for absolute beginners in product management</li>    
+                        <li>All our programs are for absolute beginners in product management</li> 
+                        <li>Internship placement for Advanced Program trainees at the end of the training</li>   
                         <li>All classes are held online via Google Meet.</li>    
                         <li>Class holds twice a week at selected days.</li>    
                         <li>Each class runs for 2 hrs </li>    
                     </ul>
-                    
+
+                  
+                  
                     <h4
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"

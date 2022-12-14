@@ -21,15 +21,16 @@ const Hero = () => {
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-aos-delay="200"
-                    >
-                        In-depth training and mentorship program for product managers</h1>
+                        data-aos-delay="200">
+                       Launch your product management career</h1>
                     <p
                         data-aos="fade-right" 
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-aos-delay="400"
-                    >Learn the core skills, frameworks and tools you need to become a proficient Product Manager.</p>
+                    >Get the knowledge, skills and tools 
+                    you need to function effectively in the 
+                    role of a product manager</p>
 
                     <Link to="/pricing"
                     >Enrol Now</Link>
@@ -120,11 +121,11 @@ const StyledHero = styled.section`
                 font-weight: 800;
                 color: #090C9B;
                 max-width: 706px;
-                line-height: 1.4;
+                line-height: 1;
                 font-family: 'nexaHeavy';
 
                 @media (max-width: 768px) {
-                    font-size: 1.5rem;
+                    font-size: 1.9rem;
                     line-height: 1.3;
                     margin-top: 1.5rem;
                 }

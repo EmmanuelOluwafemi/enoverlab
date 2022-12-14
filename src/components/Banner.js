@@ -7,35 +7,30 @@ import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
 import character from '../assets/img/banner_character.jpeg';
 
-
 const Banner = () => {
     return (
         <StyledBanner>
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-                    <img src={character} className="characterMobile" alt="character" />
+                <img src={character} className="characterMobile" alt="character" />            
                     <div className="details mobile">
-                        <h4>Fumnanya Okeleke-Kooper </h4>
-                        <p>Product Owner, SeamlessHR</p>
-                        {/* <p> Max</p> */}
-
+                    <h4> Subomi Salami   </h4>
+                    <p> Product Manager, Meta</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>A product manager and a product owner; the differences and similarities?</h2>
+                <h2>Dealing with imposter syndrome as a new Product Manager</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4>Fumnanya Okeleke-Kooper</h4>
-                <p>Product Owner, SeamlessHR</p>
-                {/* <p> Max</p> */}
-
+                <h4> Subomi Salami   </h4>
+                    <p> Product Manager, Meta</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
@@ -90,6 +85,9 @@ const StyledBanner = styled.section`
     }
     .cont {
         display: flex;
+         /* mew */
+       
+        /* new */
     }
     .details {
         flex-direction: column;
@@ -123,6 +121,7 @@ const StyledBanner = styled.section`
     }
     .content {
         max-width: 491px;
+       
         h5 {
             font-size: 1.1rem;
             color: #52DEE5;
