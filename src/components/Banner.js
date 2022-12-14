@@ -22,7 +22,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>Preparing for 2023; what you need to focus on as a Product Manager</h2>
+                <h2>Moving your Product Manager career forward in 2023</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
