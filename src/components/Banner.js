@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../assets/img/bannerBackground.jpg';
 import ama from '../assets/img/ama.svg';
-import character from '../assets/img/banner_character.jpeg';
+import character from '../assets/img/banjiNew.jpg';
 
 const Banner = () => {
     return (
@@ -15,22 +15,22 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />            
                     <div className="details mobile">
-                    <h4> Subomi Salami   </h4>
-                    <p> Product Manager, Meta</p>
+                    <h4>Olabanji Ewenla </h4>
+                    <p> Product Manager, EnoverLab</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>This week product session topic:</h5>
-                <h2>Dealing with imposter syndrome as a new Product Manager</h2>
+                <h2>Preparing for 2023; what you need to focus on as a Product Manager</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
-                <h4> Subomi Salami   </h4>
-                    <p> Product Manager, Meta</p>
+                <h4> Olabanji Ewennla </h4>
+                    <p> Product Manager, EnoverLab</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
