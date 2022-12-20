@@ -12,17 +12,17 @@ import {AiOutlineArrowLeft, AiOutlineArrowRight, AiFillPlayCircle} from 'react-i
 
 
 
-const  itunu = "https://res.cloudinary.com/perxels/video/upload/v1653129859/Upload_1_cyp9tf.mp4"
-const damilola = "https://res.cloudinary.com/perxels/video/upload/v1653130009/upload_3_bh7kd3.mp4"
-const bunmi = "https://res.cloudinary.com/perxels/video/upload/v1653128825/upload_4_ovgd6i.mp4"
+const  itunu = "https://www.youtube.com/embed/hx2mjlaXzoc"
+const damilola = "https://www.youtube.com/embed/uGNt4A1xm7M"
+// const bunmi = "https://res.cloudinary.com/perxels/video/upload/v1653128825/upload_4_ovgd6i.mp4"
 // const chiom = "https://res.cloudinary.com/dqyu8yphl/video/upload/v1648640292/Chioma_fpjoqt.mp4"
 const Data = [
-    {
-        id: 0,
-        videoUrl: bunmi,
-        imgUrl: BunmiImg,
-        name: "Bunmi"
-    },
+    // {
+    //     id: 0,
+    //     videoUrl: bunmi,
+    //     imgUrl: BunmiImg,
+    //     name: "Bunmi"
+    // },
     {
         id: 1,
         videoUrl: damilola,
@@ -83,7 +83,7 @@ const VideoSlider = (props) => {
     </div>
 
 
-    {/* <div className='slide-container'  >     
+    <div className='slide-container'  >     
     
             <Slider ref={slider} className="slider" {...settings} data-aos="fade-left" 
                 data-aos-easing="ease-in-sine"
@@ -95,14 +95,15 @@ const VideoSlider = (props) => {
 
                         <div className="image-wrapper">
                         <div className="image-container" 
-                        style={{
-                                    backgroundImage: `url(${imgUrl})`
-                                }}>
-                            <img src={imgUrl} alt="" />
-                            
-                            <div className="playIcon" onClick={openModal} >
+                        // style={{
+                        //             backgroundImage: `url(${imgUrl})`
+                        //         }}
+                                >
+                            {/* <img src={imgUrl} alt="" /> */}
+                            <iframe src={videoUrl} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            {/* <div className="playIcon"  >
                                 <AiFillPlayCircle className='play' />
-                            </div>
+                            </div> */}
                
                
 
@@ -123,8 +124,8 @@ const VideoSlider = (props) => {
             
             <button className={currentSlide >= 3 ? "button forward" : "button forward show"} onClick={next}><AiOutlineArrowRight className='icon'/></button>
         </div>
-    </div> */}
-    <div className='video-container'>
+    </div>
+    {/* <div className='video-container'>
         <div className="video-wrapper">
             <video src="https://res.cloudinary.com/dqyu8yphl/video/upload/v1664139637/idara_zwvrlr.mp4" 
             autoPlay
@@ -132,7 +133,7 @@ const VideoSlider = (props) => {
             controls
             loop />
         </div>
-    </div>
+    </div> */}
     </SliderContainer>
   )
 }
@@ -253,7 +254,7 @@ const SliderContainer = styled.div`
         .image-container{ 
             background-repeat: no-repeat;
             position: relative;
-            height: inherit;
+            height: 40rem;
             width: 100%;
             background-size: 100%;
             display: flex;
@@ -262,13 +263,20 @@ const SliderContainer = styled.div`
             background-position: center;
 
             @media(max-width:1390px){
-                
+                height: 25rem;
             }
             img{
                 visibility: hidden;
                 height: 100%;
                 width: 100%;
                 position: static;
+            }
+
+            iframe{
+                height: 100%;
+                width: 100%;
+                position: static;
+
             }
             .playIcon{
                 display: flex;
