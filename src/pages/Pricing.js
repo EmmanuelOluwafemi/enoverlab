@@ -74,10 +74,10 @@ const Pricing = () => {
         <StyledPricingWrapper>
             <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Be ahead of the game  <br />Start 2023 strong <br /> Join the waitlist of the January Cohort <br />
+                    <h3 className='web-text'>Learn Product Management skills today <br />Take your career to the <br/> next level<br /> 
                     </h3>
 
-                    <h3 className='mobile-text'>Be ahead of the game<br />Start 2023 strong<br />  Join the waitlist of the <br /> January Cohort <br />
+                    <h3 className='mobile-text'>Learn Product Management <br/>  skills today <br />Take your career to <br/> the next level <br /> 
                         <br />
 
                         <span></span></h3>
@@ -87,8 +87,8 @@ const Pricing = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>25% Early Bird Discount<br />Registration closes December 31, 2022 <br /> <span>Enroll below</span></p>
-                    <p className='mobile-text'>25% Early Bird Discount<br />Registration closes December 31, 2022 <br /><span>Enroll below</span></p>
+                    <p className='web-text'>Training begins on the  13th of January<br/> <span>Enroll below</span></p>
+                    <p className='mobile-text'>Training begins on the <br/> 13th of January<br/><span>Enroll below</span></p>
                 </div>
             </div>
             <Header />
@@ -169,7 +169,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard> */}
             </StyledPricing>
-            <Timer />
+            {/* <Timer /> */}
             <Cta pricing timer />
             <VideoSlider />
             {/* <TestimVid/> */}
