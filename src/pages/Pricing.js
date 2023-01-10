@@ -157,7 +157,7 @@ const Pricing = () => {
                     ))}
                 </PricingCard>
 
-                {/* <PricingCard 
+                <PricingCard 
                     title="BLITZ PROGRAM" 
                     price="₦200,000"
                     weeks="(4-6 weeks)"
@@ -167,7 +167,7 @@ const Pricing = () => {
                     {blitz.map((item, index) => (
                         <List key={index} text={item} />
                     ))}
-                </PricingCard> */}
+                </PricingCard>
             </StyledPricing>
             {/* <Timer /> */}
             <Cta pricing timer />
